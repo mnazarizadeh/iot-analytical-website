@@ -119,11 +119,11 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
-  height: 70px;
+  height: 80px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 15px 0;
+  padding: 20px 0;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
@@ -144,8 +144,8 @@ h6 {
   text-transform: uppercase;
 }
 
-#header .logo h2 a,
-#header .logo h2 a:hover {
+#header .logo h1 a,
+#header .logo h1 a:hover {
   color: #00366f;
   text-decoration: none;
 }
@@ -158,27 +158,6 @@ h6 {
 
 .main-pages {
   margin-top: 60px;
-}
-
-#btn-login {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  /* display: inline-block; */
-  padding: 10px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: -2px 20px 20px 10px;
-  color: #fff;
-  background: #007bff;
-  border: 2px solid #007bff;
-}
-
-#btn-login:hover {
-  background: none;
-  color:  #007bff;
-  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -206,7 +185,7 @@ h6 {
 #intro .intro-info h2 {
   color: #fff;
   margin-bottom: 40px;
-  font-size: 44px;
+  font-size: 48px;
   font-weight: 700;
 }
 
@@ -239,7 +218,6 @@ h6 {
   background: none;
   border-color: #fff;
   color: #fff;
-  text-decoration: none;
 }
 
 #intro .intro-info .btn-services {
@@ -250,7 +228,6 @@ h6 {
   background: #007bff;
   border-color: #007bff;
   color: #fff;
-  text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -495,7 +472,7 @@ h6 {
 
 #about {
   background: #fff;
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 #about .about-container .background {
@@ -730,12 +707,148 @@ h6 {
 --------------------------------*/
 
 #portfolio {
-  padding: 80px 0;
+  padding: 60px 0;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
-#portfolio .container .section-header {
-  padding-bottom: 65px;
+#portfolio #portfolio-flters {
+  padding: 0;
+  margin: 5px 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#portfolio #portfolio-flters li {
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 6px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #007bff;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background: #ecf5ff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#portfolio #portfolio-flters li:hover,
+#portfolio #portfolio-flters li.filter-active {
+  background: #007bff;
+  color: #fff;
+}
+
+#portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+#portfolio .portfolio-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#portfolio .portfolio-item .portfolio-wrap {
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-wrap:hover img {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  transition: 0.2s linear;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 {
+  font-size: 22px;
+  line-height: 1px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  padding-bottom: 0;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a {
+  color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a:hover {
+  color: #007bff;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info p {
+  padding: 0;
+  margin: 0;
+  color: #e2effe;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview,
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  background: #007bff;
+  border-radius: 50%;
+  margin: 10px 4px 0 4px;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview i,
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details i {
+  padding-top: 6px;
+  font-size: 22px;
+  color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover,
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover {
+  background: #3395ff;
+}
+
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover i,
+#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover i {
+  color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-wrap:hover {
+  background: #003166;
+}
+
+#portfolio .portfolio-item .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
 }
 
 /* Testimonials Section
@@ -801,7 +914,7 @@ h6 {
 
 #team {
   background: #fff;
-  padding: 80px 0;
+  padding: 60px 0;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -932,9 +1045,9 @@ h6 {
 
 #contact {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-  padding: 85px 0;
+  padding: 60px 0;
   overflow: hidden;
-  
+ 
 }
 
 #contact .section-header {
