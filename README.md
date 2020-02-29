@@ -1,6 +1,7 @@
 # IoT Analytical Website
 
 To deploy your local code run the following command:
+
 	`npm run deploy`
 
 
