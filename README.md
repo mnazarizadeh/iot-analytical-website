@@ -2,7 +2,7 @@
 
 To deploy your local code run the following command:
 
-	`npm run deploy`
+	npm run deploy
 
 
 
