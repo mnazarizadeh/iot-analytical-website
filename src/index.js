@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import DashBoard from './Components/DashBoard';
-import { Router, Route } from 'react-router';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { createBrowserHistory } from "history";
 
@@ -15,8 +15,8 @@ import "jquery";
 const history = createBrowserHistory();
 
 const template = (
-  <Router history={history}>
-    <Route path="/" exact component={App} />
+  <Router basename={process.env.PUBLIC_URL} history={history}>
+    <Route exact path="/" component={App} />
     <Route path="/Dashboard" component={DashBoard} />
   </Router>
 );

@@ -1,3 +1,12 @@
+# IoT Analytical Website
+
+To deploy your local code run the following command:
+	`npm run deploy`
+
+
+
+## Auto generated texts following
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
