@@ -5,14 +5,14 @@ import * as serviceWorker from './serviceWorker';
 import DashBoard from './Components/DashBoard';
 import { Router, Route } from 'react-router';
 
-import createHistory from 'history/createBrowserHistory';
+import { createBrowserHistory } from "history";
 
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "animate.css";
 import "jquery";
 
-const history = createHistory();
+const history = createBrowserHistory();
 
 const template = (
   <Router history={history}>

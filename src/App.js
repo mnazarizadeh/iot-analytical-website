@@ -10,25 +10,25 @@ import Navbar from './Components/Navbar';
 import Intro from './Components/Intro';
 import Features from './Components/Features';
 import WhyUs from './Components/WhyUs';
-import Portfolio from './Components/Portfolio';
 import Testimonial from './Components/Testimonial';
 import Team from './Components/Team';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
      <React.Fragment>
 
-        <Navbar />
-        <Intro /> 
-        <Features />
-        <WhyUs />
-        <Portfolio />
-        <Testimonial />
-        <Team />
-        <Contact />
-        <Footer />
+         <Navbar />
+         <Intro />
+         <Features />
+         <WhyUs />
+         <Testimonial />
+         <Team />
+         <Contact />
+         <Footer />
+         <ScrollToTop />
 
      </React.Fragment>
   );
