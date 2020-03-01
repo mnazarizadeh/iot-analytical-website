@@ -54,6 +54,10 @@ h6 {
   border-radius: 50%;
 }
 
+#video {
+  background-color: black;
+}
+
 @-webkit-keyframes animate-preloader {
   0% {
     -webkit-transform: rotate(0deg);
@@ -603,11 +607,6 @@ h6 {
   margin-bottom: 0;
 }
 
-#why-us {
-  padding: 60px 0;
-  background: #004a99;
-}
-
 #why-us .section-header h3,
 #why-us .section-header p {
   color: #fff;
@@ -694,6 +693,7 @@ h6 {
 --------------------------------*/
 
 #testimonials {
+  margin-top: 60px;
   padding: 60px 0;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }

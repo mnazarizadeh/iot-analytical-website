@@ -139,8 +139,8 @@ class Navbar extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#portfolio">
-                    Portfolio
+                  <a className="nav-link" href="#video">
+                    Video
                   </a>
                 </li>
                 <li className="nav-item">
