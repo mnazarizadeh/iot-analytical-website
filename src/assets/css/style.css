@@ -729,7 +729,7 @@ h6 {
   margin: 0 0 15px 140px;
 }
 
-#testimonials .owl-nav,
+/* #testimonials .owl-nav,
 #testimonials .owl-dots {
   margin-top: 5px;
   text-align: center;
@@ -746,7 +746,7 @@ h6 {
 
 #testimonials .owl-dot.active {
   background-color: #007bff;
-}
+} */
 
 /* Team Section
 --------------------------------*/
