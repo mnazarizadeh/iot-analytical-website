@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -13,7 +12,7 @@ body {
   position: fixed;
   overflow: scroll;
   width: 100%;
-  padding-right: 0!important;
+  padding-right: 0 !important;
 }
 
 a {
@@ -164,15 +163,7 @@ h6 {
 }
 
 #btn-login {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  /* display: inline-block; */
-  padding: 10px 32px;
   border-radius: 50px;
-  transition: 0.5s;
-  margin: 20px 20px 20px 10px;
   color: #fff;
   background: #007bff;
   border: 2px solid #007bff;
@@ -180,7 +171,7 @@ h6 {
 
 #btn-login:hover {
   background: none;
-  color:  #007bff;
+  color: #007bff;
   text-decoration: none;
 }
 
@@ -936,7 +927,6 @@ h6 {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   padding: 85px 0;
   overflow: hidden;
-  
 }
 
 #contact .section-header {
