@@ -29,28 +29,55 @@ class Testimonial extends Component {
                       className="testimonial-img"
                       alt=".."
                     />
-                    <h3>Saul Goodman</h3>
+                    <h3>Mahdi Niknia</h3>
                     <h4>Ceo &amp; Founder</h4>
                     <p>
-                      Proin iaculis purus consequat sem cure digni ssim donec
-                      porttitora entum suscipit rhoncus. Accusantium quam,
-                      ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                      risus at semper.
+                      We just finished a new 5th floor building using IoT
+                      Analytical devices which make the building smarter. The
+                      team completely knows their business and they deliver
+                      exactly what they say will deliver on time. All members
+                      are responsive and friendly. Professional technicians
+                      installed the device in a couple of days and it was ready
+                      to use in a short period of time.
                     </p>
                   </div>
                   <div className="testimonial-item">
                     <img
-                      src="assets/img/testimonial-2.jpg"
+                      src="assets/img/testimonial-4.jpg"
                       className="testimonial-img"
                       alt=""
                     />
-                    <h3>Sara Wilsson</h3>
+                    <h3>Shahab Moradi</h3>
                     <h4>Designer</h4>
                     <p>
-                      Export tempor illum tamen malis malis eram quae irure esse
-                      labore quem cillum quid cillum eram malis quorum velit
-                      fore eram velit sunt aliqua noster fugiat irure amet legam
-                      anim culpa.
+                      We installed IoT Analytical devices to one of our projects
+                      to make a difference for people who care about energy and
+                      environment. Our customers claim that it has dramatically
+                      changed their consumption pattern for the better. The
+                      recommender system helps them use water, gas, and
+                      electricity optimal instead of using it during peak hours.
+                      Not only is it affordable but also it makes the earth a
+                      better place to live by saving energy.
+                    </p>
+                  </div>
+                  <div className="testimonial-item">
+                    <img
+                      src="assets/img/testimonial-5.jpg"
+                      className="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Ramyar Ghandriz</h3>
+                    <h4>Freelancer</h4>
+                    <p>
+                      We had a wonderful experience with the IoT Analytical
+                      team. We were searching for smart home systems for our
+                      latest project and it was not possible to find unit
+                      device, on one hand, to control gas, water, and
+                      electricity consumption simultaneously, on the other hand,
+                      analyze different periods of time usage with the result of
+                      a comparative visualized chart. We found all these
+                      features in an easy-to-install and an user-friendly device
+                      which IoT Analytical represents.
                     </p>
                   </div>
                 </OwlCarousel>
