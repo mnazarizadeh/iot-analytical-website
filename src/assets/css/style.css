@@ -15,6 +15,15 @@ body {
   padding-right: 0 !important;
 }
 
+.testparag {
+  color: #000;
+}
+
+.testh {
+  color: #000;
+  padding-bottom: 1rem;
+}
+
 a {
   color: #007bff;
   transition: 0.5s;
@@ -48,8 +57,6 @@ h6 {
 /* Back to top button */
 
 .MyOverRideClass {
-  width: 44px;
-  height: 44px;
   text-align: center;
   border-radius: 50%;
 }
@@ -89,7 +96,7 @@ h6 {
 #logo-text {
   font-weight: bold;
   color: #00366f;
-  margin-bottom: 0;
+  margin-bottom: 7px;
 }
 
 #header.header-scrolled,
@@ -132,9 +139,9 @@ h6 {
 }
 
 #btn-login:hover {
-  background: none;
-  color: #007bff;
-  text-decoration: none;
+  background: none !important;
+  color: #007bff !important;
+  text-decoration: none !important;
 }
 
 /*--------------------------------------------------------------
@@ -146,17 +153,18 @@ h6 {
   position: relative;
   background: url("../img/intro-bg.png") center bottom no-repeat;
   background-size: cover;
-  padding: 200px 0 120px 0;
+  padding: 110px 0 0 0;
 }
 
 #intro .intro-img {
-  height: 40%;
-  width: 40%;
+  height: 50%;
+  width: 50%;
   float: right;
 }
 
 #intro .intro-info {
-  width: 50%;
+  padding-top: 65px;
+  width: 40%;
   float: left;
 }
 
@@ -247,7 +255,7 @@ h6 {
   text-decoration: none;
 }
 
-.main-nav .drop-down ul {
+/* .main-nav .drop-down ul {
   display: block;
   position: absolute;
   left: 0;
@@ -309,7 +317,7 @@ h6 {
   content: "\f105";
   position: absolute;
   right: 15px;
-}
+} */
 
 /* Mobile Navigation */
 
@@ -449,6 +457,11 @@ h6 {
 
 /* About Us Section
 --------------------------------*/
+
+#phonepng {
+  max-width: 300px;
+  max-height: 300px;
+}
 
 #about {
   background: #fff;

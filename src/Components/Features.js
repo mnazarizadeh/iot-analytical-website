@@ -16,7 +16,7 @@ class Features extends Component {
 
             <div className="row about-container">
               <div className="col-lg-6 content order-lg-1 order-2">
-                <p>
+                <p className="testparag">
                   IoT Analytical is an energy utilization data analyzer that
                   makes it easy for everyone to have their household consumption
                   visualized by observing water, gas, and electricity usage. It
@@ -95,23 +95,23 @@ class Features extends Component {
             <div className="row about-extra">
               <div className="col-lg-6 wow fadeInUp">
                 <img
-                  src="assets/img/Phone.png"
-                  className="img-fluid"
+                  src="assets/img/phone.png"
+                  className="rounded mx-auto d-block"
                   alt="about"
                 />
               </div>
               <div className="col-lg-6 wow fadeInUp pt-5 mt-5 pt-lg-0">
-                <h4>
+                <h4 className="testh">
                   Voluptatem dignissimos provident quasi corporis voluptates sit
                   assumenda.
                 </h4>
-                <p>
+                <p className="testparag">
                   Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati
                   possimus ea. Quas molestiae perspiciatis occaecati qui rerum.
                   Deleniti quod porro sed quisquam saepe. Numquam mollitia
                   recusandae non ad at et a.
                 </p>
-                <p>
+                <p className="testparag">
                   Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti.
                   Odit qui asperiores ea corporis deserunt veritatis quidem
                   expedita perferendis. Qui rerum eligendi ex doloribus quia
@@ -129,24 +129,24 @@ class Features extends Component {
                 />
               </div>
 
-              <div className="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
-                <h4>
+              <div className="col-lg-6 wow fadeInUp pt-5 pt-lg-0 order-2 order-lg-1">
+                <h4 className="testh">
                   Neque saepe temporibus repellat ea ipsum et. Id vel et quia
                   tempora facere reprehenderit.
                 </h4>
-                <p>
+                <p className="testparag">
                   Delectus alias ut incidunt delectus nam placeat in
                   consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui
                   aut distinctio. Cumque fugit earum est quam officiis numquam.
                   Ducimus corporis autem at blanditiis beatae incidunt sunt.
                 </p>
-                <p>
+                <p className="testparag">
                   Voluptas saepe natus quidem blanditiis. Non sunt impedit
                   voluptas mollitia beatae. Qui esse molestias. Laudantium
                   libero nisi vitae debitis. Dolorem cupiditate est perferendis
                   iusto.
                 </p>
-                <p>
+                <p className="testparag">
                   Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore
                   sint quia modi. Numquam est aut fuga mollitia exercitationem
                   nam accusantium provident quia.

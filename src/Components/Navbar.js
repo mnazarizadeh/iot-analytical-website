@@ -81,7 +81,7 @@ class Navbar extends Component {
                 <br />
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
+                    <InputGroupText color="secondary">
                       <i className="fa fa-lock"></i>
                     </InputGroupText>
                   </InputGroupAddon>
@@ -96,7 +96,7 @@ class Navbar extends Component {
               </div>
             </ModalBody>
             <ModalFooter>
-              <Button color="primary" onClick={() => this.CheckLogin()}>
+              <Button color="secondary" onClick={() => this.CheckLogin()}>
                 Log in
               </Button>{" "}
               <Button color="secondary" onClick={() => this.openModal()}>

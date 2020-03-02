@@ -9,7 +9,7 @@ class Intro extends Component {
             <div className="intro-img">
               <img
                 id="intro-img-1"
-                src="assets/img/home2.png"
+                src="assets/img/home1.png"
                 alt="intro"
                 className="img-fluid"
               />

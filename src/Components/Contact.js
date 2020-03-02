@@ -15,18 +15,18 @@ class Contact extends Component {
                 <div className="row">
                   <div className="col-md-5 info">
                     <i className="ion-ios-location-outline"></i>
-                    <p>
+                    <p className="testparag">
                       Unit 6, No 32, Azar Shahr St, Iranshahr St, Karim Khan
                       Zand Blvd, Tehran, Iran
                     </p>
                   </div>
                   <div className="col-md-4 info">
                     <i className="ion-ios-email-outline"></i>
-                    <p>info@iot-analytical.com</p>
+                    <p className="testparag">info@iot-analytical.com</p>
                   </div>
                   <div className="col-md-3 info">
                     <i className="ion-ios-telephone-outline"></i>
-                    <p>021 88690360</p>
+                    <p className="testparag">021 88690360</p>
                   </div>
                 </div>
 

@@ -31,7 +31,7 @@ class Testimonial extends Component {
                     />
                     <h3>Mahdi Niknia</h3>
                     <h4>Ceo &amp; Founder</h4>
-                    <p>
+                    <p className="testparag">
                       We just finished a new 5th floor building using IoT
                       Analytical devices which make the building smarter. The
                       team completely knows their business and they deliver
@@ -49,7 +49,7 @@ class Testimonial extends Component {
                     />
                     <h3>Shahab Moradi</h3>
                     <h4>Designer</h4>
-                    <p>
+                    <p className="testparag">
                       We installed IoT Analytical devices to one of our projects
                       to make a difference for people who care about energy and
                       environment. Our customers claim that it has dramatically
@@ -68,7 +68,7 @@ class Testimonial extends Component {
                     />
                     <h3>Ramyar Ghandriz</h3>
                     <h4>Freelancer</h4>
-                    <p>
+                    <p className="testparag">
                       We had a wonderful experience with the IoT Analytical
                       team. We were searching for smart home systems for our
                       latest project and it was not possible to find unit

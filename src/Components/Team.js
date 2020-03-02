@@ -8,9 +8,7 @@ class Team extends Component {
           <div className="container-fluid">
             <div className="section-header">
               <h3>Team</h3>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              </p>
+              <p></p>
             </div>
 
             <div className="row justify-content-center">
@@ -33,7 +31,7 @@ class Team extends Component {
                           <i className="fa fa-facebook"></i>
                         </a>
                         <a href="m.nazarizadeh@gmail.com">
-                          <i className="fa fa-google-plus"></i>
+                          <i className="fa fa-google"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/mnazarizadeh">
                           <i className="fa fa-linkedin"></i>
@@ -66,7 +64,7 @@ class Team extends Component {
                           <i className="fa fa-facebook"></i>
                         </a>
                         <a href="asadoughi1990@gmail.com">
-                          <i className="fa fa-google-plus"></i>
+                          <i className="fa fa-google"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/ali-sadoughi-62a8651a3">
                           <i className="fa fa-linkedin"></i>
@@ -99,7 +97,7 @@ class Team extends Component {
                           <i className="fa fa-facebook"></i>
                         </a>
                         <a href="/">
-                          <i className="fa fa-google-plus"></i>
+                          <i className="fa fa-google"></i>
                         </a>
                         <a href="/">
                           <i className="fa fa-linkedin"></i>
@@ -132,7 +130,7 @@ class Team extends Component {
                           <i className="fa fa-facebook"></i>
                         </a>
                         <a href="marsa.mousavi@gmail.com">
-                          <i className="fa fa-google-plus"></i>
+                          <i className="fa fa-google"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/marsamousavi">
                           <i className="fa fa-linkedin"></i>
@@ -168,7 +166,7 @@ class Team extends Component {
                           <i className="fa fa-facebook"></i>
                         </a>
                         <a href="Hamed.nazarizadehh@gmail.com">
-                          <i className="fa fa-google-plus"></i>
+                          <i className="fa fa-google"></i>
                         </a>
                         <a href="http://linkedin.com/in/hamed-nazari-3b3a736b">
                           <i className="fa fa-linkedin"></i>

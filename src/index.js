@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import Dashboard from "./Dashboard/Dashboard";
+import Admin from "./Dashboard/Admin";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import { createBrowserHistory } from "history";
@@ -17,7 +17,7 @@ const history = createBrowserHistory();
 const template = (
   <Router basename={process.env.PUBLIC_URL} history={history}>
     <Route exact path="/" component={App} />
-    <Route path="/Dashboard" component={Dashboard} />
+    <Route path="/Dashboard" component={Admin} />
   </Router>
 );
 
