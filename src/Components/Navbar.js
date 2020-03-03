@@ -62,17 +62,22 @@ class Navbar extends Component {
           onConfirm={() => this.setState({ show: false })}
         />
         <div>
-          <Modal isOpen={this.state.modal} toggle={() => this.openModal()}>
+          <Modal
+            isOpen={this.state.modal}
+            toggle={() => this.openModal()}
+            className="iotModal"
+          >
             <ModalHeader toggle={() => this.openModal()}>Log in</ModalHeader>
             <ModalBody>
               <div>
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
-                      <i className="fa fa-user"></i>
+                      <i className="fa fa-user colori"></i>
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
+                    className="inputbox"
                     name="Username"
                     placeholder="username"
                     onChange={e => this.onInputChangedUsername(e)}
@@ -82,10 +87,11 @@ class Navbar extends Component {
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText color="secondary">
-                      <i className="fa fa-lock"></i>
+                      <i className="fa fa-lock colori"></i>
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
+                    className="inputbox"
                     name="Password"
                     placeholder="Password"
                     type="password"

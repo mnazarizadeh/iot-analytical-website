@@ -85,7 +85,7 @@ class Features extends Component {
               </div>
               <div className="col-lg-6 background order-lg-2 order-1 wow fadeInUp py-5 my-5">
                 <img
-                  src="assets/img/about-img.svg"
+                  src="./assets/img/about-img.svg"
                   className="img-fluid"
                   alt="about"
                 />
@@ -95,7 +95,7 @@ class Features extends Component {
             <div className="row about-extra">
               <div className="col-lg-6 wow fadeInUp">
                 <img
-                  src="assets/img/phone.png"
+                  src="./assets/img/phone.png"
                   className="rounded mx-auto d-block"
                   alt="about"
                 />

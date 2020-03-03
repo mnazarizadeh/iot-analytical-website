@@ -4,7 +4,7 @@ class Intro extends Component {
   render() {
     return (
       <React.Fragment>
-        <section id="intro" className="clearfix">
+        <section id="introw" className="clearfix">
           <div className="container">
             <div className="intro-img">
               <img

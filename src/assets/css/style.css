@@ -7,7 +7,46 @@ body {
   color: #444;
   font-family: "Open Sans", sans-serif;
 }
-
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  /* display: none; */
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
 .modal-open {
   position: fixed;
   overflow: scroll;
@@ -18,12 +57,33 @@ body {
 .testparag {
   color: #000;
 }
-
 .testh {
   color: #000;
   padding-bottom: 1rem;
 }
-
+.iotModal {
+  color: #000 !important;
+}
+.iotModal h5 {
+  font-size: 16px !important;
+}
+.iotModal span {
+  color: #000 !important;
+}
+.iotModal .colori {
+  color: #000 !important;
+  font-size: 16px !important;
+}
+.iotModal .inputbox {
+  border-color: #000 !important;
+  border-left: 1px solid #000 !important;
+  color: #000 !important;
+  font-size: 16px !important;
+}
+.iotModal .input-group-text {
+  color: #000 !important;
+  padding: 0.375rem 0.75rem !important;
+}
 a {
   color: #007bff;
   transition: 0.5s;
@@ -148,40 +208,41 @@ h6 {
 # Intro Section
 --------------------------------------------------------------*/
 
-#intro {
+#introw {
   width: 100%;
   position: relative;
   background: url("../img/intro-bg.png") center bottom no-repeat;
   background-size: cover;
   padding: 110px 0 0 0;
+  background-color: #fff;
 }
 
-#intro .intro-img {
+#introw .intro-img {
   height: 50%;
   width: 50%;
   float: right;
 }
 
-#intro .intro-info {
+#introw .intro-info {
   padding-top: 65px;
   width: 40%;
   float: left;
 }
 
-#intro .intro-info h2 {
+#introw .intro-info h2 {
   color: #fff;
   margin-bottom: 40px;
   font-size: 44px;
   font-weight: 700;
 }
 
-#intro .intro-info h2 span {
+#introw .intro-info h2 span {
   color: #74b5fc;
   text-decoration: underline;
 }
 
-#intro .intro-info .btn-get-started,
-#intro .intro-info .btn-services {
+#introw .intro-info .btn-get-started,
+#introw .intro-info .btn-services {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -194,24 +255,24 @@ h6 {
   color: #fff;
 }
 
-#intro .intro-info .btn-get-started {
+#introw .intro-info .btn-get-started {
   background: #007bff;
   border: 2px solid #007bff;
   color: #fff;
 }
 
-#intro .intro-info .btn-get-started:hover {
+#introw .intro-info .btn-get-started:hover {
   background: none;
   border-color: #fff;
   color: #fff;
   text-decoration: none;
 }
 
-#intro .intro-info .btn-services {
+#introw .intro-info .btn-services {
   border: 2px solid #fff;
 }
 
-#intro .intro-info .btn-services:hover {
+#introw .intro-info .btn-services:hover {
   background: #007bff;
   border-color: #007bff;
   color: #fff;
@@ -1194,17 +1255,17 @@ h6 {
     padding: 8px 0;
   }
 
-  #intro {
+  #introw {
     padding: 140px 0 60px 0;
   }
 
-  #intro .intro-img {
+  #introw .intro-img {
     width: 80%;
     float: none;
     margin: 0 auto 25px auto;
   }
 
-  #intro .intro-info {
+  #introw .intro-info {
     width: 80%;
     float: none;
     margin: auto;
@@ -1223,11 +1284,11 @@ h6 {
 }
 
 @media (max-width: 767px) {
-  #intro .intro-info {
+  #introw .intro-info {
     width: 100%;
   }
 
-  #intro .intro-info h2 {
+  #introw .intro-info h2 {
     font-size: 34px;
     margin-bottom: 30px;
   }
@@ -1253,7 +1314,7 @@ h6 {
 }
 
 @media (max-width: 574px) {
-  #intro {
+  #introw {
     padding: 100px 0 20px 0;
   }
 }
