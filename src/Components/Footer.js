@@ -19,7 +19,7 @@ class Footer extends Component {
                   </p>
                 </div>
 
-                <div className="col-lg-2 col-md-6 footer-links">
+                {/* <div className="col-lg-2 col-md-6 footer-links">
                   <h4>Useful Links</h4>
                   <ul>
                     <li>
@@ -38,7 +38,7 @@ class Footer extends Component {
                       <a href="/">Privacy policy</a>
                     </li>
                   </ul>
-                </div>
+                </div> */}
 
                 <div className="col-lg-3 col-md-6 footer-contact">
                   <h4>Contact Us</h4>
@@ -72,18 +72,8 @@ class Footer extends Component {
                   </div>
                 </div>
 
-                <div className="col-lg-3 col-md-6 footer-newsletter">
-                  <h4>Our Newsletter</h4>
-                  <p>
-                    Tamen quem nulla quae legam multos aute sint culpa legam
-                    noster magna veniam enim veniam illum dolore legam minim
-                    quorum culpa amet magna export quem marada parida nodela
-                    caramase seza.
-                  </p>
-                  <form action="" method="post">
-                    <input type="email" name="email" />
-                    <input type="submit" value="Subscribe" />
-                  </form>
+                <div className="col-lg-5 col-md-6">
+                  <h4>Location</h4>
                 </div>
               </div>
             </div>
