@@ -43,9 +43,9 @@ export default class ScrollToTop extends Component {
       <React.Fragment>
         {is_visible && (
           <div onClick={() => this.scrollToTop()}>
-            <a href="/" id="return-to-top">
+            <div id="return-to-top">
               <i className="fa fa-chevron-up"></i>
-            </a>
+            </div>
           </div>
         )}
       </React.Fragment>
