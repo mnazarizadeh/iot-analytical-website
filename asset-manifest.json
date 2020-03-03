@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/iot-analytical-website/static/css/main.8396643c.chunk.css",
-    "main.js": "/iot-analytical-website/static/js/main.3d8f01a9.chunk.js",
-    "main.js.map": "/iot-analytical-website/static/js/main.3d8f01a9.chunk.js.map",
+    "main.css": "/iot-analytical-website/static/css/main.5c9f3e98.chunk.css",
+    "main.js": "/iot-analytical-website/static/js/main.40007955.chunk.js",
+    "main.js.map": "/iot-analytical-website/static/js/main.40007955.chunk.js.map",
     "runtime-main.js": "/iot-analytical-website/static/js/runtime-main.685215f0.js",
     "runtime-main.js.map": "/iot-analytical-website/static/js/runtime-main.685215f0.js.map",
     "static/css/2.7d8e0cd9.chunk.css": "/iot-analytical-website/static/css/2.7d8e0cd9.chunk.css",
     "static/js/2.7e1ba8ed.chunk.js": "/iot-analytical-website/static/js/2.7e1ba8ed.chunk.js",
     "static/js/2.7e1ba8ed.chunk.js.map": "/iot-analytical-website/static/js/2.7e1ba8ed.chunk.js.map",
     "index.html": "/iot-analytical-website/index.html",
-    "precache-manifest.a9e5248625677e3f4c9b6ced4d44c809.js": "/iot-analytical-website/precache-manifest.a9e5248625677e3f4c9b6ced4d44c809.js",
+    "precache-manifest.b1bfc52a860e83d3ef0dfe5eee14de05.js": "/iot-analytical-website/precache-manifest.b1bfc52a860e83d3ef0dfe5eee14de05.js",
     "service-worker.js": "/iot-analytical-website/service-worker.js",
     "static/css/2.7d8e0cd9.chunk.css.map": "/iot-analytical-website/static/css/2.7d8e0cd9.chunk.css.map",
-    "static/css/main.8396643c.chunk.css.map": "/iot-analytical-website/static/css/main.8396643c.chunk.css.map",
+    "static/css/main.5c9f3e98.chunk.css.map": "/iot-analytical-website/static/css/main.5c9f3e98.chunk.css.map",
     "static/js/2.7e1ba8ed.chunk.js.LICENSE.txt": "/iot-analytical-website/static/js/2.7e1ba8ed.chunk.js.LICENSE.txt",
-    "static/js/main.3d8f01a9.chunk.js.LICENSE.txt": "/iot-analytical-website/static/js/main.3d8f01a9.chunk.js.LICENSE.txt",
+    "static/js/main.40007955.chunk.js.LICENSE.txt": "/iot-analytical-website/static/js/main.40007955.chunk.js.LICENSE.txt",
     "static/media/emilyz.jpg": "/iot-analytical-website/static/media/emilyz.9fcf69e5.jpg",
     "static/media/font-awesome.min.css": "/iot-analytical-website/static/media/fontawesome-webfont.fee66e71.woff",
     "static/media/style.css": "/iot-analytical-website/static/media/intro-bg.20e8f860.png",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.685215f0.js",
     "static/css/2.7d8e0cd9.chunk.css",
     "static/js/2.7e1ba8ed.chunk.js",
-    "static/css/main.8396643c.chunk.css",
-    "static/js/main.3d8f01a9.chunk.js"
+    "static/css/main.5c9f3e98.chunk.css",
+    "static/js/main.40007955.chunk.js"
   ]
 }
