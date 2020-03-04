@@ -24,7 +24,7 @@ class Intro extends Component {
                 for your smart home!
               </h2>
               <div>
-                <a href="/" className="btn-get-started pulse">
+                <a href="/" className="btn-get-started animated infinite pulse">
                   Preorder
                 </a>
                 <a href="#about" className="btn-services scrollto">
