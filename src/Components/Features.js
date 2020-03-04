@@ -1,6 +1,17 @@
 import React, { Component } from "react";
+import { WOW } from "wowjs";
 
 class Features extends Component {
+  componentDidMount() {
+    const wow = new WOW({
+      offset: 100,
+      mobile: false,
+      live: true
+    });
+
+    wow.init();
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -67,7 +78,7 @@ class Features extends Component {
                     </p>
                   </div>
 
-                  <div className="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                  <div className="icon-box wow fadeInUp" data-wow-delay="0.6s">
                     <div className="icon">
                       <i className="fa fa-globe"></i>
                     </div>
