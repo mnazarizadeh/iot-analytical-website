@@ -161,6 +161,10 @@ h6 {
   margin-bottom: 7px;
 }
 
+#homelink {
+  font-weight: 600;
+}
+
 .navbar-site {
   background-color: white !important;
 }

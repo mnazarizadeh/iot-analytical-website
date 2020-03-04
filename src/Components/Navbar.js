@@ -135,8 +135,8 @@ class Navbar extends Component {
             >
               <ul id="navbar-items-custom" className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="#intro">
-                    Home<span className="sr-only">(current)</span>
+                  <a id="homelink" className="nav-link" href="#introw">
+                    Home
                   </a>
                 </li>
                 <li className="nav-item">
