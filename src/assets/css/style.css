@@ -167,6 +167,7 @@ h6 {
 
 .navbar-site {
   background-color: white !important;
+  /* height: 75px !important; */
 }
 
 #navbar-items-custom li a {
@@ -179,6 +180,12 @@ h6 {
 
 .custom-toggler.navbar-toggler {
   border-color: rgb(0, 54, 111);
+}
+
+#logo-img {
+  padding: 0;
+  margin: 7px 0;
+  /* max-height: 35px; */
 }
 
 #header.header-scrolled,
@@ -235,7 +242,7 @@ h6 {
   position: relative;
   background: url("../img/intro-bg.png") center bottom no-repeat;
   background-size: cover;
-  padding: 110px 0 0 0;
+  padding: 150px 0 0 0;
   background-color: #fff;
 }
 
@@ -1018,6 +1025,10 @@ h6 {
   padding: 85px 0;
   overflow: hidden;
   background-color: white !important;
+}
+
+#contact .contactForm {
+  color: black !important;
 }
 
 #contact .section-header {

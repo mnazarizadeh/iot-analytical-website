@@ -115,7 +115,7 @@ class Navbar extends Component {
         <nav className="navbar navbar-expand-lg custom-toggler fixed-top navbar-site">
           <div className="container">
             <a className="navbar-brand" href="/">
-              <h3 id="logo-text">IOT ANALYTICAL</h3>
+              <img id="logo-img" src="./assets/img/logo.png" alt="logo" />
             </a>
             <button
               className="navbar-toggler"
