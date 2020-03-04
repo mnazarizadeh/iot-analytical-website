@@ -45,7 +45,7 @@ class Footer extends Component {
                     Iranshahr St, Karim Khan Zand Blvd
                     <br />
                     Tehran, Iran <br />
-                    <strong>Phone:</strong> 021 88690360
+                    <strong>Phone:</strong> +9821 88690360
                     <br />
                     <strong>Email:</strong> info@iot-analytical.com
                     <br />
@@ -58,7 +58,10 @@ class Footer extends Component {
                     >
                       <i className="fa fa-twitter"></i>
                     </a>
-                    <a href="info@iot-analytical.com" className="Email">
+                    <a
+                      href="mailto:info@iot-analytical.com?subject=Need to be smarter"
+                      className="Email"
+                    >
                       <i className="fa fa-envelope"></i>
                     </a>
                     <a
@@ -97,7 +100,7 @@ class Footer extends Component {
 
           <div className="container">
             <div className="copyright">
-              &copy; Copyright <strong>IOT Analytical</strong>. All Rights
+              &copy; Copyright <strong>IoT Analytical</strong>. All Rights
               Reserved
             </div>
           </div>

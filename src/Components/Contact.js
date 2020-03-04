@@ -26,7 +26,7 @@ class Contact extends Component {
                   </div>
                   <div className="col-md-3 info">
                     <i className="ion-ios-telephone-outline"></i>
-                    <p className="testparag">021 88690360</p>
+                    <p className="testparag">+9821 88690360</p>
                   </div>
                 </div>
 
