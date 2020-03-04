@@ -1,6 +1,25 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
+import MapGL from "react-map-gl";
+import { Marker } from "react-map-gl";
+
+const MAPBOX_TOKEN =
+  "pk.eyJ1IjoiYXNhZG91Z2hpIiwiYSI6ImNrN2RrYnhkcTBha3Qzbm80N2JuNGgxNmoifQ._zSnm6xtQ1XLswCWkCdLgA";
 
 class Footer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      viewport: {
+        latitude: 35.7132,
+        longitude: 51.42,
+        zoom: 17,
+        bearing: 0,
+        pitch: 0
+      }
+    };
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -18,27 +37,6 @@ class Footer extends Component {
                     mauris nunc congue.
                   </p>
                 </div>
-
-                {/* <div className="col-lg-2 col-md-6 footer-links">
-                  <h4>Useful Links</h4>
-                  <ul>
-                    <li>
-                      <a href="/">Home</a>
-                    </li>
-                    <li>
-                      <a href="/">About us</a>
-                    </li>
-                    <li>
-                      <a href="/">Services</a>
-                    </li>
-                    <li>
-                      <a href="/">Terms of service</a>
-                    </li>
-                    <li>
-                      <a href="/">Privacy policy</a>
-                    </li>
-                  </ul>
-                </div> */}
 
                 <div className="col-lg-3 col-md-6 footer-contact">
                   <h4>Contact Us</h4>
@@ -71,9 +69,27 @@ class Footer extends Component {
                     </a>
                   </div>
                 </div>
-
                 <div className="col-lg-5 col-md-6">
                   <h4>Location</h4>
+                  <MapGL
+                    {...this.state.viewport}
+                    width="100%"
+                    height="80%"
+                    mapStyle="mapbox://styles/mapbox/streets-v11"
+                    onViewportChange={viewport => this.setState({ viewport })}
+                    mapboxApiAccessToken={MAPBOX_TOKEN}
+                  >
+                    <Marker
+                      latitude={this.state.viewport.latitude}
+                      longitude={this.state.viewport.longitude}
+                    >
+                      <img
+                        id="location-image"
+                        src="./assets/img/marker.svg"
+                        alt="location"
+                      />
+                    </Marker>
+                  </MapGL>
                 </div>
               </div>
             </div>
