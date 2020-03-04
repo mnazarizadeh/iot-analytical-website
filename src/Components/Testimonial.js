@@ -22,6 +22,7 @@ class Testimonial extends Component {
                   margin={10}
                   nav={false}
                   items={1}
+                  autoplayHoverPause={true}
                 >
                   <div className="testimonial-item">
                     <img
