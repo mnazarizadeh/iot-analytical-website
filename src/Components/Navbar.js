@@ -112,7 +112,7 @@ class Navbar extends Component {
           </Modal>
         </div>
 
-        <nav className="navbar navbar-expand-lg navbar-light custom-toggler fixed-top navbar-site">
+        <nav className="navbar navbar-expand-lg custom-toggler fixed-top navbar-site">
           <div className="container">
             <a className="navbar-brand" href="/">
               <img id="logo-img" src="./assets/img/logo.png" alt="logo" />
