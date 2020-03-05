@@ -67,7 +67,12 @@ class Navbar extends Component {
             toggle={() => this.openModal()}
             className="iotModal"
           >
-            <ModalHeader toggle={() => this.openModal()}>Log in</ModalHeader>
+            <ModalHeader
+              className="modal-header-custom"
+              toggle={() => this.openModal()}
+            >
+              Log in
+            </ModalHeader>
             <ModalBody>
               <div>
                 <InputGroup>
@@ -102,10 +107,13 @@ class Navbar extends Component {
               </div>
             </ModalBody>
             <ModalFooter>
-              <Button color="secondary" onClick={() => this.CheckLogin()}>
+              <Button
+                className="btn-custom-iot"
+                onClick={() => this.CheckLogin()}
+              >
                 Log in
               </Button>{" "}
-              <Button color="secondary" onClick={() => this.openModal()}>
+              <Button className="btn-exit" onClick={() => this.openModal()}>
                 Exit
               </Button>
             </ModalFooter>
@@ -114,7 +122,7 @@ class Navbar extends Component {
 
         <nav className="navbar navbar-expand-lg custom-toggler fixed-top navbar-site">
           <div className="container">
-            <a className="navbar-brand" href="/">
+            <a className="navbar-brand" href="#introw">
               <img id="logo-img" src="./assets/img/logo.png" alt="logo" />
             </a>
             <button
@@ -162,8 +170,7 @@ class Navbar extends Component {
               </ul>
 
               <button
-                id="btn-login"
-                className="btn my-2 my-sm-0 px-4"
+                className="btn btn-custom-iot my-2 my-sm-0 px-4"
                 onClick={() => this.openModal()}
               >
                 Log in
