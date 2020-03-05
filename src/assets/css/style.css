@@ -170,6 +170,10 @@ h6 {
   /* height: 75px !important; */
 }
 
+.navbar-site .container {
+  padding: 0;
+}
+
 #navbar-items-custom li a {
   color: #00366f;
 }
@@ -252,10 +256,14 @@ h6 {
     padding: 200px 0 0 0;
   }
 
-  #introw .intro-img {
-    height: 120%;
-    width: 120%;
-    float: right;
+  #introw #intro-img-1 {
+    height: 550px;
+    max-width: 900px;
+  }
+
+  #introw .intro-info {
+    padding-top: 65px;
+    width: 30%;
   }
 }
 
@@ -1368,5 +1376,11 @@ h6 {
 @media (max-width: 574px) {
   #introw {
     padding: 100px 0 20px 0;
+  }
+  #introw .intro-info {
+    padding-top: 10px;
+  }
+  #intro-img-1 {
+    padding-top: 45px;
   }
 }
