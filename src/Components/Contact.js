@@ -10,7 +10,7 @@ class Contact extends Component {
               <h3>Contact Us</h3>
             </div>
 
-            <div className="row wow fadeInUp">
+            <div className="row">
               <div className="col-lg">
                 <div className="row">
                   <div className="col-md-5 info">
