@@ -1,26 +1,18 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from "react";
-import MapGL from "react-map-gl";
-import { Marker } from "react-map-gl";
-
-const MAPBOX_TOKEN =
-  "pk.eyJ1IjoiYXNhZG91Z2hpIiwiYSI6ImNrN2RrYnhkcTBha3Qzbm80N2JuNGgxNmoifQ._zSnm6xtQ1XLswCWkCdLgA";
+import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 
 class Footer extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
-      viewport: {
-        latitude: 35.7132,
-        longitude: 51.42,
-        zoom: 17,
-        bearing: 0,
-        pitch: 0
-      }
+      lat: 35.7132,
+      lng: 51.42,
+      zoom: 17
     };
   }
 
   render() {
+    const position = [this.state.lat, this.state.lng];
     return (
       <React.Fragment>
         <footer id="footer">
@@ -30,10 +22,10 @@ class Footer extends Component {
                 <div className="col-lg-4 col-md-6 footer-info">
                   <h3>IoT Analytical</h3>
                   <p>
-                      IoT Analytical helps life gets better and more <br/>
-                      convenient with smart homes. Optimize your <br/>
-                      energy consumption and make a bright future <br/>
-                      for the next generations with us.
+                    IoT Analytical helps life gets better and more <br />
+                    convenient with smart homes. Optimize your <br />
+                    energy consumption and make a bright future <br />
+                    for the next generations with us.
                   </p>
                 </div>
 
@@ -73,25 +65,15 @@ class Footer extends Component {
                 </div>
                 <div className="col-lg-5 col-md-6">
                   <h4>Location</h4>
-                  <MapGL
-                    {...this.state.viewport}
-                    width="100%"
-                    height="80%"
-                    mapStyle="mapbox://styles/mapbox/streets-v11"
-                    onViewportChange={viewport => this.setState({ viewport })}
-                    mapboxApiAccessToken={MAPBOX_TOKEN}
-                  >
-                    <Marker
-                      latitude={this.state.viewport.latitude}
-                      longitude={this.state.viewport.longitude}
-                    >
-                      <img
-                        id="location-image"
-                        src="./assets/img/marker.svg"
-                        alt="location"
-                      />
+                  <Map center={position} zoom={this.state.zoom}>
+                    <TileLayer
+                      attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+                    <Marker position={position}>
+                      <Popup>IoT Analytical Office</Popup>
                     </Marker>
-                  </MapGL>
+                  </Map>
                 </div>
               </div>
             </div>
@@ -99,7 +81,8 @@ class Footer extends Component {
 
           <div className="container">
             <div className="copyright">
-              Copyright &copy; {new Date().getFullYear()} <strong>IoT Analytical</strong>. All Rights Reserved.
+              Copyright &copy; {new Date().getFullYear()}{" "}
+              <strong>IoT Analytical</strong>. All Rights Reserved.
             </div>
           </div>
         </footer>
