@@ -17,7 +17,7 @@ class Intro extends Component {
 
             <div className="intro-info">
               <h2>
-                  A Green Future
+                  A Blue Sky
                 <br />
                   Is What We Offer
               </h2>
