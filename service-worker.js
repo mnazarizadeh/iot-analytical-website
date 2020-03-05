@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/iot-analytical-website/precache-manifest.cc15bf6c518eb299e753d57d2bf9c04c.js"
+  "/iot-analytical-website/precache-manifest.6cfbe8968d2ccfe02eb446096e6a526d.js"
 );
 
 self.addEventListener('message', (event) => {
