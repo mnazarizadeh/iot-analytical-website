@@ -37,7 +37,7 @@ class Features extends Component {
                   apartment into an environmentally friendly smart home.
                 </p>
                 <div id="wrapper-features1">
-                  <div className="icon-box wow fadeInUp">
+                  <div className="icon-box wow fadeInLeft">
                     <div className="icon">
                       <i className="fa fa-refresh"></i>
                     </div>
@@ -51,7 +51,10 @@ class Features extends Component {
                     </p>
                   </div>
 
-                  <div className="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                  <div
+                    className="icon-box wow fadeInLeft"
+                    data-wow-delay="0.2s"
+                  >
                     <div className="icon">
                       <i className="fa fa-bar-chart"></i>
                     </div>
@@ -64,7 +67,10 @@ class Features extends Component {
                     </p>
                   </div>
 
-                  <div className="icon-box wow fadeInUp" data-wow-delay="0.4s">
+                  <div
+                    className="icon-box wow fadeInLeft"
+                    data-wow-delay="0.4s"
+                  >
                     <div className="icon">
                       <i className="fa fa-thumbs-o-up"></i>
                     </div>
@@ -78,7 +84,10 @@ class Features extends Component {
                     </p>
                   </div>
 
-                  <div className="icon-box wow fadeInUp" data-wow-delay="0.6s">
+                  <div
+                    className="icon-box wow fadeInLeft"
+                    data-wow-delay="0.6s"
+                  >
                     <div className="icon">
                       <i className="fa fa-globe"></i>
                     </div>
@@ -94,7 +103,7 @@ class Features extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 background order-lg-2 order-1 wow fadeInUp my-auto">
+              <div className="col-lg-6 background order-lg-2 order-1 wow fadeInRight my-auto pb-5">
                 <img
                   src="assets/img/about-img.svg"
                   className="img-fluid"
@@ -104,14 +113,14 @@ class Features extends Component {
             </div>
 
             <div className="row about-extra">
-              <div className="col-lg-6 wow fadeInUp">
+              <div className="col-lg-6 wow fadeInLeft pb-4">
                 <img
                   src="assets/img/Phone.png"
                   className="rounded mx-auto d-block"
                   alt="about"
                 />
               </div>
-              <div className="col-lg-6 wow fadeInUp my-auto ">
+              <div className="col-lg-6 wow fadeInRight my-auto ">
                 <h4 className="testh">
                   Access your custom dashboard on your smartphone anywhere,
                   anytime!
@@ -128,7 +137,7 @@ class Features extends Component {
             </div>
 
             <div className="row about-extra">
-              <div className="col-lg-6 wow fadeInUp order-1 order-lg-2">
+              <div className="col-lg-6 wow fadeInRight order-1 order-lg-2 pb-5">
                 <img
                   src="assets/img/about-extra-2.svg"
                   className="img-fluid"
@@ -136,7 +145,7 @@ class Features extends Component {
                 />
               </div>
 
-              <div className="col-lg-6 wow fadeInUp my-auto order-2 order-lg-1">
+              <div className="col-lg-6 wow fadeInLeft my-auto order-2 order-lg-1">
                 <h4 className="testh">
                   A user-friendly dashboard is what we offer!
                 </h4>
