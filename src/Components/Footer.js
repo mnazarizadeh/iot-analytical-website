@@ -28,13 +28,12 @@ class Footer extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-lg-4 col-md-6 footer-info">
-                  <h3>IOT Analytical</h3>
+                  <h3>IoT Analytical</h3>
                   <p>
-                    Cras fermentum odio eu feugiat lide par naso tierra. Justo
-                    eget nada terra videa magna derita valies darta donna mare
-                    fermentum iaculis eu non diam phasellus. Scelerisque felis
-                    imperdiet proin fermentum leo. Amet volutpat consequat
-                    mauris nunc congue.
+                      IoT Analytical helps life gets better and more <br/>
+                      convenient with smart homes. Optimize your <br/>
+                      energy consumption and make a bright future <br/>
+                      for the next generations with us.
                   </p>
                 </div>
 
@@ -44,8 +43,8 @@ class Footer extends Component {
                     Unit 6, No 32, Azar Shahr St <br />
                     Iranshahr St, Karim Khan Zand Blvd
                     <br />
-                    Tehran, Iran <br />
-                    <strong>Phone:</strong> +9821 88690360
+                    Tehran, IRAN <br />
+                    <strong>Phone:</strong> +98 21 88690360
                     <br />
                     <strong>Email:</strong> info@iot-analytical.com
                     <br />
@@ -59,7 +58,7 @@ class Footer extends Component {
                       <i className="fa fa-twitter"></i>
                     </a>
                     <a
-                      href="mailto:info@iot-analytical.com?subject=Need to be smarter"
+                      href="mailto:info@iot-analytical.com?Subject=Need to be smarter"
                       className="Email"
                     >
                       <i className="fa fa-envelope"></i>
@@ -100,8 +99,7 @@ class Footer extends Component {
 
           <div className="container">
             <div className="copyright">
-              &copy; Copyright <strong>IoT Analytical</strong>. All Rights
-              Reserved
+              Copyright &copy; {new Date().getFullYear()} <strong>IoT Analytical</strong>. All Rights Reserved.
             </div>
           </div>
         </footer>

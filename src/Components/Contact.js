@@ -17,7 +17,7 @@ class Contact extends Component {
                     <i className="ion-ios-location-outline"></i>
                     <p className="testparag">
                       Unit 6, No 32, Azar Shahr St, Iranshahr St, Karim Khan
-                      Zand Blvd, Tehran, Iran
+                      Zand Blvd, Tehran, IRAN
                     </p>
                   </div>
                   <div className="col-md-4 info">
@@ -26,7 +26,7 @@ class Contact extends Component {
                   </div>
                   <div className="col-md-3 info">
                     <i className="ion-ios-telephone-outline"></i>
-                    <p className="testparag">+9821 88690360</p>
+                    <p className="testparag">+98 21 88690360</p>
                   </div>
                 </div>
 

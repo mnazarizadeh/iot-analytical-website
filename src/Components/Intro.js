@@ -9,7 +9,7 @@ class Intro extends Component {
             <div className="intro-img">
               <img
                 id="intro-img-1"
-                src="assets/img/home1.png"
+                src="assets/img/smarthome.png"
                 alt="intro"
                 className="img-fluid"
               />
@@ -17,11 +17,9 @@ class Intro extends Component {
 
             <div className="intro-info">
               <h2>
-                We provide
+                  A Green Future
                 <br />
-                recommendations
-                <br />
-                for your smart home!
+                  Is What We Offer
               </h2>
               <div>
                 <a href="/" className="btn-get-started animated infinite pulse">

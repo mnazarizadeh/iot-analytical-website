@@ -102,20 +102,17 @@ class Features extends Component {
               </div>
               <div className="col-lg-6 wow fadeInUp pt-5 mt-5 pt-lg-0">
                 <h4 className="testh">
-                  Voluptatem dignissimos provident quasi corporis voluptates sit
-                  assumenda.
+                    Access your custom dashboard on your smartphone anywhere, anytime!
                 </h4>
                 <p className="testparag">
-                  Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati
-                  possimus ea. Quas molestiae perspiciatis occaecati qui rerum.
-                  Deleniti quod porro sed quisquam saepe. Numquam mollitia
-                  recusandae non ad at et a.
                 </p>
                 <p className="testparag">
-                  Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti.
-                  Odit qui asperiores ea corporis deserunt veritatis quidem
-                  expedita perferendis. Qui rerum eligendi ex doloribus quia
-                  sit. Porro rerum eum eum.
+                    No matter where you are, on the way to work or waiting for someone,
+                    you can control your home energy consumption and make a decision to
+                    optimize it. Just login to your account on your smartphone and the
+                    report is ready for you.
+                </p>
+                <p className="testparag">
                 </p>
               </div>
             </div>
@@ -131,25 +128,17 @@ class Features extends Component {
 
               <div className="col-lg-6 wow fadeInUp pt-5 pt-lg-0 order-2 order-lg-1">
                 <h4 className="testh">
-                  Neque saepe temporibus repellat ea ipsum et. Id vel et quia
-                  tempora facere reprehenderit.
+                    A user-friendly dashboard is what we offer!
                 </h4>
                 <p className="testparag">
-                  Delectus alias ut incidunt delectus nam placeat in
-                  consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui
-                  aut distinctio. Cumque fugit earum est quam officiis numquam.
-                  Ducimus corporis autem at blanditiis beatae incidunt sunt.
                 </p>
                 <p className="testparag">
-                  Voluptas saepe natus quidem blanditiis. Non sunt impedit
-                  voluptas mollitia beatae. Qui esse molestias. Laudantium
-                  libero nisi vitae debitis. Dolorem cupiditate est perferendis
-                  iusto.
+                    There is no need to be a technician to analyze your home
+                    energy consumption. Just login to your dashboard, choose
+                    the items you want to check, select a date, and the report
+                    is visualized in the simplest way for you.
                 </p>
                 <p className="testparag">
-                  Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore
-                  sint quia modi. Numquam est aut fuga mollitia exercitationem
-                  nam accusantium provident quia.
                 </p>
               </div>
             </div>
