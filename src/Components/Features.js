@@ -94,7 +94,7 @@ class Features extends Component {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 background order-lg-2 order-1 wow fadeInUp py-5 my-5">
+              <div className="col-lg-6 background order-lg-2 order-1 wow fadeInUp my-auto">
                 <img
                   src="assets/img/about-img.svg"
                   className="img-fluid"
@@ -111,20 +111,19 @@ class Features extends Component {
                   alt="about"
                 />
               </div>
-              <div className="col-lg-6 wow fadeInUp pt-5 mt-5 pt-lg-0">
+              <div className="col-lg-6 wow fadeInUp my-auto ">
                 <h4 className="testh">
-                    Access your custom dashboard on your smartphone anywhere, anytime!
+                  Access your custom dashboard on your smartphone anywhere,
+                  anytime!
                 </h4>
+                <p className="testparag"></p>
                 <p className="testparag">
+                  No matter where you are, on the way to work or waiting for
+                  someone, you can control your home energy consumption and make
+                  a decision to optimize it. Just login to your account on your
+                  smartphone and the report is ready for you.
                 </p>
-                <p className="testparag">
-                    No matter where you are, on the way to work or waiting for someone,
-                    you can control your home energy consumption and make a decision to
-                    optimize it. Just login to your account on your smartphone and the
-                    report is ready for you.
-                </p>
-                <p className="testparag">
-                </p>
+                <p className="testparag"></p>
               </div>
             </div>
 
@@ -137,20 +136,18 @@ class Features extends Component {
                 />
               </div>
 
-              <div className="col-lg-6 wow fadeInUp pt-5 pt-lg-0 order-2 order-lg-1">
+              <div className="col-lg-6 wow fadeInUp my-auto order-2 order-lg-1">
                 <h4 className="testh">
-                    A user-friendly dashboard is what we offer!
+                  A user-friendly dashboard is what we offer!
                 </h4>
+                <p className="testparag"></p>
                 <p className="testparag">
+                  There is no need to be a technician to analyze your home
+                  energy consumption. Just login to your dashboard, choose the
+                  items you want to check, select a date, and the report is
+                  visualized in the simplest way for you.
                 </p>
-                <p className="testparag">
-                    There is no need to be a technician to analyze your home
-                    energy consumption. Just login to your dashboard, choose
-                    the items you want to check, select a date, and the report
-                    is visualized in the simplest way for you.
-                </p>
-                <p className="testparag">
-                </p>
+                <p className="testparag"></p>
               </div>
             </div>
           </div>
