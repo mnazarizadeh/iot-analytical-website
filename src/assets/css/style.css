@@ -21,7 +21,7 @@ body {
   -webkit-border-radius: 35px;
   -moz-border-radius: 35px;
   border-radius: 35px;
-  z-index: 5000 !important;
+  z-index: 2 !important;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -68,7 +68,8 @@ body {
   color: #000 !important;
 }
 .iotModal h5 {
-  font-size: 16px !important;
+  color: #000 !important;
+  font-size: 18px !important;
 }
 .iotModal span {
   color: #000 !important;
@@ -287,6 +288,17 @@ h6 {
     padding-top: 65px;
     width: 30%;
   }
+}
+
+#modal-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#modal-img img {
+  width: 50%;
+  height: 50%;
 }
 
 #introw .intro-img {
@@ -1187,6 +1199,7 @@ h6 {
 .leaflet-container {
   width: 100%;
   height: 30vh;
+  z-index: 1 !important;
 }
 
 #location-image {

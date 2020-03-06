@@ -21,7 +21,8 @@ class Intro extends Component {
       modal: false,
       show: false,
       iUsername: "",
-      Password: ""
+      Phone: "",
+      Mail: ""
     };
   }
   openModal = () => {
@@ -30,9 +31,11 @@ class Intro extends Component {
     }));
   };
   CheckLogin = () => {
-    if (this.state.iUsername === "Ali" && this.state.Password === "sa123456") {
-      this.props.history.push(`/Dashboard`);
-    } else {
+    if (
+      this.state.iUsername !== "" &&
+      this.state.Phone !== "" &&
+      this.state.Mail !== ""
+    ) {
       this.setState(prevState => ({
         show: !prevState.show
       }));
@@ -44,11 +47,18 @@ class Intro extends Component {
       iUsername: newValues.Username
     });
   };
-  onInputChangedPassword = e => {
+  onInputChangedPhone = e => {
     const newValues = getValueFromEvent(e);
 
     this.setState({
-      Password: newValues.Password
+      Phone: newValues.Phone
+    });
+  };
+  onInputChangedMail = e => {
+    const newValues = getValueFromEvent(e);
+
+    this.setState({
+      Mail: newValues.Mail
     });
   };
   render() {
@@ -57,8 +67,8 @@ class Intro extends Component {
         <SweetAlert
           icon="warning"
           show={this.state.show}
-          title="Log in Failed"
-          text="Your username or password is incorrect, Please Try Again!"
+          title="Congratulations"
+          text="Your Order has been submitted, We will contact you soon!"
           onConfirm={() => this.setState({ show: false })}
         />
         <div>
@@ -71,10 +81,15 @@ class Intro extends Component {
               className="modal-header-custom"
               toggle={() => this.openModal()}
             >
-              Log in
+              CART
             </ModalHeader>
             <ModalBody>
               <div>
+                <div id="modal-img">
+                  <img src="./assets/img/product.jpg" alt="product-pic" />
+                  <h5>Price: 399$</h5>
+                </div>
+
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
@@ -84,35 +99,50 @@ class Intro extends Component {
                   <Input
                     className="inputbox"
                     name="Username"
-                    placeholder="username"
+                    placeholder="Fullname"
                     onChange={e => this.onInputChangedUsername(e)}
                   />
                 </InputGroup>
-                <br />
+
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText color="secondary">
-                      <i className="fa fa-lock colori"></i>
+                      <i className="fa fa-phone colori"></i>
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
                     className="inputbox"
-                    name="Password"
-                    placeholder="Password"
-                    type="password"
-                    onChange={e => this.onInputChangedPassword(e)}
+                    name="phone"
+                    placeholder="Phone number"
+                    type="text"
+                    onChange={e => this.onInputChangedPhone(e)}
+                  />
+                </InputGroup>
+
+                <InputGroup>
+                  <InputGroupAddon addonType="prepend">
+                    <InputGroupText color="secondary">
+                      <i className="fa fa-envelope colori"></i>
+                    </InputGroupText>
+                  </InputGroupAddon>
+                  <Input
+                    className="inputbox"
+                    name="email"
+                    placeholder="E-mail"
+                    type="email"
+                    onChange={e => this.onInputChangedMail(e)}
                   />
                 </InputGroup>
                 <br />
               </div>
             </ModalBody>
             <ModalFooter>
-              <Button id="btn-login" onClick={() => this.CheckLogin()}>
-                Log in
+              <Button
+                className="btn-custom-iot"
+                onClick={() => this.CheckLogin()}
+              >
+                Submit
               </Button>{" "}
-              <Button id="btn-login" onClick={() => this.openModal()}>
-                Exit
-              </Button>
             </ModalFooter>
           </Modal>
         </div>
