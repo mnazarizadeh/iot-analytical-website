@@ -21,7 +21,7 @@ import { Route, Switch } from "react-router-dom";
 import PerfectScrollbar from "perfect-scrollbar";
 
 // CSS
-import "./assets/scss/black-dashboard-react.scss";
+import "./assets/css/black-dashboard-react.css";
 import "./assets/demo/demo.css";
 import "./assets/css/nucleo-icons.css";
 
@@ -109,7 +109,7 @@ class Admin extends React.Component {
         return routes[i].name;
       }
     }
-    return "Brand";
+    return "ALI";
   };
   render() {
     return (
@@ -120,7 +120,12 @@ class Admin extends React.Component {
             routes={routes}
             bgColor={this.state.backgroundColor}
             logo={{
-              text: "IoT Analytical"
+              text: (
+                <img
+                  src={require("./assets/img/ia_text_dark.png")}
+                  alt="logo"
+                />
+              )
             }}
             toggleSidebar={this.toggleSidebar}
           />
@@ -131,7 +136,13 @@ class Admin extends React.Component {
           >
             <AdminNavbar
               {...this.props}
-              brandText={this.getBrandText(this.props.location.pathname)}
+              brandText={
+                <img
+                  id="brand-text"
+                  src={require("./assets/img/ia_text_dark.png")}
+                  alt="logo"
+                />
+              }
               toggleSidebar={this.toggleSidebar}
               sidebarOpened={this.state.sidebarOpened}
             />

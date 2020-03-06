@@ -1045,6 +1045,10 @@ h6 {
   font-size: 15px !important;
 }
 
+#contact .form-control:focus {
+  border-color: #0067d5 !important;
+}
+
 #contact .contactForm {
   color: black !important;
 }

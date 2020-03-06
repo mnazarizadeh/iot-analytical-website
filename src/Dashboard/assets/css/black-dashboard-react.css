@@ -56,6 +56,11 @@
     "Liberation Mono", "Courier New", monospace;
 }
 
+#brand-text {
+  height: 70%;
+  width: 70%;
+}
+
 *,
 *::before,
 *::after {
@@ -15667,7 +15672,7 @@ hr {
 }
 .sidebar .logo a.logo-mini img,
 .off-canvas-sidebar .logo a.logo-mini img {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   width: 30px;
 }
 .sidebar .logo a.logo-normal,
