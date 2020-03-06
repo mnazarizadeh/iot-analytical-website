@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea250eaf6f8d144f9eedf97deec7c311",
+    "revision": "ca6b098e6a1831c74db65700acb1bab6",
     "url": "/iot-analytical-website/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iot-analytical-website/static/css/2.053df589.chunk.css"
   },
   {
-    "revision": "7099c4389a06c777321a",
+    "revision": "9454b460b78088fe9801",
     "url": "/iot-analytical-website/static/css/main.35bea7a0.chunk.css"
   },
   {
@@ -20,12 +20,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/iot-analytical-website/static/js/2.c05d9dc5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7099c4389a06c777321a",
-    "url": "/iot-analytical-website/static/js/main.617cceff.chunk.js"
+    "revision": "9454b460b78088fe9801",
+    "url": "/iot-analytical-website/static/js/main.417849d7.chunk.js"
   },
   {
     "revision": "67d2f5ba5143fe1affa48e55357bf584",
-    "url": "/iot-analytical-website/static/js/main.617cceff.chunk.js.LICENSE.txt"
+    "url": "/iot-analytical-website/static/js/main.417849d7.chunk.js.LICENSE.txt"
   },
   {
     "revision": "759f19c95ec1d4bea5dc",
