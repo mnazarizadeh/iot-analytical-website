@@ -30,7 +30,10 @@ class Navbar extends Component {
     }));
   };
   CheckLogin = () => {
-    if (this.state.iUsername === "Ali" && this.state.Password === "sa123456") {
+    if (
+      this.state.iUsername.toLowerCase() === "ali" &&
+      this.state.Password === "sa123456"
+    ) {
       this.props.history.push(`/Dashboard`);
     } else {
       this.setState(prevState => ({
@@ -113,9 +116,6 @@ class Navbar extends Component {
               >
                 Log in
               </Button>{" "}
-              <Button className="btn-exit" onClick={() => this.openModal()}>
-                Exit
-              </Button>
             </ModalFooter>
           </Modal>
         </div>

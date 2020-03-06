@@ -21,7 +21,7 @@ body {
   -webkit-border-radius: 35px;
   -moz-border-radius: 35px;
   border-radius: 35px;
-  /* display: none; */
+  z-index: 5000 !important;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -74,7 +74,7 @@ body {
   color: #000 !important;
 }
 .modal-content .modal-header button {
-  margin-top: -25px !important;
+  margin-top: -17px !important;
 }
 .iotModal .colori {
   color: #000 !important;
@@ -91,9 +91,9 @@ body {
   padding: 0.375rem 0.75rem !important;
 }
 
-.modal-header-custom {
+/* .modal-header-custom {
   border-bottom: 1px solid black !important;
-}
+} */
 
 a {
   color: #007bff;
@@ -244,19 +244,19 @@ h6 {
 }
 
 .navbar .btn-custom-iot:hover,
-.iotModal .btn-custom-iot:hover,
-.iotModal .btn-exit:hover {
+.iotModal .btn-custom-iot:hover {
   background: white !important;
   color: #007bff !important;
   text-decoration: none !important;
 }
 
-.iotModal .btn-exit {
-  border-radius: 50px !important;
-  color: #fff !important;
-  background: #007bff !important;
-  border: 2px solid #007bff !important;
-  padding: 6px 25px !important;
+.iotModal .modal-content .modal-footer {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.iotModal .btn-custom-iot {
+  padding: 7px 20px !important;
 }
 
 /*--------------------------------------------------------------
@@ -1038,6 +1038,11 @@ h6 {
   padding: 85px 0;
   overflow: hidden;
   background-color: white !important;
+}
+
+#contact .form-control {
+  color: black !important;
+  font-size: 15px !important;
 }
 
 #contact .contactForm {
