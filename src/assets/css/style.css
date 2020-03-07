@@ -92,9 +92,10 @@ body {
   padding: 0.375rem 0.75rem !important;
 }
 
-/* .modal-header-custom {
-  border-bottom: 1px solid black !important;
-} */
+.modal-header-custom {
+  border-bottom: 1px solid lightgrey !important;
+  padding-bottom: 24px !important;
+}
 
 a {
   color: #007bff;

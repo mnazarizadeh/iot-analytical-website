@@ -87,7 +87,7 @@ class Intro extends Component {
               <div>
                 <div id="modal-img">
                   <img src="./assets/img/product.jpg" alt="product-pic" />
-                  <h5>Price: 399$</h5>
+                  <h5 className="my-auto text-muted">Price: 399$</h5>
                 </div>
 
                 <InputGroup>
@@ -133,7 +133,6 @@ class Intro extends Component {
                     onChange={e => this.onInputChangedMail(e)}
                   />
                 </InputGroup>
-                <br />
               </div>
             </ModalBody>
             <ModalFooter>

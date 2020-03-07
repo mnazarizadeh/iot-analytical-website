@@ -77,7 +77,7 @@ class Navbar extends Component {
               Log in
             </ModalHeader>
             <ModalBody>
-              <div>
+              <div className="container">
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
@@ -91,7 +91,7 @@ class Navbar extends Component {
                     onChange={e => this.onInputChangedUsername(e)}
                   />
                 </InputGroup>
-                <br />
+
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText color="secondary">
@@ -106,7 +106,6 @@ class Navbar extends Component {
                     onChange={e => this.onInputChangedPassword(e)}
                   />
                 </InputGroup>
-                <br />
               </div>
             </ModalBody>
             <ModalFooter>
