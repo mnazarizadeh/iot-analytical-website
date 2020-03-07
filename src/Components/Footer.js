@@ -45,18 +45,24 @@ class Footer extends Component {
                   <div className="social-links">
                     <a
                       href="https://twitter.com/IoTAnalytical"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="twitter"
                     >
                       <i className="fa fa-twitter"></i>
                     </a>
                     <a
                       href="mailto:info@iot-analytical.com?Subject=Need to be smarter"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="Email"
                     >
                       <i className="fa fa-envelope"></i>
                     </a>
                     <a
                       href="https://www.linkedin.com/company/iotanalytical"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="linkedin"
                     >
                       <i className="fa fa-linkedin"></i>

@@ -13816,7 +13816,7 @@ img {
 }
 
 .navbar {
-  padding: 10px 30px 10px 15px;
+  padding: 10px 15px 10px 15px;
   width: 100%;
   z-index: 1050;
   background: #1a1e34;
@@ -13896,7 +13896,7 @@ img {
   padding-bottom: 0.3125rem;
   color: #ffffff;
   margin-left: 17px;
-  margin-top: 3px;
+  /*margin-top: 3px;*/
   text-transform: uppercase;
   font-size: 1rem;
 }
