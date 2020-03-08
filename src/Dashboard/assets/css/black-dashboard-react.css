@@ -104,6 +104,10 @@ body {
   background-color: #1e1e2f;
 }
 
+.text-purple {
+  color: #d048b6;
+}
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }
@@ -15667,8 +15671,8 @@ hr {
   float: left;
   width: 34px;
   text-align: center;
-  margin-left: 12px;
-  margin-right: 12px;
+  /* margin-left: 12px;
+  margin-right: 12px; */
 }
 .sidebar .logo a.logo-mini img,
 .off-canvas-sidebar .logo a.logo-mini img {

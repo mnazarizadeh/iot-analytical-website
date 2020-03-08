@@ -109,7 +109,7 @@ class Admin extends React.Component {
         return routes[i].name;
       }
     }
-    return "ALI";
+    return "IOT ANALYTICAL";
   };
   render() {
     return (
@@ -136,13 +136,7 @@ class Admin extends React.Component {
           >
             <AdminNavbar
               {...this.props}
-              brandText={
-                <img
-                  id="brand-text"
-                  src={require("./assets/img/ia_text_dark.png")}
-                  alt="logo"
-                />
-              }
+              brandText={this.getBrandText(this.props.location.pathname)}
               toggleSidebar={this.toggleSidebar}
               sidebarOpened={this.state.sidebarOpened}
             />
