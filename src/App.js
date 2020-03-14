@@ -16,20 +16,25 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
 
-function App() {
-  return (
-    <React.Fragment>
-      <Navbar />
-      <Intro />
-      <Features />
-      <Video />
-      <Testimonial />
-      <Team />
-      <Contact />
-      <Footer />
-      <ScrollToTop />
-    </React.Fragment>
-  );
+class App extends React.Component {
+  componentDidMount() {
+    this.props.hideLoader();
+  }
+  render() {
+    return (
+      <React.Fragment>
+        <Navbar />
+        <Intro />
+        <Features />
+        <Video />
+        <Testimonial />
+        <Team />
+        <Contact />
+        <Footer />
+        <ScrollToTop />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;

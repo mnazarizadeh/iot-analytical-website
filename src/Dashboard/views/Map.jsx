@@ -23,7 +23,13 @@ import {
   GoogleMap,
   Marker
 } from "react-google-maps";
-
+//mahdi
+import Sidebar from "./../components/Sidebar/Sidebar";
+import routes from "./../routes.js";
+import { Route, Switch } from "react-router-dom";
+import Footer from "./../components/Footer/Footer.js";
+import AdminNavbar from "./../components/Navbars/AdminNavbar";
+//mahdi
 // reactstrap components
 import { Card, CardHeader, CardBody, Row, Col } from "reactstrap";
 
@@ -284,33 +290,105 @@ const MapWrapper = withScriptjs(
 );
 
 class Map extends React.Component {
+  //mahdi
+  constructor(props) {
+    super(props);
+    this.state = {
+      backgroundColor: "blue",
+      sidebarOpened:
+        document.documentElement.className.indexOf("nav-open") !== -1
+    };
+  }
+  getRoutes = routes => {
+    return routes.map((prop, key) => {
+      if (prop.layout === "/admin") {
+        return (
+          <Route
+            path={prop.layout + prop.path}
+            component={prop.component}
+            key={key}
+          />
+        );
+      } else {
+        return null;
+      }
+    });
+  };
+  getBrandText = path => {
+    for (let i = 0; i < routes.length; i++) {
+      if (
+        this.props.location.pathname.indexOf(
+          routes[i].layout + routes[i].path
+        ) !== -1
+      ) {
+        return routes[i].name;
+      }
+    }
+    return "IOT ANALYTICAL";
+  };
+  toggleSidebar = () => {
+    document.documentElement.classList.toggle("nav-open");
+    this.setState({ sidebarOpened: !this.state.sidebarOpened });
+  };
+  //mahdi
   render() {
     return (
-      <>
-        <div className="content">
-          <Row>
-            <Col md="12">
-              <Card className="card-plain">
-                <CardHeader>Google Maps</CardHeader>
-                <CardBody>
-                  <div
-                    id="map"
-                    className="map"
-                    style={{ position: "relative", overflow: "hidden" }}
-                  >
-                    <MapWrapper
-                      googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
-                      loadingElement={<div style={{ height: `100%` }} />}
-                      containerElement={<div style={{ height: `100%` }} />}
-                      mapElement={<div style={{ height: `100%` }} />}
-                    />
-                  </div>
-                </CardBody>
-              </Card>
-            </Col>
-          </Row>
+      <div className="wrapper">
+        <Sidebar
+          {...this.props}
+          routes={routes}
+          bgColor={this.state.backgroundColor}
+          logo={{
+            text: (
+              <img
+                src={require("./../assets/img/ia_text_dark.png")}
+                alt="logo"
+              />
+            )
+          }}
+          toggleSidebar={this.toggleSidebar}
+        />
+        <div
+          className="main-panel"
+          ref="mainPanel"
+          data={this.state.backgroundColor}
+        >
+          <AdminNavbar
+            {...this.props}
+            brandText={this.getBrandText(this.props.location.pathname)}
+            toggleSidebar={this.toggleSidebar}
+            sidebarOpened={this.state.sidebarOpened}
+          />
+          <div className="content">
+            <Row>
+              <Col md="12">
+                <Card className="card-plain">
+                  <CardHeader>Google Maps</CardHeader>
+                  <CardBody>
+                    <div
+                      id="map"
+                      className="map"
+                      style={{ position: "relative", overflow: "hidden" }}
+                    >
+                      <MapWrapper
+                        googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
+                        loadingElement={<div style={{ height: `100%` }} />}
+                        containerElement={<div style={{ height: `100%` }} />}
+                        mapElement={<div style={{ height: `100%` }} />}
+                      />
+                    </div>
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
+          </div>
+          <Switch>{this.getRoutes(routes)}</Switch>
+          {// we don't want the Footer to be rendered on map page
+          this.props.location.pathname.indexOf("maps") !== -1 ? null : (
+            <Footer fluid />
+          )}
         </div>
-      </>
+      </div>
     );
   }
 }

@@ -117,7 +117,7 @@ class AdminNavbar extends React.Component {
               aria-expanded={false}
               aria-label="Toggle navigation"
               className="navbar-toggler"
-              data-target="#navigation"
+              data-target="navigation"
               data-toggle="collapse"
               id="navigation"
               type="button"
