@@ -3,8 +3,11 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import Admin from "./Dashboard/Admin";
-import icons from "./Dashboard/views/Icons";
-import maps from "./Dashboard/views/Map";
+import Electricity from "./Dashboard/views/Electricity";
+import Water from "./Dashboard/views/Water";
+import Gas from "./Dashboard/views/Gas";
+import Diagnosis from "./Dashboard/views/Diagnosis";
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import { createBrowserHistory } from "history";
@@ -35,8 +38,10 @@ const template = (
       render={props => <App hideLoader={hideLoader} {...props} />}
     />
     <Route path="/Dashboard" component={Admin} />
-    <Route path="/icons" component={icons} />
-    <Route path="/map" component={maps} />
+    <Route path="/Electricity" component={Electricity} />
+    <Route path="/Water" component={Water} />
+    <Route path="/Gas" component={Gas} />
+    <Route path="/Diagnosis" component={Diagnosis} />
   </Router>
 );
 

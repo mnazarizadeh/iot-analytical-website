@@ -16,12 +16,11 @@
 
 */
 import Dashboard from "./views/Dashboard.jsx";
-import Icons from "./views/Icons.jsx";
-import Map from "./views/Map.jsx";
-import Notifications from "./views/Notifications.jsx";
+import Electricity from "./views/Electricity.jsx";
+import Water from "./views/Water.jsx";
+import Gas from "./views/Gas.jsx";
 import TableList from "./views/TableList.jsx";
-import Typography from "./views/Typography.jsx";
-import UserProfile from "./views/UserProfile.jsx";
+import Diagnosis from "./views/Diagnosis.jsx";
 
 var routes = [
   {
@@ -33,60 +32,44 @@ var routes = [
     layout: ""
   },
   {
-    path: "/icons",
-    name: "Icons",
+    path: "/Electricity",
+    name: "Electricity",
     rtlName: "الرموز",
-    icon: "tim-icons icon-atom",
-    component: Icons,
+    icon: "fa fa-bolt fa-4x",
+    component: Electricity,
     layout: ""
   },
   {
-    path: "/map",
-    name: "Maps",
+    path: "/Water",
+    name: "Water",
     rtlName: "خرائط",
-    icon: "tim-icons icon-pin",
-    component: Map,
+    icon: "fa fa-tint fa-4x",
+    component: Water,
     layout: ""
   },
   {
-    path: "/notifications",
-    name: "Notifications",
+    path: "/Gas",
+    name: "Gas",
     rtlName: "إخطارات",
-    icon: "tim-icons icon-bell-55",
-    component: Notifications,
+    icon: "fa fa-fire fa-4x",
+    component: Gas,
     layout: ""
   },
   {
-    path: "/user-profile",
-    name: "User Profile",
+    path: "/Diagnosis",
+    name: "Diagnosis",
     rtlName: "ملف تعريفي للمستخدم",
-    icon: "tim-icons icon-single-02",
-    component: UserProfile,
+    icon: "fa fa-tachometer fa-4x",
+    component: Diagnosis,
     layout: ""
   },
   {
-    path: "/tables",
-    name: "Table List",
+    path: "/Settings",
+    name: "Settings",
     rtlName: "قائمة الجدول",
-    icon: "tim-icons icon-puzzle-10",
+    icon: "fa fa-cog fa-4x",
     component: TableList,
     layout: ""
-  },
-  {
-    path: "/typography",
-    name: "Typography",
-    rtlName: "طباعة",
-    icon: "tim-icons icon-align-center",
-    component: Typography,
-    layout: ""
   }
-  // {
-  //   path: "/rtl-support",
-  //   name: "RTL Support",
-  //   rtlName: "ار تي ال",
-  //   icon: "tim-icons icon-world",
-  //   component: Rtl,
-  //   layout: "/rtl"
-  // }
 ];
 export default routes;
