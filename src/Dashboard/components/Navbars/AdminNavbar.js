@@ -21,14 +21,12 @@ import classNames from "classnames";
 
 // reactstrap components
 import {
-  Button,
   Collapse,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
   UncontrolledDropdown,
   Input,
-  InputGroup,
   NavbarBrand,
   Navbar,
   NavLink,
@@ -79,12 +77,7 @@ class AdminNavbar extends React.Component {
       collapseOpen: !this.state.collapseOpen
     });
   };
-  // this function is to open the Search modal
-  toggleModalSearch = () => {
-    this.setState({
-      modalSearch: !this.state.modalSearch
-    });
-  };
+
   render() {
     return (
       <>
@@ -117,7 +110,7 @@ class AdminNavbar extends React.Component {
               aria-expanded={false}
               aria-label="Toggle navigation"
               className="navbar-toggler"
-              data-target="#navigation"
+              data-target="navigation"
               data-toggle="collapse"
               id="navigation"
               type="button"
@@ -129,18 +122,6 @@ class AdminNavbar extends React.Component {
             </button>
             <Collapse navbar isOpen={this.state.collapseOpen}>
               <Nav className="ml-auto" navbar>
-                <InputGroup className="search-bar">
-                  <Button
-                    color="link"
-                    data-target="#searchModal"
-                    data-toggle="modal"
-                    id="search-button"
-                    onClick={this.toggleModalSearch}
-                  >
-                    <i className="tim-icons icon-zoom-split" />
-                    <span className="d-lg-none d-md-block">Search</span>
-                  </Button>
-                </InputGroup>
                 <UncontrolledDropdown nav>
                   <DropdownToggle
                     caret
@@ -155,27 +136,17 @@ class AdminNavbar extends React.Component {
                   <DropdownMenu className="dropdown-navbar" right tag="ul">
                     <NavLink tag="li">
                       <DropdownItem className="nav-item">
-                        Mike John responded to your email
+                        New alerts at your diagnosis section
                       </DropdownItem>
                     </NavLink>
                     <NavLink tag="li">
                       <DropdownItem className="nav-item">
-                        You have 5 more tasks
+                        This month Consumption Recommendations
                       </DropdownItem>
                     </NavLink>
                     <NavLink tag="li">
                       <DropdownItem className="nav-item">
-                        Your friend Michael is in town
-                      </DropdownItem>
-                    </NavLink>
-                    <NavLink tag="li">
-                      <DropdownItem className="nav-item">
-                        Another notification
-                      </DropdownItem>
-                    </NavLink>
-                    <NavLink tag="li">
-                      <DropdownItem className="nav-item">
-                        Another one
+                        You have 2 more Notifications
                       </DropdownItem>
                     </NavLink>
                   </DropdownMenu>
@@ -206,7 +177,11 @@ class AdminNavbar extends React.Component {
                     </NavLink>
                     <DropdownItem divider tag="li" />
                     <NavLink tag="li">
-                      <DropdownItem className="nav-item">Log out</DropdownItem>
+                      <DropdownItem className="nav-item">
+                        <a className="text-muted text-decoration-none" href="/">
+                          Log out
+                        </a>
+                      </DropdownItem>
                     </NavLink>
                   </DropdownMenu>
                 </UncontrolledDropdown>
