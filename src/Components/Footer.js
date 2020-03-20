@@ -87,8 +87,7 @@ class Footer extends Component {
 
           <div className="container">
             <div className="copyright">
-              Copyright &copy; {new Date().getFullYear()}{" "}
-              <strong>IoT Analytical</strong>. All Rights Reserved.
+                &copy; {new Date().getFullYear()}{" "} <strong> IoT Analytical </strong>. All Rights Reserved.
             </div>
           </div>
         </footer>
