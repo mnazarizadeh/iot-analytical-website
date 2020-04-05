@@ -42,6 +42,7 @@ const template = (
     <Route path="/Water" component={Water} />
     <Route path="/Gas" component={Gas} />
     <Route path="/Diagnosis" component={Diagnosis} />
+    <Route path="/Settings" component={Admin} />
   </Router>
 );
 

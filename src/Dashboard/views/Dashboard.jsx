@@ -185,31 +185,31 @@ class Dashboard extends React.Component {
                     <tbody>
                       <tr>
                         <td>Lighting</td>
-                        <td className="text-center"><h4><span class="badge badge-pill badge-danger">Error</span></h4></td>
+                        <td className="text-center"><h3><span class="badge badge-pill badge-danger">Error</span></h3></td>
                         <td className="text-center">Crash</td>
                         <td className="text-center">Dining room</td>
                       </tr>
                       <tr>
                         <td>Wall Mount Lighting</td>
-                        <td className="text-center"><h4><span class="badge badge-pill badge-warning">Warning</span></h4></td>
+                        <td className="text-center"><h3><span class="badge badge-pill badge-warning">Warning</span></h3></td>
                         <td className="text-center">Warn</td>
                         <td className="text-center">Hall</td>
                       </tr>
                       <tr>
                         <td>AC</td>
-                        <td className="text-center"><h4><span class="badge badge-pill badge-info">Info</span></h4></td>
+                        <td className="text-center"><h3><span class="badge badge-pill badge-info">Info</span></h3></td>
                         <td className="text-center">Replacement needed</td>
                         <td className="text-center">TV Room</td>
                       </tr>
                       <tr>
                         <td>Smart Plug</td>
-                        <td className="text-center"><h4><span class="badge badge-pill badge-danger">Error</span></h4></td>
+                        <td className="text-center"><h3><span class="badge badge-pill badge-danger">Error</span></h3></td>
                         <td className="text-center">Disconnect</td>
                         <td className="text-center">Libary</td>
                       </tr>
                       <tr>
                         <td>Curtain</td>
-                        <td className="text-center"><h4><span class="badge badge-pill badge-info">Info</span></h4></td>
+                        <td className="text-center"><h3><span class="badge badge-pill badge-info">Info</span></h3></td>
                         <td className="text-center">Connect</td>
                         <td className="text-center">Libary</td>
                       </tr>

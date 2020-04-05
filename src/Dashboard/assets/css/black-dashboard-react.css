@@ -61,6 +61,73 @@
   width: 70%;
 }
 
+.badge1:empty {
+  display: inline-block;
+  width: 150px;
+  height: 16px;
+  margin-right: 200px;
+  margin-left: 20px;
+}
+
+.badge2:empty {
+  display: inline-block;
+  width: 100px;
+  height: 16px;
+}
+
+.badge3:empty {
+  display: inline-block;
+  width: 200px;
+  height: 16px;
+  margin-right: 120px;
+  margin-left: 100px;
+}
+
+.badge4:empty {
+  display: inline-block;
+  width: 200px;
+  height: 16px;
+}
+
+.badge5:empty {
+  display: inline-block;
+  width: 70px;
+  height: 16px;
+  margin-right: 120px;
+  margin-left: 150px;
+}
+
+.badge6:empty {
+  display: inline-block;
+  width: 200px;
+  height: 16px;
+}
+
+.badge7:empty {
+  display: inline-block;
+  width: 200px;
+  height: 16px;
+  margin-right: 80px;
+  margin-left: 20px;
+}
+
+.badge8:empty {
+  display: inline-block;
+  width: 400px;
+  height: 16px;
+}
+
+.badge9:empty {
+  display: inline-block;
+  width: 150px;
+  height: 16px;
+  margin-left: 60px;
+}
+
+.switch-label-custom {
+  font-size: 30px;
+}
+
 *,
 *::before,
 *::after {
@@ -1486,14 +1553,14 @@ pre code {
 .table td {
   padding: 1rem;
   vertical-align: top;
-  border-top: 0.0625rem solid #e3e3e3;
+  /* border-top: 0.0625rem solid #e3e3e3; */
 }
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 0.125rem solid #e3e3e3;
+  /* border-bottom: 0.125rem solid #e3e3e3; */
 }
 .table tbody + tbody {
-  border-top: 0.125rem solid #e3e3e3;
+  /* border-top: 0.125rem solid #e3e3e3; */
 }
 .table .table {
   background-color: #1e1e2f;
@@ -18194,7 +18261,7 @@ textarea.form-control {
   margin-bottom: 15px;
 }
 .card label {
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin-bottom: 5px;
 }
 .card .card-footer {

@@ -216,6 +216,86 @@ class Gas extends React.Component {
               </Col>
             </Row>
             <Row>
+              <Col lg="12" md="12">
+                <Card>
+                  <CardHeader>
+                    <CardTitle tag="h3"><b>Recommendations</b></CardTitle>
+                  </CardHeader>
+                  <CardBody>
+                    <Table className="tablesorter" responsive>
+                      <thead className="text-primary">
+                        <tr>
+                          <th>Device</th>
+                          <th className="text-center">0</th>
+                          <th className="text-center">3</th>
+                          <th className="text-center">6</th>
+                          <th className="text-center">9</th>
+                          <th className="text-center">12</th>
+                          <th className="text-center">15</th>
+                          <th className="text-center">18</th>
+                          <th className="text-center">21</th>
+                          <th className="text-center">24</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div className="custom-control custom-switch">
+                             <input type="checkbox" className="custom-control-input" id="customSwitches" />
+                             <label className="custom-control-label" for="customSwitches">Oven</label>
+                            </div>
+                          </td>
+                          <td colSpan="9">
+                            <span className="badge1 badge-pill badge-danger"></span>
+                            <span className="badge2 badge-pill badge-danger"></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="custom-control custom-switch">
+                              <input type="checkbox" className="custom-control-input" id="customSwitches1" />
+                              <label className="custom-control-label" for="customSwitches1">Water Heater</label>
+                            </div>
+                          </td>
+                          <td colSpan="9">
+                            <span className="badge3 badge-pill badge-danger"></span>
+                            <span className="badge4 badge-pill badge-danger"></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="custom-control custom-switch">
+                              <input type="checkbox" className="custom-control-input" id="customSwitches3" />
+                              <label className="custom-control-label" for="customSwitches3">Warmer</label>
+                            </div>
+                            
+                          </td>
+                          <td colSpan="9">
+                            <span className="badge7 badge-pill badge-danger"></span>
+                            <span className="badge8 badge-pill badge-danger"></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="custom-control custom-switch">
+                              <input type="checkbox" className="custom-control-input" id="customSwitches4" />
+                              <label className="custom-control-label" for="customSwitches4">BBQ</label>
+                            </div>
+                            
+                          </td>
+                          <td colSpan="9">
+                            <span className="badge1 badge-pill badge-danger"></span>
+                            <span className="badge2 badge-pill badge-danger"></span>
+                            <span className="badge9 badge-pill badge-danger"></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </Table>
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
+            <Row>
               <Col lg="12">
                 <Card className="card-chart">
                   <CardHeader>
@@ -253,34 +333,34 @@ class Gas extends React.Component {
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Lighting</td>
+                          <td>Oven</td>
                           <td className="text-center"><h4><span class="badge badge-pill badge-danger">Error</span></h4></td>
                           <td className="text-center">Crash</td>
-                          <td className="text-center">Dining room</td>
+                          <td className="text-center">Kitchen</td>
                         </tr>
                         <tr>
-                          <td>Wall Mount Lighting</td>
+                          <td>Water Heater</td>
                           <td className="text-center"><h4><span class="badge badge-pill badge-warning">Warning</span></h4></td>
                           <td className="text-center">Warn</td>
-                          <td className="text-center">Hall</td>
+                          <td className="text-center">Bathroom</td>
                         </tr>
                         <tr>
-                          <td>AC</td>
+                          <td>Warmer</td>
                           <td className="text-center"><h4><span class="badge badge-pill badge-info">Info</span></h4></td>
                           <td className="text-center">Replacement needed</td>
-                          <td className="text-center">TV Room</td>
+                          <td className="text-center">Library</td>
                         </tr>
                         <tr>
-                          <td>Smart Plug</td>
+                          <td>BBQ</td>
                           <td className="text-center"><h4><span class="badge badge-pill badge-danger">Error</span></h4></td>
                           <td className="text-center">Disconnect</td>
-                          <td className="text-center">Libary</td>
+                          <td className="text-center">Yard</td>
                         </tr>
                         <tr>
-                          <td>Curtain</td>
+                          <td>Warmer</td>
                           <td className="text-center"><h4><span class="badge badge-pill badge-info">Info</span></h4></td>
                           <td className="text-center">Connect</td>
-                          <td className="text-center">Libary</td>
+                          <td className="text-center">Hall</td>
                         </tr>
                       </tbody>
                     </Table>

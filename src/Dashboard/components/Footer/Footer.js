@@ -36,7 +36,7 @@ class Footer extends React.Component {
               <NavLink href="/">About Us</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/">Blog</NavLink>
+              <NavLink href="/">Contact Us</NavLink>
             </NavItem>
           </Nav>
           <div className="copyright">

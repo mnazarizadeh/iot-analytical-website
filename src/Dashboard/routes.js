@@ -19,7 +19,6 @@ import Dashboard from "./views/Dashboard.jsx";
 import Electricity from "./views/Electricity.jsx";
 import Water from "./views/Water.jsx";
 import Gas from "./views/Gas.jsx";
-import TableList from "./views/TableList.jsx";
 import Diagnosis from "./views/Diagnosis.jsx";
 
 var routes = [
@@ -68,7 +67,7 @@ var routes = [
     name: "Settings",
     rtlName: "قائمة الجدول",
     icon: "fa fa-cog fa-4x",
-    component: TableList,
+    component: Dashboard,
     layout: ""
   }
 ];

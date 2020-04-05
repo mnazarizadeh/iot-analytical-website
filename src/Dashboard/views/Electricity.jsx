@@ -216,6 +216,99 @@ class Electricity extends React.Component {
               </Col>
             </Row>
             <Row>
+              <Col lg="12" md="12">
+                <Card>
+                  <CardHeader>
+                    <CardTitle tag="h3"><b>Recommendations</b></CardTitle>
+                  </CardHeader>
+                  <CardBody>
+                    <Table className="tablesorter" responsive>
+                      <thead className="text-primary">
+                        <tr>
+                          <th>Device</th>
+                          <th className="text-center">0</th>
+                          <th className="text-center">3</th>
+                          <th className="text-center">6</th>
+                          <th className="text-center">9</th>
+                          <th className="text-center">12</th>
+                          <th className="text-center">15</th>
+                          <th className="text-center">18</th>
+                          <th className="text-center">21</th>
+                          <th className="text-center">24</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div className="custom-control custom-switch">
+                             <input type="checkbox" className="custom-control-input" id="customSwitches" />
+                             <label className="custom-control-label" for="customSwitches">Lighting</label>
+                            </div>
+                          </td>
+                          <td colSpan="9">
+                            <span className="badge1 badge-pill badge-warning"></span>
+                            <span className="badge2 badge-pill badge-warning"></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="custom-control custom-switch">
+                              <input type="checkbox" className="custom-control-input" id="customSwitches1" />
+                              <label className="custom-control-label" for="customSwitches1">Wall Mount Lighting</label>
+                            </div>
+                          </td>
+                          <td colSpan="9">
+                            <span className="badge3 badge-pill badge-warning"></span>
+                            <span className="badge4 badge-pill badge-warning"></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="custom-control custom-switch">
+                              <input type="checkbox" className="custom-control-input" id="customSwitches2" />
+                              <label className="custom-control-label" for="customSwitches2">AC</label>
+                            </div>
+                            
+                          </td>
+                          <td colSpan="9">
+                            <span className="badge5 badge-pill badge-warning"></span>
+                            <span className="badge6 badge-pill badge-warning"></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="custom-control custom-switch">
+                              <input type="checkbox" className="custom-control-input" id="customSwitches3" />
+                              <label className="custom-control-label" for="customSwitches3">Smart Plug</label>
+                            </div>
+                            
+                          </td>
+                          <td colSpan="9">
+                            <span className="badge7 badge-pill badge-warning"></span>
+                            <span className="badge8 badge-pill badge-warning"></span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="custom-control custom-switch">
+                              <input type="checkbox" className="custom-control-input" id="customSwitches4" />
+                              <label className="custom-control-label" for="customSwitches4">Curtain</label>
+                            </div>
+                            
+                          </td>
+                          <td colSpan="9">
+                            <span className="badge1 badge-pill badge-warning"></span>
+                            <span className="badge2 badge-pill badge-warning"></span>
+                            <span className="badge9 badge-pill badge-warning"></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </Table>
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
+            <Row>
               <Col lg="12">
                 <Card className="card-chart">
                   <CardHeader>
@@ -239,7 +332,7 @@ class Electricity extends React.Component {
               <Col lg="12" md="12">
                 <Card>
                   <CardHeader>
-                    <CardTitle tag="h4"><b>Logs</b></CardTitle>
+                    <CardTitle tag="h3"><b>Logs</b></CardTitle>
                   </CardHeader>
                   <CardBody>
                     <Table className="tablesorter" responsive>
@@ -254,31 +347,31 @@ class Electricity extends React.Component {
                       <tbody>
                         <tr>
                           <td>Lighting</td>
-                          <td className="text-center"><h4><span class="badge badge-pill badge-danger">Error</span></h4></td>
+                          <td className="text-center"><h3><span className="badge badge-pill badge-danger">Error</span></h3></td>
                           <td className="text-center">Crash</td>
                           <td className="text-center">Dining room</td>
                         </tr>
                         <tr>
                           <td>Wall Mount Lighting</td>
-                          <td className="text-center"><h4><span class="badge badge-pill badge-warning">Warning</span></h4></td>
+                          <td className="text-center"><h3><span className="badge badge-pill badge-warning">Warning</span></h3></td>
                           <td className="text-center">Warn</td>
                           <td className="text-center">Hall</td>
                         </tr>
                         <tr>
                           <td>AC</td>
-                          <td className="text-center"><h4><span class="badge badge-pill badge-info">Info</span></h4></td>
+                          <td className="text-center"><h3><span className="badge badge-pill badge-info">Info</span></h3></td>
                           <td className="text-center">Replacement needed</td>
                           <td className="text-center">TV Room</td>
                         </tr>
                         <tr>
                           <td>Smart Plug</td>
-                          <td className="text-center"><h4><span class="badge badge-pill badge-danger">Error</span></h4></td>
+                          <td className="text-center"><h3><span className="badge badge-pill badge-danger">Error</span></h3></td>
                           <td className="text-center">Disconnect</td>
                           <td className="text-center">Libary</td>
                         </tr>
                         <tr>
                           <td>Curtain</td>
-                          <td className="text-center"><h4><span class="badge badge-pill badge-info">Info</span></h4></td>
+                          <td className="text-center"><h3><span className="badge badge-pill badge-info">Info</span></h3></td>
                           <td className="text-center">Connect</td>
                           <td className="text-center">Libary</td>
                         </tr>
