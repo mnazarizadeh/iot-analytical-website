@@ -24,6 +24,8 @@ import routes from "./../routes.js";
 import { Route, Switch } from "react-router-dom";
 import Footer from "./../components/Footer/Footer.js";
 import AdminNavbar from "./../components/Navbars/AdminNavbar";
+// javascript plugin used to create scrollbars on windows
+import PerfectScrollbar from "perfect-scrollbar";
 
 import { Line, Pie } from "react-chartjs-2";
 
@@ -47,6 +49,8 @@ import {
 
 } from "./../variables/charts.jsx";
 
+var ps;
+
 class Gas extends React.Component {
   constructor(props) {
     super(props);
@@ -57,6 +61,39 @@ class Gas extends React.Component {
         document.documentElement.className.indexOf("nav-open") !== -1
     };
   }
+
+  componentDidMount() {
+    if (navigator.platform.indexOf("Win") > -1) {
+      document.documentElement.className += " perfect-scrollbar-on";
+      document.documentElement.classList.remove("perfect-scrollbar-off");
+      ps = new PerfectScrollbar(this.refs.mainPanel, { suppressScrollX: true });
+      let tables = document.querySelectorAll(".table-responsive");
+      for (let i = 0; i < tables.length; i++) {
+        ps = new PerfectScrollbar(tables[i]);
+      }
+    }
+  }
+  componentWillUnmount() {
+    if (navigator.platform.indexOf("Win") > -1) {
+      ps.destroy();
+      document.documentElement.className += " perfect-scrollbar-off";
+      document.documentElement.classList.remove("perfect-scrollbar-on");
+    }
+  }
+  componentDidUpdate(e) {
+    if (e.history.action === "PUSH") {
+      if (navigator.platform.indexOf("Win") > -1) {
+        let tables = document.querySelectorAll(".table-responsive");
+        for (let i = 0; i < tables.length; i++) {
+          ps = new PerfectScrollbar(tables[i]);
+        }
+      }
+      document.documentElement.scrollTop = 0;
+      document.scrollingElement.scrollTop = 0;
+      this.refs.mainPanel.scrollTop = 0;
+    }
+  }
+
   setBgChartData = name => {
     this.setState({
       bigChartData: name
@@ -319,7 +356,7 @@ class Gas extends React.Component {
               <Col lg="12" md="12">
                 <Card>
                   <CardHeader>
-                    <CardTitle tag="h4"><b>Logs</b></CardTitle>
+                    <CardTitle tag="h3"><b>Logs</b></CardTitle>
                   </CardHeader>
                   <CardBody>
                     <Table className="tablesorter" responsive>
@@ -334,31 +371,31 @@ class Gas extends React.Component {
                       <tbody>
                         <tr>
                           <td>Oven</td>
-                          <td className="text-center"><h4><span class="badge badge-pill badge-danger">Error</span></h4></td>
+                          <td className="text-center"><h3><span class="badge badge-pill badge-danger">Error</span></h3></td>
                           <td className="text-center">Crash</td>
                           <td className="text-center">Kitchen</td>
                         </tr>
                         <tr>
                           <td>Water Heater</td>
-                          <td className="text-center"><h4><span class="badge badge-pill badge-warning">Warning</span></h4></td>
+                          <td className="text-center"><h3><span class="badge badge-pill badge-warning">Warning</span></h3></td>
                           <td className="text-center">Warn</td>
                           <td className="text-center">Bathroom</td>
                         </tr>
                         <tr>
                           <td>Warmer</td>
-                          <td className="text-center"><h4><span class="badge badge-pill badge-info">Info</span></h4></td>
+                          <td className="text-center"><h3><span class="badge badge-pill badge-info">Info</span></h3></td>
                           <td className="text-center">Replacement needed</td>
                           <td className="text-center">Library</td>
                         </tr>
                         <tr>
                           <td>BBQ</td>
-                          <td className="text-center"><h4><span class="badge badge-pill badge-danger">Error</span></h4></td>
+                          <td className="text-center"><h3><span class="badge badge-pill badge-danger">Error</span></h3></td>
                           <td className="text-center">Disconnect</td>
                           <td className="text-center">Yard</td>
                         </tr>
                         <tr>
                           <td>Warmer</td>
-                          <td className="text-center"><h4><span class="badge badge-pill badge-info">Info</span></h4></td>
+                          <td className="text-center"><h3><span class="badge badge-pill badge-info">Info</span></h3></td>
                           <td className="text-center">Connect</td>
                           <td className="text-center">Hall</td>
                         </tr>
