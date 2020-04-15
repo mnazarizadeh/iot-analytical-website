@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import Login from "./Components/Login";
 import Admin from "./Dashboard/Admin";
 import Electricity from "./Dashboard/views/Electricity";
 import Water from "./Dashboard/views/Water";
@@ -37,12 +38,14 @@ const template = (
       path="/"
       render={props => <App hideLoader={hideLoader} {...props} />}
     />
+    
     <Route path="/Dashboard" component={Admin} />
     <Route path="/Electricity" component={Electricity} />
     <Route path="/Water" component={Water} />
     <Route path="/Gas" component={Gas} />
     <Route path="/Diagnosis" component={Diagnosis} />
     <Route path="/Settings" component={Admin} />
+    <Route path="/login" component={Login} />
   </Router>
 );
 
