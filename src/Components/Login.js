@@ -87,7 +87,7 @@ class Login extends Component {
             >
               Log in
             </button>
-            <p className="mt-5 mb-3 text-muted">&copy; IoT Analytical {year}</p>
+            <p className="mt-5 mb-3 text-muted">&copy; {year} IoT Analytical </p>
           </div>
         </div>
       </React.Fragment>

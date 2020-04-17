@@ -12,6 +12,7 @@ import Features from "./Components/Features";
 import Video from "./Components/Video";
 import Testimonial from "./Components/Testimonial";
 import Team from "./Components/Team";
+import FAQ from "./Components/FAQ";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import ScrollToTop from "./Components/ScrollToTop";
@@ -29,6 +30,7 @@ class App extends React.Component {
         <Video />
         <Testimonial />
         <Team />
+        <FAQ />
         <Contact />
         <Footer />
         <ScrollToTop />

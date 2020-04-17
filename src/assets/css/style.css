@@ -1043,6 +1043,16 @@ h6 {
   transition: all 0.4s ease-in-out;
 }
 
+
+/* FAQ Section
+--------------------------------*/
+
+.card-faq {
+  background: white !important;
+  margin-bottom: 15px;
+}
+
+
 /* Contact Section
 --------------------------------*/
 
