@@ -67,6 +67,10 @@ body {
 .iotModal {
   color: #000 !important;
 }
+.iotModal .table {
+  color: #000 !important;
+}
+
 .iotModal h5 {
   color: #000 !important;
   font-size: 18px !important;
@@ -93,8 +97,22 @@ body {
 }
 
 .modal-header-custom {
-  border-bottom: 1px solid lightgrey !important;
-  padding-bottom: 24px !important;
+  background-color: #007bff !important;
+}
+
+.product-pic-modal {
+  text-align: center !important;
+}
+
+.product-pic-modal img {
+  padding: 0.25rem;
+  border: 0.0625rem solid #e3e3e3;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 2px rgba(34, 42, 66, 0.075);
+}
+
+.quantity {
+  max-width: 3.75rem;
 }
 
 a {

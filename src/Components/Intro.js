@@ -9,7 +9,7 @@ import {
   InputGroup,
   InputGroupAddon,
   InputGroupText,
-  Input
+  Input,
 } from "reactstrap";
 import SweetAlert from "sweetalert2-react";
 import { getValueFromEvent } from "../util/clientUtils";
@@ -22,43 +22,43 @@ class Intro extends Component {
       show: false,
       iUsername: "",
       Phone: "",
-      Mail: ""
+      Mail: "",
     };
   }
   openModal = () => {
-    this.setState(prevState => ({
-      modal: !prevState.modal
+    this.setState((prevState) => ({
+      modal: !prevState.modal,
     }));
   };
-  CheckLogin = () => {
+  CheckCart = () => {
     if (
       this.state.iUsername !== "" &&
       this.state.Phone !== "" &&
       this.state.Mail !== ""
     ) {
-      this.setState(prevState => ({
-        show: !prevState.show
+      this.setState((prevState) => ({
+        show: !prevState.show,
       }));
     }
   };
-  onInputChangedUsername = e => {
+  onInputChangedUsername = (e) => {
     const newValues = getValueFromEvent(e);
     this.setState({
-      iUsername: newValues.Username
+      iUsername: newValues.Username,
     });
   };
-  onInputChangedPhone = e => {
+  onInputChangedPhone = (e) => {
     const newValues = getValueFromEvent(e);
 
     this.setState({
-      Phone: newValues.Phone
+      Phone: newValues.Phone,
     });
   };
-  onInputChangedMail = e => {
+  onInputChangedMail = (e) => {
     const newValues = getValueFromEvent(e);
 
     this.setState({
-      Mail: newValues.Mail
+      Mail: newValues.Mail,
     });
   };
   render() {
@@ -81,14 +81,35 @@ class Intro extends Component {
               className="modal-header-custom"
               toggle={() => this.openModal()}
             >
-              CART
+              YOUR CART
             </ModalHeader>
             <ModalBody>
               <div>
-                <div id="modal-img">
+                <div className="product-pic-modal">
                   <img src="./assets/img/product.jpg" alt="product-pic" />
-                  <h5 className="my-auto text-muted">Price: 399$</h5>
                 </div>
+                <table className="table table-image mb-4">
+                  <thead>
+                    <tr>
+                      <th scope="col">Product</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Quantity</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>IoT Analytical Device</td>
+                      <td>299$</td>
+                      <td>
+                        <input
+                          type="number"
+                          className="form-control text-center quantity"
+                          defaultValue="1"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
 
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
@@ -100,7 +121,7 @@ class Intro extends Component {
                     className="inputbox"
                     name="Username"
                     placeholder="Fullname"
-                    onChange={e => this.onInputChangedUsername(e)}
+                    onChange={(e) => this.onInputChangedUsername(e)}
                   />
                 </InputGroup>
 
@@ -115,7 +136,7 @@ class Intro extends Component {
                     name="phone"
                     placeholder="Phone number"
                     type="text"
-                    onChange={e => this.onInputChangedPhone(e)}
+                    onChange={(e) => this.onInputChangedPhone(e)}
                   />
                 </InputGroup>
 
@@ -130,7 +151,7 @@ class Intro extends Component {
                     name="email"
                     placeholder="E-mail"
                     type="email"
-                    onChange={e => this.onInputChangedMail(e)}
+                    onChange={(e) => this.onInputChangedMail(e)}
                   />
                 </InputGroup>
               </div>
@@ -138,7 +159,7 @@ class Intro extends Component {
             <ModalFooter>
               <Button
                 className="btn-custom-iot"
-                onClick={() => this.CheckLogin()}
+                onClick={() => this.CheckCart()}
               >
                 Submit
               </Button>{" "}
@@ -166,7 +187,7 @@ class Intro extends Component {
                   className="btn-get-started animated infinite pulse"
                   onClick={() => this.openModal()}
                 >
-                  Preorder
+                  Order Now!
                 </button>
                 <a href="#about" className="btn-services scrollto">
                   Features

@@ -608,7 +608,6 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #1e1e2f;
   border: 0.0625rem solid #e3e3e3;
   border-radius: 0.25rem;
   box-shadow: 0 1px 2px rgba(34, 42, 66, 0.075);
@@ -5399,7 +5398,7 @@ button.close {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 24px 24px 0 24px;
+  padding: 24px;
   border-bottom: 1px solid #e9ecef;
   border-top-left-radius: 0.2857rem;
   border-top-right-radius: 0.2857rem;
@@ -13962,8 +13961,9 @@ hr {
 }
 
 .table > tbody > tr > td {
-  color: rgba(255, 255, 255, 0.7) !important;
+  color: black !important;
 }
+
 .table > tbody > tr > td .photo {
   height: 30px;
   width: 30px;
@@ -14046,7 +14046,7 @@ hr {
   text-transform: uppercase;
   font-weight: 700;
   border: 0;
-  color: rgba(255, 255, 255, 0.7);
+  
 }
 
 .table .radio,
@@ -14074,7 +14074,7 @@ hr {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  border-color: rgba(255, 255, 255, 0.1);
+  
   padding: 12px 7px;
   vertical-align: middle;
 }

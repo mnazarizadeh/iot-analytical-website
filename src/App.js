@@ -29,8 +29,8 @@ class App extends React.Component {
         <Features />
         <Video />
         <Testimonial />
-        <Team />
         <FAQ />
+        <Team />
         <Contact />
         <Footer />
         <ScrollToTop />
