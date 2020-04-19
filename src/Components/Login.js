@@ -60,13 +60,13 @@ class Login extends Component {
 
         <div className="text-center login">
           <div className="form-signin2">
-            <img className="mb-5" src="./assets/img/loginLogo.png" alt="logo" />
+          <img id="logo-img" className="mb-4" src="./assets/img/logo.png" alt="logo" />
 
             <input
               type="text"
               className="form-control top-input"
               name="Username"
-              placeholder="username"
+              placeholder="Username"
               onChange={(e) => this.onInputChangedUsername(e)}
               required
               autofocus
