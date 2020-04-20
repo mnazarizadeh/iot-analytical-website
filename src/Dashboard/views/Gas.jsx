@@ -260,7 +260,7 @@ class Gas extends React.Component {
                   </CardHeader>
                   <CardBody>
                     <Table className="tablesorter" responsive>
-                      <thead className="text-primary">
+                      <thead className="text-white">
                         <tr>
                           <th>Device</th>
                           <th className="text-center">0</th>
@@ -360,7 +360,7 @@ class Gas extends React.Component {
                   </CardHeader>
                   <CardBody>
                     <Table className="tablesorter" responsive>
-                      <thead className="text-primary">
+                      <thead className="text-white">
                         <tr>
                           <th>Node</th>
                           <th className="text-center">Message Types</th>
@@ -368,7 +368,7 @@ class Gas extends React.Component {
                           <th className="text-center">Zone</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody className="text-white">
                         <tr>
                           <td>Oven</td>
                           <td className="text-center"><h3><span class="badge badge-pill badge-danger">Error</span></h3></td>

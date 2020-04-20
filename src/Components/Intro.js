@@ -91,16 +91,16 @@ class Intro extends Component {
                 <table className="table table-image mb-4">
                   <thead>
                     <tr>
-                      <th scope="col">Product</th>
-                      <th scope="col">Price</th>
-                      <th scope="col">Quantity</th>
+                      <th scope="col" style={{color: "black"}}>Product</th>
+                      <th scope="col" style={{color: "black"}}>Price</th>
+                      <th scope="col" style={{color: "black"}}>Quantity</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>IoT Analytical Device</td>
-                      <td>299$</td>
-                      <td>
+                      <td style={{color: "black"}}>IoT Analytical Device</td>
+                      <td style={{color: "black"}}>299$</td>
+                      <td style={{color: "black"}}>
                         <input
                           type="number"
                           className="form-control text-center quantity"

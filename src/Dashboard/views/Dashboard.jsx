@@ -170,11 +170,11 @@ class Dashboard extends React.Component {
             <Col lg="12" md="12">
               <Card>
                 <CardHeader>
-                  <CardTitle tag="h4"><b>Logs</b></CardTitle>
+                  <CardTitle tag="h3"><b>Logs</b></CardTitle>
                 </CardHeader>
                 <CardBody>
                   <Table className="tablesorter" responsive>
-                    <thead className="text-primary">
+                    <thead className="text-white">
                       <tr>
                         <th>Node</th>
                         <th className="text-center">Message Types</th>
@@ -182,7 +182,7 @@ class Dashboard extends React.Component {
                         <th className="text-center">Zone</th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody className="text-white">
                       <tr>
                         <td>Lighting</td>
                         <td className="text-center"><h3><span class="badge badge-pill badge-danger">Error</span></h3></td>

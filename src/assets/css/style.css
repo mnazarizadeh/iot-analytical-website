@@ -1216,6 +1216,28 @@ h6 {
   font-size: 14px;
 }
 
+.btn-pressKit {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #fff;
+  background: #007bff;
+  border: 2px solid #007bff;
+}
+
+.btn-pressKit:hover {
+  border-color: white;
+  color: #fff;
+  text-decoration: none;
+}
+
+
 .leaflet-container {
   width: 100%;
   height: 30vh;
@@ -1229,7 +1251,7 @@ h6 {
 
 #footer .footer-top {
   background: #004a99;
-  padding: 60px 0 30px 0;
+  padding: 60px 0 0 0;
 }
 
 #footer .footer-top .footer-info {
@@ -1254,6 +1276,10 @@ h6 {
   margin-bottom: 0;
   font-family: "Montserrat", sans-serif;
   color: #ecf5ff;
+}
+
+#footer .social-links {
+  margin-left: 29px; 
 }
 
 #footer .footer-top .social-links a {

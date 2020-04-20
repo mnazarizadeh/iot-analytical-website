@@ -1,20 +1,130 @@
 import React, { Component } from "react";
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
+import { withRouter } from "react-router-dom";
+import {
+  Button,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  InputGroup,
+  InputGroupAddon,
+  InputGroupText,
+  Input,
+} from "reactstrap";
+import SweetAlert from "sweetalert2-react";
+import { getValueFromEvent } from "../util/clientUtils";
 
 class Footer extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       lat: 35.7132,
       lng: 51.42,
-      zoom: 17
+      zoom: 17,
+      modal: false,
+      show: false,
+      iUsername: "",
+      Mail: ""
     };
   }
+
+  openModal = () => {
+    this.setState((prevState) => ({
+      modal: !prevState.modal,
+    }));
+  };
+  CheckSubmit = () => {
+    if (
+      this.state.iUsername !== "" &&
+      this.state.Mail !== ""
+    ) {
+      this.setState((prevState) => ({
+        show: !prevState.show,
+      }));
+    }
+  };
+  onInputChangedUsername = (e) => {
+    const newValues = getValueFromEvent(e);
+    this.setState({
+      iUsername: newValues.Username,
+    });
+  };
+  
+  onInputChangedMail = (e) => {
+    const newValues = getValueFromEvent(e);
+
+    this.setState({
+      Mail: newValues.Mail,
+    });
+  };
 
   render() {
     const position = [this.state.lat, this.state.lng];
     return (
       <React.Fragment>
+      <SweetAlert
+          icon="warning"
+          show={this.state.show}
+          title="Thank You"
+          text="Your Press Kit will be emailed to you soon!"
+          onConfirm={() => this.setState({ show: false })}
+        />
+        <div>
+          <Modal
+            isOpen={this.state.modal}
+            toggle={() => this.openModal()}
+            className="iotModal"
+          >
+            <ModalHeader
+              className="modal-header-custom"
+              toggle={() => this.openModal()}
+            >
+              Get Press Kit
+            </ModalHeader>
+            <ModalBody>
+              <div>
+                
+                <InputGroup>
+                  <InputGroupAddon addonType="prepend">
+                    <InputGroupText>
+                      <i className="fa fa-user colori"></i>
+                    </InputGroupText>
+                  </InputGroupAddon>
+                  <Input
+                    className="inputbox"
+                    name="Username"
+                    placeholder="Fullname"
+                    onChange={(e) => this.onInputChangedUsername(e)}
+                  />
+                </InputGroup>
+
+                <InputGroup>
+                  <InputGroupAddon addonType="prepend">
+                    <InputGroupText color="secondary">
+                      <i className="fa fa-envelope colori"></i>
+                    </InputGroupText>
+                  </InputGroupAddon>
+                  <Input
+                    className="inputbox"
+                    name="email"
+                    placeholder="E-mail"
+                    type="email"
+                    onChange={(e) => this.onInputChangedMail(e)}
+                  />
+                </InputGroup>
+              </div>
+            </ModalBody>
+            <ModalFooter>
+              <Button
+                className="btn-custom-iot"
+                onClick={() => this.CheckSubmit()}
+              >
+                Submit
+              </Button>{" "}
+            </ModalFooter>
+          </Modal>
+        </div>
         <footer id="footer">
           <div className="footer-top">
             <div className="container">
@@ -41,6 +151,13 @@ class Footer extends Component {
                     <strong>Email:</strong> info@iot-analytical.com
                     <br />
                   </p>
+
+                  <button
+                  className="btn-pressKit"
+                  onClick={() => this.openModal()}
+                >
+                  Get Press Kit
+                </button>
 
                   <div className="social-links">
                     <a
@@ -96,4 +213,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer;
+export default withRouter(Footer);
