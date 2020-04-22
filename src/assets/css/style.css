@@ -152,9 +152,7 @@ h6 {
   border-radius: 50%;
 }
 
-#video {
-  background-color: black;
-}
+
 
 @-webkit-keyframes animate-preloader {
   0% {

@@ -1,17 +1,18 @@
 import React, { Component } from "react";
-import { Player, BigPlayButton } from "video-react";
-import "./../assets/css/video-react.css";
 
 class Video extends Component {
   render() {
     return (
       <div id="video">
-        <Player
-          poster="assets/img/video-pic.jpg"
-          src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-        >
-          <BigPlayButton position="center" />
-        </Player>
+        <iframe
+          title="IoT Analytical - Introduction"
+          width="100%"
+          height="550"
+          src="https://www.youtube.com/embed/35kiDy5gnZs"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     );
   }
