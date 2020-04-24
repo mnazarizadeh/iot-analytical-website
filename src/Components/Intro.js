@@ -178,9 +178,9 @@ class Intro extends Component {
 
             <div className="intro-info">
               <h2>
-                A Blue Sky
+                IoT Analytical:
                 <br />
-                Is What We Offer
+                Analytics Solution for Smart Homes
               </h2>
               <div>
                 <button

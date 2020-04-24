@@ -10,7 +10,6 @@ import Navbar from "./Components/Navbar";
 import Intro from "./Components/Intro";
 import Features from "./Components/Features";
 import Video from "./Components/Video";
-import Testimonial from "./Components/Testimonial";
 import Team from "./Components/Team";
 import FAQ from "./Components/FAQ";
 import Contact from "./Components/Contact";
@@ -28,7 +27,6 @@ class App extends React.Component {
         <Intro />
         <Features />
         <Video />
-        <Testimonial />
         <FAQ />
         <Team />
         <Contact />

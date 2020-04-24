@@ -6,7 +6,7 @@ class Features extends Component {
     const wow = new WOW({
       offset: 100,
       mobile: false,
-      live: true
+      live: true,
     });
 
     wow.init();
@@ -19,22 +19,21 @@ class Features extends Component {
           <div className="container">
             <header className="section-header">
               <h3>Features</h3>
-              <p>
-                Make your home smart to use energy more efficiently and save it
-                for next generations by using IoT Analytical.
-              </p>
+              <p></p>
             </header>
 
             <div className="row about-container">
               <div className="col-lg-6 content order-lg-1 order-2">
                 <p className="testparag">
-                  IoT Analytical is an energy utilization data analyzer that
-                  makes it easy for everyone to have their household consumption
-                  visualized by observing water, gas, and electricity usage. It
-                  also provides sustainable consumption recommendations based on
-                  consumer usage patterns. It is easy to install, integrates
-                  with all smart home systems, and transforms any house or
-                  apartment into an environmentally friendly smart home.
+                  IoT Analytical enhances, empowers, and helps maintain smart
+                  home solutions. Is designed in a way that all relevant data
+                  regarding each part of smart solution is collected, stored,
+                  and process automatically. The user can easily access water,
+                  gas, and electricity consumption and receive live diagnosis
+                  analysis. IoT Analytical contributes significantly to the
+                  maintenance of smart homes and acts as a diagnosis tool. It
+                  also provides suggestions for reducing consumption and thus,
+                  helps to save the environment.
                 </p>
                 <div id="wrapper-features1">
                   <div className="icon-box wow fadeInLeft">
@@ -45,9 +44,10 @@ class Features extends Component {
                       <span>Compatibility</span>
                     </h4>
                     <p className="description">
-                      Add this easy-to-install product to any kind of smart home
-                      system you have. It could be integrated fast and smart.
-                      Now ready to interact with your modules and sensors.
+                      Whether your smart home solution uses Android or Linux,
+                      IoT analytical can be easily installed through the use of
+                      its restful API. Hence, it can be easily installed on
+                      almost every smart home out there.
                     </p>
                   </div>
 
@@ -62,8 +62,10 @@ class Features extends Component {
                       <span>Visualization</span>
                     </h4>
                     <p className="description">
-                      Get usage chart in various predefined time periods and
-                      compare with users' total mean in selected time range.
+                      All the collected data is served through mobile, web, and
+                      hub interface. The data is processed and can be accessed
+                      in a variety of ways. Comparison feature is also available
+                      to see the difference of usage in various time periods.
                     </p>
                   </div>
 
@@ -78,27 +80,10 @@ class Features extends Component {
                       <span>Recommendation</span>
                     </h4>
                     <p className="description">
-                      Based on user consumption patterns, the best usage plan
-                      will be recommended automatically. Artificial Inteligence
-                      makes prodigious discrimination in decisions.
-                    </p>
-                  </div>
-
-                  <div
-                    className="icon-box wow fadeInLeft"
-                    data-wow-delay="0.6s"
-                  >
-                    <div className="icon">
-                      <i className="fa fa-globe"></i>
-                    </div>
-                    <h4 className="title">
-                      <span>Eco-friendly</span>
-                    </h4>
-                    <p className="description">
-                      Less wasted energy on cooling and heating, smarter usage
-                      of lighting and appliances, and saving water in household
-                      usage will help make a big difference in improving the
-                      environment by applying smart decisions.
+                      IoT Analytical utilizes AI alongside big data to offer the
+                      most efficient usage behaviour. In time, the system also
+                      learns from its past and enhances its ability to offer
+                      better recommendations.
                     </p>
                   </div>
                 </div>
@@ -121,16 +106,13 @@ class Features extends Component {
                 />
               </div>
               <div className="col-lg-6 wow fadeInRight my-auto ">
-                <h4 className="testh">
-                  Access your custom dashboard on your smartphone anywhere,
-                  anytime!
-                </h4>
+                <h4 className="testh">User-friendly dashboard</h4>
                 <p className="testparag"></p>
-                <p className="testparag">
-                  No matter where you are, on the way to work or waiting for
-                  someone, you can control your home energy consumption and make
-                  a decision to optimize it. Just login to your account on your
-                  smartphone and the report is ready for you.
+                <p className="description">
+                  IoT analytical application is available on Android, iOS, and
+                  web. The household owner can access it from anywhere, whenever
+                  he or she wants. The dashboard is designed to be as simple as
+                  possible.
                 </p>
                 <p className="testparag"></p>
               </div>
@@ -146,15 +128,12 @@ class Features extends Component {
               </div>
 
               <div className="col-lg-6 wow fadeInLeft my-auto order-2 order-lg-1">
-                <h4 className="testh">
-                  A user-friendly dashboard is what we offer!
-                </h4>
+                <h4 className="testh">No hidden costs</h4>
                 <p className="testparag"></p>
-                <p className="testparag">
-                  There is no need to be a technician to analyze your home
-                  energy consumption. Just login to your dashboard, choose the
-                  items you want to check, select a date, and the report is
-                  visualized in the simplest way for you.
+                <p className="description">
+                  all features available in IoT analytical is available for
+                  one-time fee payment. No subscription required. No hidden
+                  cost, no bull*hit!
                 </p>
                 <p className="testparag"></p>
               </div>
