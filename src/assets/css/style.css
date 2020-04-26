@@ -292,14 +292,14 @@ h6 {
 
 @media (min-height: 700px) {
   #introw {
-    height: 750px;
+    height: 685px;
     padding: 200px 0 0 0;
+    margin-bottom: 25px;
   }
 
-  #introw #intro-img-1 {
-    height: 550px;
-    max-width: 900px;
-  }
+  /* #introw #intro-img-1 {
+  
+  } */
 
   #introw .intro-info {
     padding-top: 65px;
@@ -729,133 +729,45 @@ h6 {
   font-size: 24px;
 }
 
-/* Services Section
+/* Video Section
 --------------------------------*/
 
-#services {
-  padding: 60px 0 40px 0;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
-}
-
-#services .box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  margin: 0 10px 40px 10px;
-  background: #fff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-  transition: all 0.3s ease-in-out;
-}
-
-#services .box:hover {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-}
-
-#services .icon {
-  position: absolute;
-  left: -10px;
-  top: calc(50% - 32px);
-}
-
-#services .icon i {
-  font-size: 64px;
-  line-height: 1;
-  transition: 0.5s;
-}
-
-#services .title {
-  margin-left: 40px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-#services .title a {
-  color: #111;
-}
-
-#services .box:hover .title a {
-  color: #007bff;
-}
-
-#services .description {
-  font-size: 14px;
-  margin-left: 40px;
-  line-height: 24px;
-  margin-bottom: 0;
-}
-
-#why-us .section-header h3,
-#why-us .section-header p {
-  color: #fff;
-}
-
-#why-us .card {
-  background: #00458f;
-  border-color: #00458f;
-  border-radius: 10px;
-  margin: 0 15px;
-  padding: 15px 0;
+#video {
+  width:100%;
+  margin: 0;
+  padding:0;
   text-align: center;
-  color: #fff;
-  transition: 0.3s ease-in-out;
-  height: 100%;
 }
 
-#why-us .card:hover {
-  background: #003b7a;
-  border-color: #003b7a;
+#video-install {
+  background: url("../img/video-pic.jpg");
+  background-repeat:no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  background-attachment: fixed;
+  
 }
 
-#why-us .card i {
-  font-size: 48px;
-  padding-top: 15px;
-  color: #bfddfe;
+#video .video-pic {
+  position: relative;
+  height: 100vh;
+  z-index: 1;
 }
 
-#why-us .card h5 {
-  font-size: 22px;
-  font-weight: 600;
+#video .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-#why-us .card p {
-  font-size: 15px;
-  color: #d8eafe;
-}
-
-#why-us .card .readmore {
-  color: #fff;
-  font-weight: 600;
-  display: inline-block;
-  transition: 0.3s ease-in-out;
-  border-bottom: #00458f solid 2px;
-}
-
-#why-us .card .readmore:hover {
-  border-bottom: #fff solid 2px;
-}
-
-#why-us .counters {
-  padding-top: 40px;
-}
-
-#why-us .counters span {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 48px;
-  display: block;
-  color: #fff;
-}
-
-#why-us .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: #cce5ff;
-}
 
 /* Portfolio Section
 --------------------------------*/
@@ -1026,6 +938,10 @@ h6 {
 
 #faq .faq-header {
   margin-bottom: 40px;
+}
+
+#faq .btn-faq {
+  padding: 0 0 0 5px;
 }
 
 #faq .card-faq {
@@ -1476,4 +1392,5 @@ h6 {
   #intro-img-1 {
     padding-top: 45px;
   }
+  
 }

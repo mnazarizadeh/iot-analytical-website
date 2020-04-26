@@ -178,8 +178,6 @@ class Intro extends Component {
 
             <div className="intro-info">
               <h2>
-                IoT Analytical:
-                <br />
                 Analytics Solution for Smart Homes
               </h2>
               <div>

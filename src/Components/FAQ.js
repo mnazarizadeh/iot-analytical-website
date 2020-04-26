@@ -15,7 +15,7 @@ class FAQ extends Component {
                   <h5>Q.</h5>
                   <h2 className="mb-0">
                     <button
-                      className="btn btn-link"
+                      className="btn btn-link btn-faq"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseOne"
@@ -49,7 +49,7 @@ class FAQ extends Component {
                   <h5>Q.</h5>
                   <h2 className="mb-0">
                     <button
-                      className="btn btn-link collapsed"
+                      className="btn btn-link btn-faq collapsed"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseTwo"
@@ -79,7 +79,7 @@ class FAQ extends Component {
                   <h5>Q.</h5>
                   <h2 className="mb-0">
                     <button
-                      className="btn btn-link collapsed"
+                      className="btn btn-link btn-faq collapsed"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseThree"
@@ -109,7 +109,7 @@ class FAQ extends Component {
                   <h5>Q.</h5>
                   <h2 className="mb-0">
                     <button
-                      className="btn btn-link collapsed"
+                      className="btn btn-link btn-faq collapsed"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseFour"
@@ -140,7 +140,7 @@ class FAQ extends Component {
                   <h5>Q.</h5>
                   <h2 className="mb-0">
                     <button
-                      className="btn btn-link collapsed"
+                      className="btn btn-link btn-faq collapsed"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseFive"
@@ -171,7 +171,7 @@ class FAQ extends Component {
                   <h5>Q.</h5>
                   <h2 className="mb-0">
                     <button
-                      className="btn btn-link collapsed"
+                      className="btn btn-link btn-faq collapsed"
                       type="button"
                       data-toggle="collapse"
                       data-target="#collapseSix"

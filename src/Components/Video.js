@@ -1,19 +1,35 @@
 import React, { Component } from "react";
+import ModalVideo from "react-modal-video";
+import "../../node_modules/react-modal-video/scss/modal-video.scss";
 
 class Video extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isOpen: false,
+    };
+    this.openModal = this.openModal.bind(this);
+  }
+  openModal() {
+    this.setState({ isOpen: true });
+  }
+
   render() {
     return (
-      <div id="video">
-        <iframe
-          title="IoT Analytical - Introduction"
-          width="100%"
-          height="550"
-          src="https://www.youtube.com/embed/35kiDy5gnZs"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
+      <section id="video">
+        <div id="video-install" className="video-pic">
+          <ModalVideo
+            channel="youtube"
+            isOpen={this.state.isOpen}
+            videoId="35kiDy5gnZs"
+            rel="0"
+            onClose={() => this.setState({ isOpen: false })}
+          />
+          <button className="btn btn-lg btn-success" onClick={this.openModal}>
+            <i class="fa fa-play fa-2x"></i>
+          </button>
+        </div>
+      </section>
     );
   }
 }
