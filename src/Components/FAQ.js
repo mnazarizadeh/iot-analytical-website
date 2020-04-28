@@ -22,7 +22,7 @@ class FAQ extends Component {
                       aria-expanded="true"
                       aria-controls="collapseOne"
                     >
-                      How can IoT analytical be installed:
+                      How can IoT analytical be installed?
                     </button>
                   </h2>
                 </div>
@@ -56,7 +56,7 @@ class FAQ extends Component {
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      Can I customize IoT analytical for my customers:
+                      Can I customize IoT analytical for my customers?
                     </button>
                   </h2>
                 </div>
@@ -86,7 +86,7 @@ class FAQ extends Component {
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      What if my internet connection is lost:
+                      What if my internet connection is lost?
                     </button>
                   </h2>
                 </div>
@@ -116,7 +116,7 @@ class FAQ extends Component {
                       aria-expanded="false"
                       aria-controls="collapseFour"
                     >
-                      How does my privacy protect:
+                      How does my privacy protect?
                     </button>
                   </h2>
                 </div>
@@ -147,7 +147,7 @@ class FAQ extends Component {
                       aria-expanded="false"
                       aria-controls="collapseFive"
                     >
-                      Is IoT analytical GDPR or/and CCPA compatible:
+                      Is IoT analytical GDPR or/and CCPA compatible?
                     </button>
                   </h2>
                 </div>
@@ -178,7 +178,7 @@ class FAQ extends Component {
                       aria-expanded="false"
                       aria-controls="collapseSix"
                     >
-                      Do you have a warranty:
+                      Do you have a warranty?
                     </button>
                   </h2>
                 </div>

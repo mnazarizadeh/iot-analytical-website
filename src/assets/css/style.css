@@ -937,6 +937,10 @@ h6 {
   padding: 70px 0 50px 0;
 }
 
+#faq .card-header {
+  padding: 0.75rem;
+}
+
 #faq .faq-header {
   margin-bottom: 40px;
 }
@@ -951,7 +955,8 @@ h6 {
 }
 
 #faq .card-faq .card-header {
-  border-left: 5px solid #004A99;
+  border-left: 4px solid #004A99;
+  border-radius: 10%;
 }
 
 #faq .card-faq .card-header h5 {
