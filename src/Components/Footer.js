@@ -25,7 +25,7 @@ class Footer extends Component {
       modal: false,
       show: false,
       iUsername: "",
-      Mail: ""
+      Mail: "",
     };
   }
 
@@ -35,10 +35,7 @@ class Footer extends Component {
     }));
   };
   CheckSubmit = () => {
-    if (
-      this.state.iUsername !== "" &&
-      this.state.Mail !== ""
-    ) {
+    if (this.state.iUsername !== "" && this.state.Mail !== "") {
       this.setState((prevState) => ({
         show: !prevState.show,
       }));
@@ -50,7 +47,7 @@ class Footer extends Component {
       iUsername: newValues.Username,
     });
   };
-  
+
   onInputChangedMail = (e) => {
     const newValues = getValueFromEvent(e);
 
@@ -63,7 +60,7 @@ class Footer extends Component {
     const position = [this.state.lat, this.state.lng];
     return (
       <React.Fragment>
-      <SweetAlert
+        <SweetAlert
           icon="warning"
           show={this.state.show}
           title="Thank You"
@@ -84,7 +81,6 @@ class Footer extends Component {
             </ModalHeader>
             <ModalBody>
               <div>
-                
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
@@ -137,6 +133,19 @@ class Footer extends Component {
                     energy consumption and make a bright future <br />
                     for the next generations with us.
                   </p>
+                  <a
+                    href="https://www.producthunt.com/posts/iot-analytical?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-iot-analytical"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      className="mt-3"
+                      src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=194950&theme=light"
+                      alt="IoT Analytical - Analytics Solution for Smart Homes | Product Hunt Embed"
+                      width="250px"
+                      height="54px"
+                    />
+                  </a>
                 </div>
 
                 <div className="col-lg-3 col-md-6 footer-contact">
@@ -150,14 +159,14 @@ class Footer extends Component {
                     <br />
                     <strong>Email:</strong> info@iot-analytical.com
                     <br />
+                    <a
+                      href="#footer"
+                      className="press-kit"
+                      onClick={() => this.openModal()}
+                    >
+                      Get Press Kit
+                    </a>
                   </p>
-
-                  <button
-                  className="btn-pressKit"
-                  onClick={() => this.openModal()}
-                >
-                  Get Press Kit
-                </button>
 
                   <div className="social-links">
                     <a
@@ -204,7 +213,8 @@ class Footer extends Component {
 
           <div className="container">
             <div className="copyright">
-                &copy; {new Date().getFullYear()}{" "} <strong> IoT Analytical </strong>. All Rights Reserved.
+              &copy; {new Date().getFullYear()}{" "}
+              <strong> IoT Analytical </strong>. All Rights Reserved.
             </div>
           </div>
         </footer>
