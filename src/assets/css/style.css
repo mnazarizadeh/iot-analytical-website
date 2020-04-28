@@ -371,6 +371,7 @@ h6 {
 }
 
 #introw .intro-info .btn-services {
+  background: transparent;
   border: 2px solid #fff;
 }
 
@@ -750,7 +751,7 @@ h6 {
 
 #video .video-pic {
   position: relative;
-  height: 700px;
+  height: 650px;
   z-index: 1;
 }
 

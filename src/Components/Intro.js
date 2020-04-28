@@ -91,16 +91,22 @@ class Intro extends Component {
                 <table className="table table-image mb-4">
                   <thead>
                     <tr>
-                      <th scope="col" style={{color: "black"}}>Product</th>
-                      <th scope="col" style={{color: "black"}}>Price</th>
-                      <th scope="col" style={{color: "black"}}>Quantity</th>
+                      <th scope="col" style={{ color: "black" }}>
+                        Product
+                      </th>
+                      <th scope="col" style={{ color: "black" }}>
+                        Price
+                      </th>
+                      <th scope="col" style={{ color: "black" }}>
+                        Quantity
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td style={{color: "black"}}>IoT Analytical Device</td>
-                      <td style={{color: "black"}}>299$</td>
-                      <td style={{color: "black"}}>
+                      <td style={{ color: "black" }}>IoT Analytical Device</td>
+                      <td style={{ color: "black" }}>299$</td>
+                      <td style={{ color: "black" }}>
                         <input
                           type="number"
                           className="form-control text-center quantity"
@@ -177,9 +183,7 @@ class Intro extends Component {
             </div>
 
             <div className="intro-info">
-              <h2>
-                Analytics Solution for Smart Homes
-              </h2>
+              <h2>Analytics Solution for Smart Homes</h2>
               <div>
                 <button
                   className="btn-get-started animated infinite pulse"
@@ -187,9 +191,12 @@ class Intro extends Component {
                 >
                   Order Now!
                 </button>
-                <a href="#about" className="btn-services scrollto">
-                  Features
-                </a>
+                <button
+                  className="btn-services"
+                  onClick={() => this.props.history.push(`/Dashboard`)}
+                >
+                  Demo
+                </button>
               </div>
             </div>
           </div>

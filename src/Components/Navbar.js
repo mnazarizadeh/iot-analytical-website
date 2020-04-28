@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import { withRouter } from "react-router-dom";
-
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 class Navbar extends Component {
   
@@ -9,7 +9,7 @@ class Navbar extends Component {
       <React.Fragment>
         <nav className="navbar navbar-expand-lg custom-toggler fixed-top navbar-site">
           <div className="container">
-            <a className="navbar-brand" href="/">
+            <a className="navbar-brand" href="#introw">
               <img id="logo-img" src="./assets/img/logo.png" alt="logo" />
             </a>
             <button
@@ -30,34 +30,34 @@ class Navbar extends Component {
             >
               <ul id="navbar-items-custom" className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a id="homelink" className="nav-link" href="#introw">
+                  <AnchorLink id="homelink" className="nav-link" href="#introw">
                     Home
-                  </a>
+                  </AnchorLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#about">
+                  <AnchorLink className="nav-link" href="#about">
                     Features
-                  </a>
+                  </AnchorLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#video">
+                  <AnchorLink className="nav-link" offset='80' href="#video">
                     Video
-                  </a>
+                  </AnchorLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#faq">
+                  <AnchorLink className="nav-link" href="#faq">
                     FAQ
-                  </a>
+                  </AnchorLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#team">
+                  <AnchorLink className="nav-link" href="#team">
                     Team
-                  </a>
+                  </AnchorLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link mr-3" href="#contact">
+                  <AnchorLink className="nav-link mr-3" href="#contact">
                     Contact Us
-                  </a>
+                  </AnchorLink>
                 </li>
               </ul>
 
