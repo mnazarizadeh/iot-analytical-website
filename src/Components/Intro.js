@@ -86,7 +86,7 @@ class Intro extends Component {
             <ModalBody>
               <div>
                 <div className="product-pic-modal">
-                  <img src="./assets/img/product.jpg" alt="product-pic" />
+                  <img src="./assets/img/product.png" alt="product-pic" />
                 </div>
                 <table className="table table-image mb-4">
                   <thead>

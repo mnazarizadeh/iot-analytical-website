@@ -25,7 +25,7 @@ class Video extends Component {
             rel="0"
             onClose={() => this.setState({ isOpen: false })}
           />
-          <button className="btn btn-lg btn-success" onClick={this.openModal}>
+          <button className="btn btn-lg" onClick={this.openModal}>
             <i class="fa fa-play fa-2x"></i>
           </button>
         </div>

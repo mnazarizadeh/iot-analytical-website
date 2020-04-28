@@ -56,7 +56,9 @@ body {
   padding-right: 0 !important;
 }
 
+
 /* custom css */
+
 .testparag {
   color: #000;
 }
@@ -64,40 +66,33 @@ body {
   color: #000;
   padding-bottom: 1rem;
 }
-.iotModal {
-  color: #000 !important;
-}
-.iotModal .table {
-  color: #000 !important;
+
+
+/* ----- Modal ------ */
+
+.iotModal .modal-footer {
+  border-top: none;
+} 
+
+.iotModal .input-group {
+  margin-bottom: .375rem;
 }
 
-.iotModal h5 {
-  color: #000 !important;
+.iotModal .colori {
+  font-size: 16px;
+}
+
+.iotModal .inputbox {
+  font-size: 16px;
+}
+
+.iotModal .modal-header-custom {
+  background-color: #007bff !important;
   font-size: 18px !important;
 }
-.iotModal span {
-  color: #000 !important;
-}
-.modal-content .modal-header button {
-  margin-top: -17px !important;
-}
-.iotModal .colori {
-  color: #000 !important;
-  font-size: 16px !important;
-}
-.iotModal .inputbox {
-  border-color: #000 !important;
-  border-left: 1px solid #000 !important;
-  color: #000 !important;
-  font-size: 16px !important;
-}
-.iotModal .input-group-text {
-  color: #000 !important;
-  padding: 0.375rem 0.75rem !important;
-}
 
-.modal-header-custom {
-  background-color: #007bff !important;
+.iotModal .modal-header-custom h5 {
+  font-size: 18px !important;
 }
 
 .product-pic-modal {
@@ -114,6 +109,19 @@ body {
 .quantity {
   max-width: 3.75rem;
 }
+
+.iotModal .modal-content .modal-footer {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.iotModal .btn-custom-iot {
+  padding: 7px 20px !important;
+}
+
+
+/* ------- */
+
 
 a {
   color: #007bff;
@@ -268,14 +276,7 @@ h6 {
   text-decoration: none !important;
 }
 
-.iotModal .modal-content .modal-footer {
-  display: flex !important;
-  justify-content: center !important;
-}
 
-.iotModal .btn-custom-iot {
-  padding: 7px 20px !important;
-}
 
 /*--------------------------------------------------------------
 # Intro Section
@@ -621,8 +622,7 @@ h6 {
 --------------------------------*/
 
 #phonepng {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 270px;
 }
 
 #about {
@@ -750,7 +750,7 @@ h6 {
 
 #video .video-pic {
   position: relative;
-  height: 100vh;
+  height: 700px;
   z-index: 1;
 }
 
@@ -761,6 +761,7 @@ h6 {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   color: white;
+  background-color: #555;
   font-size: 20px;
   padding: 12px 24px;
   border: none;
@@ -1349,6 +1350,12 @@ h6 {
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
+  }
+  #video-install {
+   background-attachment: local;
+  }
+  #video .video-pic {
+    height: 300px;
   }
 }
 

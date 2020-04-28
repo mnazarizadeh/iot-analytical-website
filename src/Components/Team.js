@@ -15,7 +15,7 @@ class Team extends Component {
               <div className="col-lg-2 col-md-6 wow fadeInUp">
                 <div className="member">
                   <img
-                    src="assets/img/1.png"
+                    src="assets/img/1.jpg"
                     className="img-fluid"
                     alt=""
                   />
@@ -57,7 +57,7 @@ class Team extends Component {
               >
                 <div className="member">
                   <img
-                    src="assets/img/2.png"
+                    src="assets/img/2.jpg"
                     className="img-fluid"
                     alt=""
                   />
@@ -141,7 +141,7 @@ class Team extends Component {
               >
                 <div className="member">
                   <img
-                    src="assets/img/4.png"
+                    src="assets/img/4.jpg"
                     className="img-fluid"
                     alt=""
                   />
@@ -183,7 +183,7 @@ class Team extends Component {
               >
                 <div className="member">
                   <img
-                    src="assets/img/5.png"
+                    src="assets/img/5.jpg"
                     className="img-fluid"
                     alt=""
                   />
