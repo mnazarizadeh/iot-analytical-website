@@ -61,14 +61,6 @@ var routes = [
     icon: "fa fa-tachometer fa-4x",
     component: Diagnosis,
     layout: ""
-  },
-  {
-    path: "/Settings",
-    name: "Settings",
-    rtlName: "قائمة الجدول",
-    icon: "fa fa-cog fa-4x",
-    component: Dashboard,
-    layout: ""
   }
 ];
 export default routes;

@@ -4579,8 +4579,9 @@ input[type="button"].btn-block {
 
 .badge-primary {
   color: #ffffff;
-  background-color: #e14eca;
+ 
 }
+
 .badge-primary[href]:hover,
 .badge-primary[href]:focus {
   color: #ffffff;
@@ -9065,14 +9066,6 @@ button.bg-darker:focus {
   color: #ffffff !important;
 }
 
-.text-primary {
-  color: #0000ff !important;
-}
-
-a.text-primary:hover,
-a.text-primary:focus {
-  color: #0000ff !important;
-}
 
 .text-secondary {
   color: #f4f5f7 !important;
@@ -9101,22 +9094,10 @@ a.text-info:focus {
   color: #0772db !important;
 }
 
-.text-warning {
-  color: #ff8d72 !important;
-}
 
 a.text-warning:hover,
 a.text-warning:focus {
   color: #ff643f !important;
-}
-
-.text-danger {
-  color: #fd5d93 !important;
-}
-
-a.text-danger:hover,
-a.text-danger:focus {
-  color: #fc2b71 !important;
 }
 
 .text-light {

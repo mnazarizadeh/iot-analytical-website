@@ -33,9 +33,8 @@ import {
   CardTitle,
   Table,
   Row,
-  Col
+  Col,
 } from "reactstrap";
-
 
 var ps;
 
@@ -46,7 +45,7 @@ class Diagnosis extends React.Component {
       bigChartData: "data1",
       backgroundColor: "blue",
       sidebarOpened:
-        document.documentElement.className.indexOf("nav-open") !== -1
+        document.documentElement.className.indexOf("nav-open") !== -1,
     };
   }
 
@@ -82,13 +81,13 @@ class Diagnosis extends React.Component {
     }
   }
 
-  setBgChartData = name => {
+  setBgChartData = (name) => {
     this.setState({
-      bigChartData: name
+      bigChartData: name,
     });
   };
 
-  getRoutes = routes => {
+  getRoutes = (routes) => {
     return routes.map((prop, key) => {
       if (prop.layout === "/admin") {
         return (
@@ -103,7 +102,7 @@ class Diagnosis extends React.Component {
       }
     });
   };
-  getBrandText = path => {
+  getBrandText = (path) => {
     for (let i = 0; i < routes.length; i++) {
       if (
         this.props.location.pathname.indexOf(
@@ -122,7 +121,6 @@ class Diagnosis extends React.Component {
 
   render() {
     return (
-
       <div className="wrapper">
         <Sidebar
           {...this.props}
@@ -134,7 +132,7 @@ class Diagnosis extends React.Component {
                 src={require("./../assets/img/ia_text_dark.png")}
                 alt="logo"
               />
-            )
+            ),
           }}
           toggleSidebar={this.toggleSidebar}
         />
@@ -154,12 +152,15 @@ class Diagnosis extends React.Component {
               <Col lg="12" md="12">
                 <Card>
                   <CardHeader>
-                    <CardTitle tag="h3"><b>Logs</b></CardTitle>
+                    <CardTitle tag="h3">
+                      <b>Logs</b>
+                    </CardTitle>
                   </CardHeader>
                   <CardBody>
                     <Table className="tablesorter" responsive>
                       <thead className="text-white">
                         <tr>
+                          <th>Date & Time</th>
                           <th>Node</th>
                           <th className="text-center">Message Types</th>
                           <th className="text-center">Description</th>
@@ -168,62 +169,132 @@ class Diagnosis extends React.Component {
                       </thead>
                       <tbody className="text-white">
                         <tr>
+                          <td>Jan 21 12:30</td>
                           <td>Lighting</td>
-                          <td className="text-center"><h3><span class="badge badge-pill badge-danger">Error</span></h3></td>
+                          <td className="text-center">
+                            <h3>
+                              <span class="badge badge-pill badge-danger">
+                                Error
+                              </span>
+                            </h3>
+                          </td>
                           <td className="text-center">Crash</td>
                           <td className="text-center">Dining room</td>
                         </tr>
                         <tr>
+                          <td>Jan 27 10:20</td>
                           <td>Wall Mount Lighting</td>
-                          <td className="text-center"><h3><span class="badge badge-pill badge-warning">Warning</span></h3></td>
+                          <td className="text-center">
+                            <h3>
+                              <span class="badge badge-pill badge-warning">
+                                Warning
+                              </span>
+                            </h3>
+                          </td>
                           <td className="text-center">Warn</td>
                           <td className="text-center">Hall</td>
                         </tr>
                         <tr>
+                          <td>Feb 5 6:09</td>
                           <td>AC</td>
-                          <td className="text-center"><h3><span class="badge badge-pill badge-info">Info</span></h3></td>
+                          <td className="text-center">
+                            <h3>
+                              <span class="badge badge-pill badge-info">
+                                Info
+                              </span>
+                            </h3>
+                          </td>
                           <td className="text-center">Replacement needed</td>
                           <td className="text-center">TV Room</td>
                         </tr>
                         <tr>
+                          <td>Mar 12 23:10</td>
                           <td>Smart Plug</td>
-                          <td className="text-center"><h3><span class="badge badge-pill badge-danger">Error</span></h3></td>
+                          <td className="text-center">
+                            <h3>
+                              <span class="badge badge-pill badge-danger">
+                                Error
+                              </span>
+                            </h3>
+                          </td>
                           <td className="text-center">Disconnect</td>
                           <td className="text-center">Libary</td>
                         </tr>
                         <tr>
+                          <td>Apr 4 14:53</td>
                           <td>Curtain</td>
-                          <td className="text-center"><h3><span class="badge badge-pill badge-info">Info</span></h3></td>
+                          <td className="text-center">
+                            <h3>
+                              <span class="badge badge-pill badge-info">
+                                Info
+                              </span>
+                            </h3>
+                          </td>
                           <td className="text-center">Connect</td>
                           <td className="text-center">Libary</td>
                         </tr>
                         <tr>
+                          <td>Jun 17 17:36</td>
                           <td>Garden</td>
-                          <td className="text-center"><h3><span class="badge badge-pill badge-danger">Error</span></h3></td>
+                          <td className="text-center">
+                            <h3>
+                              <span class="badge badge-pill badge-danger">
+                                Error
+                              </span>
+                            </h3>
+                          </td>
                           <td className="text-center">Crash</td>
                           <td className="text-center">Yard</td>
                         </tr>
                         <tr>
+                          <td>Aug 1 19:46</td>
                           <td>Kitchen</td>
-                          <td className="text-center"><h3><span class="badge badge-pill badge-warning">Warning</span></h3></td>
+                          <td className="text-center">
+                            <h3>
+                              <span class="badge badge-pill badge-warning">
+                                Warning
+                              </span>
+                            </h3>
+                          </td>
                           <td className="text-center">Warn</td>
                           <td className="text-center">Kitchen</td>
                         </tr>
                         <tr>
+                          <td>Sep 18 17:13</td>
                           <td>Bath</td>
-                          <td className="text-center"><h3><span class="badge badge-pill badge-info">Info</span></h3></td>
+                          <td className="text-center">
+                            <h3>
+                              <span class="badge badge-pill badge-info">
+                                Info
+                              </span>
+                            </h3>
+                          </td>
                           <td className="text-center">Replacement needed</td>
                           <td className="text-center">Bath Room</td>
                         </tr>
                         <tr>
+                          <td>Oct 8 2:18</td>
                           <td>Pool</td>
-                          <td className="text-center"><h3><span class="badge badge-pill badge-danger">Error</span></h3></td>
+                          <td className="text-center">
+                            <h3>
+                              <span class="badge badge-pill badge-danger">
+                                Error
+                              </span>
+                            </h3>
+                          </td>
                           <td className="text-center">Disconnect</td>
                           <td className="text-center">Yard</td>
                         </tr>
                         <tr>
+                          <td>Nov 24 16:03</td>
                           <td>Shower tap</td>
-                          <td className="text-center"><h3><span class="badge badge-pill badge-info">Info</span></h3></td>
+                          <td className="text-center">
+                            <h3>
+                              <span class="badge badge-pill badge-info">
+                                Info
+                              </span>
+                            </h3>
+                          </td>
                           <td className="text-center">Connect</td>
                           <td className="text-center">Bath Room</td>
                         </tr>
@@ -235,10 +306,12 @@ class Diagnosis extends React.Component {
             </Row>
           </div>
           <Switch>{this.getRoutes(routes)}</Switch>
-          {// we don't want the Footer to be rendered on map page
+          {
+            // we don't want the Footer to be rendered on map page
             this.props.location.pathname.indexOf("maps") !== -1 ? null : (
               <Footer fluid />
-            )}
+            )
+          }
         </div>
       </div>
     );

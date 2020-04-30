@@ -162,7 +162,7 @@ class AdminNavbar extends React.Component {
                     <div className="photo">
                       <img
                         alt="..."
-                        src={require("./../../assets/img/ali.jpg")}
+                        src={require("./../../assets/img/anime3.png")}
                       />
                     </div>
                     <b className="caret d-none d-lg-block d-xl-block" />
