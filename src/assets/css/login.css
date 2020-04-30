@@ -1,6 +1,5 @@
 .login {
   margin-top: 150px;
-  
 }
 
 .form-signin2 {
@@ -31,8 +30,17 @@
 
 
 .bottom-input {
-  margin-bottom: 20px;
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
 }
 
+#password-validation {
+  margin-bottom: 20px;
+}
+
+#password-validation, #user-validation {
+  color: red;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
+}

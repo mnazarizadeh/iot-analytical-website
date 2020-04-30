@@ -1,30 +1,45 @@
 import React, { Component } from "react";
 import "./../assets/css/login.css";
-import SweetAlert from "sweetalert2-react";
 import { getValueFromEvent } from "../util/clientUtils";
-
 
 
 class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false,  
       iUsername: "",
       Password: "",
     };
   }
 
   CheckLogin = () => {
+    if (this.state.iUsername === "") {
+      document.getElementById("user-validation").textContent =
+        "Please enter your username!";
+    } else {
+      document.getElementById("user-validation").textContent = "";
+    }
+    if (this.state.Password === "") {
+      document.getElementById("password-validation").textContent =
+        "Please enter your password!";
+    } else {
+      document.getElementById("password-validation").textContent = "";
+    }
     if (
       this.state.iUsername.toLowerCase() === "guest" &&
       this.state.Password === "guest"
     ) {
       this.props.history.push(`/Dashboard`);
-    } else {
-      this.setState((prevState) => ({
-        show: !prevState.show,
-      }));
+    }
+    if (this.state.iUsername !== "" && this.state.Password !== "") {
+      document.getElementById(
+        "error"
+      ).innerHTML = `<div class="alert alert-warning alert-dismissible fade show" role="alert">
+       Your username or password is incorrect, please try again.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>`;
     }
   };
 
@@ -43,24 +58,29 @@ class Login extends Component {
     });
   };
 
-  
   render() {
     let date = new Date();
     let year = date.getFullYear();
-  
+    document.addEventListener('keydown', event => {
+      if (event.key === "Enter") {
+        document.getElementsByClassName("btn")[0].click();
+      }
+    });
+
     return (
       <React.Fragment>
-        <SweetAlert
-          icon="warning"
-          show={this.state.show}
-          title="Log in Failed"
-          text="Your username or password is incorrect, Please Try Again!"
-          onConfirm={() => this.setState({ show: false })}
-        />
-
         <div className="text-center login">
           <div className="form-signin2">
-          <img id="logo-img" className="mb-4" src="./assets/img/logo.png" alt="logo" />
+            <a href="/">
+              <img
+                id="logo-img"
+                className="mb-4"
+                src="./assets/img/logo.png"
+                alt="logo"
+              />
+            </a>
+
+            <div id="error"></div>
 
             <input
               type="text"
@@ -69,8 +89,9 @@ class Login extends Component {
               placeholder="Username"
               onChange={(e) => this.onInputChangedUsername(e)}
               required
-              autofocus
+              autoFocus
             />
+            <div id="user-validation"></div>
 
             <input
               name="Password"
@@ -80,14 +101,18 @@ class Login extends Component {
               className="form-control bottom-input"
               required
             />
+            <div id="password-validation"></div>
 
             <button
               className="btn btn-lg btn-primary btn-block"
+              type="submit"
               onClick={() => this.CheckLogin()}
             >
               Log in
             </button>
-            <p className="mt-5 mb-3 text-muted">&copy; {year} IoT Analytical </p>
+            <p className="mt-5 mb-3 text-muted">
+              &copy; {year} IoT Analytical{" "}
+            </p>
           </div>
         </div>
       </React.Fragment>
