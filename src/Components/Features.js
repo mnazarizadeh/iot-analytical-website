@@ -122,7 +122,7 @@ class Features extends Component {
             <div className="row about-extra">
               <div className="col-lg-6 wow fadeInRight order-1 order-lg-2 pb-5">
                 <img
-                  src="assets/img/about-extra-2.svg"
+                  src="assets/img/feature3.png"
                   className="img-fluid"
                   alt="about"
                 />

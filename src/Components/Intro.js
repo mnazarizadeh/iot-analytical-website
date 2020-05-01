@@ -14,6 +14,8 @@ import {
 import SweetAlert from "sweetalert2-react";
 import { getValueFromEvent } from "../util/clientUtils";
 
+
+
 class Intro extends Component {
   constructor(props) {
     super(props);
@@ -25,11 +27,13 @@ class Intro extends Component {
       Mail: "",
     };
   }
+
   openModal = () => {
     this.setState((prevState) => ({
       modal: !prevState.modal,
     }));
   };
+
   CheckCart = () => {
     if (
       this.state.iUsername !== "" &&
@@ -41,6 +45,7 @@ class Intro extends Component {
       }));
     }
   };
+
   onInputChangedUsername = (e) => {
     const newValues = getValueFromEvent(e);
     this.setState({
@@ -61,7 +66,9 @@ class Intro extends Component {
       Mail: newValues.Mail,
     });
   };
+
   render() {
+    
     return (
       <React.Fragment>
         <SweetAlert
@@ -104,10 +111,11 @@ class Intro extends Component {
                   </thead>
                   <tbody>
                     <tr>
-                      <td style={{ color: "black" }}>IoT Analytical Device</td>
+                      <td style={{ color: "black" }}>IoT Analytical Unit</td>
                       <td style={{ color: "black" }}>299$</td>
                       <td style={{ color: "black" }}>
                         <input
+                          id="quantity"
                           type="number"
                           className="form-control text-center quantity"
                           defaultValue="1"
@@ -120,7 +128,7 @@ class Intro extends Component {
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
-                      <i className="fa fa-user colori"></i>
+                      <i className="fa fa-user"></i>
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
@@ -134,7 +142,7 @@ class Intro extends Component {
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText color="secondary">
-                      <i className="fa fa-phone colori"></i>
+                      <i className="fa fa-phone"></i>
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input

@@ -26,6 +26,7 @@ class Footer extends Component {
       show: false,
       iUsername: "",
       Mail: "",
+      Org: ""
     };
   }
 
@@ -35,7 +36,7 @@ class Footer extends Component {
     }));
   };
   CheckSubmit = () => {
-    if (this.state.iUsername !== "" && this.state.Mail !== "") {
+    if (this.state.iUsername !== "" && this.state.Mail !== "" && this.state.Org !== "") {
       this.setState((prevState) => ({
         show: !prevState.show,
       }));
@@ -56,6 +57,14 @@ class Footer extends Component {
     });
   };
 
+  onInputChangedOrg = (e) => {
+    const newValues = getValueFromEvent(e);
+
+    this.setState({
+      Org: newValues.Org,
+    });
+  };
+
   render() {
     const position = [this.state.lat, this.state.lng];
     return (
@@ -67,61 +76,78 @@ class Footer extends Component {
           text="Your Press Kit will be emailed to you soon!"
           onConfirm={() => this.setState({ show: false })}
         />
-        <div>
-          <Modal
-            isOpen={this.state.modal}
-            toggle={() => this.openModal()}
-            className="iotModal"
-          >
-            <ModalHeader
-              className="modal-header-custom"
-              toggle={() => this.openModal()}
-            >
-              Get Press Kit
-            </ModalHeader>
-            <ModalBody>
-              <div>
-                <InputGroup>
-                  <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
-                      <i className="fa fa-user colori"></i>
-                    </InputGroupText>
-                  </InputGroupAddon>
-                  <Input
-                    className="inputbox"
-                    name="Username"
-                    placeholder="Fullname"
-                    onChange={(e) => this.onInputChangedUsername(e)}
-                  />
-                </InputGroup>
-
-                <InputGroup>
-                  <InputGroupAddon addonType="prepend">
-                    <InputGroupText color="secondary">
-                      <i className="fa fa-envelope colori"></i>
-                    </InputGroupText>
-                  </InputGroupAddon>
-                  <Input
-                    className="inputbox"
-                    name="email"
-                    placeholder="E-mail"
-                    type="email"
-                    onChange={(e) => this.onInputChangedMail(e)}
-                  />
-                </InputGroup>
-              </div>
-            </ModalBody>
-            <ModalFooter>
-              <Button
-                className="btn-custom-iot"
-                onClick={() => this.CheckSubmit()}
-              >
-                Submit
-              </Button>{" "}
-            </ModalFooter>
-          </Modal>
-        </div>
         <footer id="footer">
+          <div>
+            <Modal
+              id="modal-dialog"
+              isOpen={this.state.modal}
+              toggle={() => this.openModal()}
+              className="iotModal"
+            >
+              <ModalHeader
+                className="modal-header-custom"
+                toggle={() => this.openModal()}
+              >
+                Get Press Kit
+              </ModalHeader>
+              <ModalBody>
+                <div>
+                  <InputGroup>
+                    <InputGroupAddon addonType="prepend">
+                      <InputGroupText>
+                        <i className="fa fa-user sizeu"></i>
+                      </InputGroupText>
+                    </InputGroupAddon>
+                    <Input
+                      className="inputbox"
+                      name="Username"
+                      placeholder="Fullname"
+                      onChange={(e) => this.onInputChangedUsername(e)}
+                    />
+                  </InputGroup>
+
+                  <InputGroup>
+                    <InputGroupAddon addonType="prepend">
+                      <InputGroupText color="secondary">
+                        <i className="fa fa-envelope colori"></i>
+                      </InputGroupText>
+                    </InputGroupAddon>
+                    <Input
+                      className="inputbox"
+                      name="email"
+                      placeholder="E-mail"
+                      type="email"
+                      onChange={(e) => this.onInputChangedMail(e)}
+                    />
+                  </InputGroup>
+
+                  <InputGroup>
+                    <InputGroupAddon addonType="prepend">
+                      <InputGroupText color="secondary">
+                        <i className="fa fa-building"></i>
+                      </InputGroupText>
+                    </InputGroupAddon>
+                    <Input
+                      className="inputbox"
+                      name="org"
+                      placeholder="Organization"
+                      type="text"
+                      onChange={(e) => this.onInputChangedOrg(e)}
+                    />
+                  </InputGroup>
+                </div>
+              </ModalBody>
+              <ModalFooter>
+                <Button
+                  className="btn-custom-iot"
+                  onClick={() => this.CheckSubmit()}
+                >
+                  Submit
+                </Button>{" "}
+              </ModalFooter>
+            </Modal>
+          </div>
+
           <div className="footer-top">
             <div className="container">
               <div className="row">
