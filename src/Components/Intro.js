@@ -11,10 +11,8 @@ import {
   InputGroupText,
   Input,
 } from "reactstrap";
-import SweetAlert from "sweetalert2-react";
+import SweetAlert from "react-bootstrap-sweetalert";
 import { getValueFromEvent } from "../util/clientUtils";
-
-
 
 class Intro extends Component {
   constructor(props) {
@@ -68,16 +66,16 @@ class Intro extends Component {
   };
 
   render() {
-    
     return (
       <React.Fragment>
         <SweetAlert
-          icon="warning"
+          success
           show={this.state.show}
-          title="Congratulations"
-          text="Your Order has been submitted, We will contact you soon!"
+          title="Congratulations!"
           onConfirm={() => this.setState({ show: false })}
-        />
+        >
+          Your order has been submitted, We will contact you soon.
+        </SweetAlert>
         <div>
           <Modal
             isOpen={this.state.modal}

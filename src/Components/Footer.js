@@ -12,7 +12,7 @@ import {
   InputGroupText,
   Input,
 } from "reactstrap";
-import SweetAlert from "sweetalert2-react";
+import SweetAlert from 'react-bootstrap-sweetalert';
 import { getValueFromEvent } from "../util/clientUtils";
 
 class Footer extends Component {
@@ -70,12 +70,14 @@ class Footer extends Component {
     return (
       <React.Fragment>
         <SweetAlert
-          icon="warning"
+          success
           show={this.state.show}
-          title="Thank You"
-          text="Your Press Kit will be emailed to you soon!"
+          title="Thank You!"
           onConfirm={() => this.setState({ show: false })}
-        />
+        >
+          Your Press Kit will be emailed to you soon.
+        </SweetAlert>
+        
         <footer id="footer">
           <div>
             <Modal

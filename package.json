@@ -21,6 +21,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-bootstrap-sweetalert": "^5.1.9",
     "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.12.0",
     "react-google-maps": "^9.4.5",
@@ -35,7 +36,6 @@
     "reactstrap": "^8.4.1",
     "shards-react": "^1.0.3",
     "styled-components": "^5.0.1",
-    "sweetalert2-react": "^0.8.3",
     "video-react": "^0.14.1",
     "wow.js": "^1.2.2",
     "wowjs": "^1.1.3"

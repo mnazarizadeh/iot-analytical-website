@@ -169,7 +169,7 @@ class Diagnosis extends React.Component {
                       </thead>
                       <tbody className="text-white">
                         <tr>
-                          <td>Jan 21 12:30</td>
+                          <td>21 Jan 12:30</td>
                           <td>Lighting</td>
                           <td className="text-center">
                             <h3>
@@ -182,7 +182,7 @@ class Diagnosis extends React.Component {
                           <td className="text-center">Dining room</td>
                         </tr>
                         <tr>
-                          <td>Jan 27 10:20</td>
+                          <td>27 Jan 10:20</td>
                           <td>Wall Mount Lighting</td>
                           <td className="text-center">
                             <h3>
@@ -195,7 +195,7 @@ class Diagnosis extends React.Component {
                           <td className="text-center">Hall</td>
                         </tr>
                         <tr>
-                          <td>Feb 5 6:09</td>
+                          <td>5 Feb 6:09</td>
                           <td>AC</td>
                           <td className="text-center">
                             <h3>
@@ -208,7 +208,7 @@ class Diagnosis extends React.Component {
                           <td className="text-center">TV Room</td>
                         </tr>
                         <tr>
-                          <td>Mar 12 23:10</td>
+                          <td>12 Mar 23:10</td>
                           <td>Smart Plug</td>
                           <td className="text-center">
                             <h3>
@@ -221,7 +221,7 @@ class Diagnosis extends React.Component {
                           <td className="text-center">Libary</td>
                         </tr>
                         <tr>
-                          <td>Apr 4 14:53</td>
+                          <td>4 Apr 14:53</td>
                           <td>Curtain</td>
                           <td className="text-center">
                             <h3>
@@ -234,7 +234,7 @@ class Diagnosis extends React.Component {
                           <td className="text-center">Libary</td>
                         </tr>
                         <tr>
-                          <td>Jun 17 17:36</td>
+                          <td>17 Jun 17:36</td>
                           <td>Garden</td>
                           <td className="text-center">
                             <h3>
@@ -247,7 +247,7 @@ class Diagnosis extends React.Component {
                           <td className="text-center">Yard</td>
                         </tr>
                         <tr>
-                          <td>Aug 1 19:46</td>
+                          <td>1 Aug 19:46</td>
                           <td>Kitchen</td>
                           <td className="text-center">
                             <h3>
@@ -260,7 +260,7 @@ class Diagnosis extends React.Component {
                           <td className="text-center">Kitchen</td>
                         </tr>
                         <tr>
-                          <td>Sep 18 17:13</td>
+                          <td>18 Sep 17:13</td>
                           <td>Bath</td>
                           <td className="text-center">
                             <h3>
@@ -273,7 +273,7 @@ class Diagnosis extends React.Component {
                           <td className="text-center">Bath Room</td>
                         </tr>
                         <tr>
-                          <td>Oct 8 2:18</td>
+                          <td>8 Oct 2:18</td>
                           <td>Pool</td>
                           <td className="text-center">
                             <h3>
@@ -286,7 +286,7 @@ class Diagnosis extends React.Component {
                           <td className="text-center">Yard</td>
                         </tr>
                         <tr>
-                          <td>Nov 24 16:03</td>
+                          <td>24 Nov 16:03</td>
                           <td>Shower tap</td>
                           <td className="text-center">
                             <h3>
