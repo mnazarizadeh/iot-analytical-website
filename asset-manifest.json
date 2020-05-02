@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd85041c.chunk.css",
-    "main.js": "/static/js/main.f6e04f53.chunk.js",
-    "main.js.map": "/static/js/main.f6e04f53.chunk.js.map",
+    "main.css": "/static/css/main.d7634409.chunk.css",
+    "main.js": "/static/js/main.010f17ab.chunk.js",
+    "main.js.map": "/static/js/main.010f17ab.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f69f45de.js",
     "runtime-main.js.map": "/static/js/runtime-main.f69f45de.js.map",
     "static/css/2.9642bede.chunk.css": "/static/css/2.9642bede.chunk.css",
-    "static/js/2.67a191db.chunk.js": "/static/js/2.67a191db.chunk.js",
-    "static/js/2.67a191db.chunk.js.map": "/static/js/2.67a191db.chunk.js.map",
+    "static/js/2.8ea016e0.chunk.js": "/static/js/2.8ea016e0.chunk.js",
+    "static/js/2.8ea016e0.chunk.js.map": "/static/js/2.8ea016e0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5ebfe36f9e2be963854b10b1b6453ebe.js": "/precache-manifest.5ebfe36f9e2be963854b10b1b6453ebe.js",
+    "precache-manifest.e4cc6c2c2a55972dbf525a0e2093399d.js": "/precache-manifest.e4cc6c2c2a55972dbf525a0e2093399d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.9642bede.chunk.css.map": "/static/css/2.9642bede.chunk.css.map",
-    "static/css/main.cd85041c.chunk.css.map": "/static/css/main.cd85041c.chunk.css.map",
-    "static/js/2.67a191db.chunk.js.LICENSE.txt": "/static/js/2.67a191db.chunk.js.LICENSE.txt",
-    "static/js/main.f6e04f53.chunk.js.LICENSE.txt": "/static/js/main.f6e04f53.chunk.js.LICENSE.txt",
+    "static/css/main.d7634409.chunk.css.map": "/static/css/main.d7634409.chunk.css.map",
+    "static/js/2.8ea016e0.chunk.js.LICENSE.txt": "/static/js/2.8ea016e0.chunk.js.LICENSE.txt",
+    "static/js/main.010f17ab.chunk.js.LICENSE.txt": "/static/js/main.010f17ab.chunk.js.LICENSE.txt",
     "static/media/anime3.png": "/static/media/anime3.bd6820f1.png",
     "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff",
     "static/media/style.css": "/static/media/video-pic.7f5a976e.jpg",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.f69f45de.js",
     "static/css/2.9642bede.chunk.css",
-    "static/js/2.67a191db.chunk.js",
-    "static/css/main.cd85041c.chunk.css",
-    "static/js/main.f6e04f53.chunk.js"
+    "static/js/2.8ea016e0.chunk.js",
+    "static/css/main.d7634409.chunk.css",
+    "static/js/main.010f17ab.chunk.js"
   ]
 }
