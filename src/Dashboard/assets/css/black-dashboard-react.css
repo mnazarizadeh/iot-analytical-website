@@ -164,7 +164,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -479,7 +479,7 @@ h6,
 .h5,
 .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  /*font-family: inherit;*/
   font-weight: 400;
   line-height: 1.2;
   color: #32325d;
@@ -2319,7 +2319,7 @@ textarea.form-control {
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  padding: 11px 40px;
+  /*padding: 11px 40px;*/
   font-size: 0.875rem;
   line-height: 1.35em;
   border-radius: 0.25rem;
@@ -4914,7 +4914,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5028,7 +5028,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11521,7 +11521,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 

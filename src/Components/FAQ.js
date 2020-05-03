@@ -11,21 +11,21 @@ class FAQ extends Component {
             </div>
             <div className="accordion" id="accordionExample">
               <div className="card-faq">
-                <div className="card-header" id="headingOne">
-                  <h5>Q.</h5>
-                  <h2 className="mb-0">
-                    <button
-                      className="btn btn-link btn-faq"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      How can IoT analytical be installed?
-                    </button>
-                  </h2>
-                </div>
+                <button
+                    className="btn btn-link btn-faq"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                >
+                  <div className="card-header" id="headingOne">
+                    <h5>Q.</h5>
+                    <h2 className="mb-0 faq-question">
+                        How can IoT analytical be installed?
+                    </h2>
+                  </div>
+                </button>
 
                 <div
                   id="collapseOne"
@@ -45,21 +45,22 @@ class FAQ extends Component {
                 </div>
               </div>
               <div className="card-faq">
-                <div className="card-header" id="headingTwo">
-                  <h5>Q.</h5>
-                  <h2 className="mb-0">
-                    <button
-                      className="btn btn-link btn-faq collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
+                <button
+                    className="btn btn-link btn-faq collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                >
+                  <div className="card-header" id="headingTwo">
+                    <h5>Q.</h5>
+                    <h2 className="mb-0 faq-question">
                       Can I customize IoT analytical for my customers?
-                    </button>
-                  </h2>
-                </div>
+                    </h2>
+                  </div>
+                </button>
+
                 <div
                   id="collapseTwo"
                   className="collapse"
@@ -75,21 +76,21 @@ class FAQ extends Component {
                 </div>
               </div>
               <div className="card-faq">
-                <div className="card-header" id="headingThree">
-                  <h5>Q.</h5>
-                  <h2 className="mb-0">
-                    <button
-                      className="btn btn-link btn-faq collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
+                <button
+                    className="btn btn-link btn-faq collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                >
+                  <div className="card-header" id="headingThree">
+                    <h5>Q.</h5>
+                    <h2 className="mb-0 faq-question">
                       What if my internet connection is lost?
-                    </button>
-                  </h2>
-                </div>
+                    </h2>
+                  </div>
+                </button>
                 <div
                   id="collapseThree"
                   className="collapse"
@@ -105,21 +106,21 @@ class FAQ extends Component {
                 </div>
               </div>
               <div className="card-faq">
-                <div className="card-header" id="headingFour">
-                  <h5>Q.</h5>
-                  <h2 className="mb-0">
-                    <button
-                      className="btn btn-link btn-faq collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
+                <button
+                    className="btn btn-link btn-faq collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                >
+                  <div className="card-header" id="headingFour">
+                    <h5>Q.</h5>
+                    <h2 className="mb-0 faq-question">
                       How does my privacy protect?
-                    </button>
-                  </h2>
-                </div>
+                    </h2>
+                  </div>
+                </button>
                 <div
                   id="collapseFour"
                   className="collapse"
@@ -136,21 +137,21 @@ class FAQ extends Component {
                 </div>
               </div>
               <div className="card-faq">
-                <div className="card-header" id="headingFive">
-                  <h5>Q.</h5>
-                  <h2 className="mb-0">
-                    <button
-                      className="btn btn-link btn-faq collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                    >
+                <button
+                    className="btn btn-link btn-faq collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                >
+                  <div className="card-header" id="headingFive">
+                    <h5>Q.</h5>
+                    <h2 className="mb-0 faq-question">
                       Is IoT analytical GDPR or/and CCPA compatible?
-                    </button>
-                  </h2>
-                </div>
+                    </h2>
+                  </div>
+                </button>
                 <div
                   id="collapseFive"
                   className="collapse"
@@ -167,21 +168,21 @@ class FAQ extends Component {
                 </div>
               </div>
               <div className="card-faq">
-                <div className="card-header" id="headingSix">
-                  <h5>Q.</h5>
-                  <h2 className="mb-0">
-                    <button
-                      className="btn btn-link btn-faq collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseSix"
-                      aria-expanded="false"
-                      aria-controls="collapseSix"
-                    >
+                <button
+                    className="btn btn-link btn-faq collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                >
+                  <div className="card-header" id="headingSix">
+                    <h5>Q.</h5>
+                    <h2 className="mb-0 faq-question">
                       Do you have a warranty?
-                    </button>
-                  </h2>
-                </div>
+                    </h2>
+                  </div>
+                </button>
                 <div
                   id="collapseSix"
                   className="collapse"
