@@ -12,7 +12,7 @@ class FAQ extends Component {
             <div className="accordion" id="accordionExample">
               <div className="card-faq">
                 <button
-                    className="btn btn-link btn-faq"
+                    className="btn btn-link btn-faq collapsed"
                     type="button"
                     data-toggle="collapse"
                     data-target="#collapseOne"
@@ -29,7 +29,7 @@ class FAQ extends Component {
 
                 <div
                   id="collapseOne"
-                  className="collapse show"
+                  className="collapse"
                   aria-labelledby="headingOne"
                   data-parent="#accordionExample"
                 >
@@ -87,7 +87,7 @@ class FAQ extends Component {
                   <div className="card-header" id="headingThree">
                     <h5>Q.</h5>
                     <h2 className="mb-0 faq-question">
-                      What if my internet connection is lost?
+                      What if my internet connection has been lost?
                     </h2>
                   </div>
                 </button>

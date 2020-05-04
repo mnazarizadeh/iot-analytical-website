@@ -188,7 +188,7 @@ class Footer extends Component {
                     <strong>Email:</strong> info@iot-analytical.com
                     <br />
                     <a
-                      href="#footer"
+                      href="#GetPressKit"
                       className="press-kit"
                       onClick={() => this.openModal()}
                     >
