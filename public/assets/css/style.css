@@ -6,7 +6,7 @@
 body {
   background: #fff;
   color: #444;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -454,10 +454,10 @@ h6 {
 .section-header p {
   text-align: center;
   margin: auto;
-  font-size: 15px;
-  padding-bottom: 60px;
-  color: #556877;
-  width: 50%;
+  font-size: 20px;
+  padding-bottom: 30px;
+  color: #2b3642;
+  width: 85%;
 }
 
 /* Section with background
@@ -558,7 +558,14 @@ h6 {
 #about .about-container .icon-box .description {
   margin-left: 80px;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
+  color: #2b3642;
+  text-align: justify;
+}
+
+#about .about-extra .description {
+  color: #2b3642;
+  text-align: justify;
 }
 
 #about .about-extra {
@@ -568,6 +575,14 @@ h6 {
 #about .about-extra h4 {
   font-weight: 600;
   font-size: 24px;
+}
+
+.img-feature-desc {
+  max-width: 300px;
+  max-height: 420px;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 
 /* Services Section
@@ -915,7 +930,7 @@ h6 {
 #team {
   background: #fff;
   padding: 60px 0;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
 }
 
 #team .member {

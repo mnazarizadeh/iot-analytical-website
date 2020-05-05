@@ -12,6 +12,10 @@ class Login extends Component {
     };
   }
 
+  componentDidMount() {
+      this.props.hideLoader();
+  }
+
   CheckLogin = () => {
     if (this.state.iUsername === "") {
       document.getElementById("user-validation").textContent =
@@ -80,7 +84,7 @@ class Login extends Component {
               />
             </a>
 
-            <div id="error"></div>
+            <div id="error"/>
 
             <input
               type="text"
@@ -91,8 +95,6 @@ class Login extends Component {
               required
               autoFocus
             />
-            <div id="user-validation"></div>
-
             <input
               name="Password"
               placeholder="Password"
@@ -101,7 +103,8 @@ class Login extends Component {
               className="form-control bottom-input"
               required
             />
-            <div id="password-validation"></div>
+            <div id="user-validation"/>
+            <div id="password-validation"/>
 
             <button
               className="btn btn-lg btn-primary btn-block"

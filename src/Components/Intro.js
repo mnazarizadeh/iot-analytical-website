@@ -23,6 +23,7 @@ class Intro extends Component {
       iUsername: "",
       Phone: "",
       Mail: "",
+      Quantity: 0,
     };
   }
 
@@ -41,27 +42,60 @@ class Intro extends Component {
       this.setState((prevState) => ({
         show: !prevState.show,
       }));
+    } else {
+        document.getElementById("user-validation").textContent =
+            "Please fill empty fields!";
+    }
+
+    if (this.state.iUsername === "") {
+      document.querySelector('.name').classList.add('empty-input-alert');
+      document.querySelector('.name-icon').classList.add('empty-input-alert');
+    }
+    if (this.state.Phone === "") {
+      document.querySelector('.phone').classList.add('empty-input-alert');
+      document.querySelector('.phone-icon').classList.add('empty-input-alert');
+    }
+    if (this.state.Mail === "") {
+      document.querySelector('.email').classList.add('empty-input-alert');
+      document.querySelector('.email-icon').classList.add('empty-input-alert');
     }
   };
 
+  onInputChangedQuantity = (e) => {
+      const newValues = getValueFromEvent(e);
+      this.setState({
+          Quantity: newValues.Quantity,
+      });
+      document.getElementById("price").innerText = newValues.Quantity * 299 +'$'
+  };
+
   onInputChangedUsername = (e) => {
+    document.getElementById("user-validation").textContent="";
+    document.querySelector('.name').classList.remove('empty-input-alert');
+    document.querySelector('.name-icon').classList.remove('empty-input-alert');
     const newValues = getValueFromEvent(e);
     this.setState({
-      iUsername: newValues.Username,
+      iUsername: newValues.username,
     });
   };
   onInputChangedPhone = (e) => {
+    document.getElementById("user-validation").textContent="";
+    document.querySelector('.phone').classList.remove('empty-input-alert');
+    document.querySelector('.phone-icon').classList.remove('empty-input-alert');
     const newValues = getValueFromEvent(e);
 
     this.setState({
-      Phone: newValues.Phone,
+      Phone: newValues.phone,
     });
   };
   onInputChangedMail = (e) => {
+    document.getElementById("user-validation").textContent="";
+    document.querySelector('.email').classList.remove('empty-input-alert');
+    document.querySelector('.email-icon').classList.remove('empty-input-alert');
     const newValues = getValueFromEvent(e);
 
     this.setState({
-      Mail: newValues.Mail,
+      Mail: newValues.email,
     });
   };
 
@@ -110,28 +144,33 @@ class Intro extends Component {
                   <tbody>
                     <tr>
                       <td style={{ color: "black" }}>IoT Analytical Unit</td>
-                      <td style={{ color: "black" }}>299$</td>
+                      <td id="price" style={{ color: "black" }}>299$</td>
                       <td style={{ color: "black" }}>
                         <input
                           id="quantity"
+                          name="Quantity"
                           type="number"
                           className="form-control text-center quantity"
                           defaultValue="1"
+                          min="1"
+                          max="20"
+                          onChange={(e) => this.onInputChangedQuantity(e)}
                         />
                       </td>
                     </tr>
                   </tbody>
                 </table>
 
+                  <div id="user-validation"/>
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
-                      <i className="fa fa-user"></i>
+                    <InputGroupText className="name-icon">
+                      <i className="fa fa-user"/>
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    className="inputbox"
-                    name="Username"
+                    className="inputbox name"
+                    name="username"
                     placeholder="Fullname"
                     onChange={(e) => this.onInputChangedUsername(e)}
                   />
@@ -139,12 +178,12 @@ class Intro extends Component {
 
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
-                    <InputGroupText color="secondary">
-                      <i className="fa fa-phone"></i>
+                    <InputGroupText color="secondary" className="phone-icon">
+                      <i className="fa fa-phone"/>
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    className="inputbox"
+                    className="inputbox phone"
                     name="phone"
                     placeholder="Phone number"
                     type="text"
@@ -154,12 +193,12 @@ class Intro extends Component {
 
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
-                    <InputGroupText color="secondary">
-                      <i className="fa fa-envelope colori"></i>
+                    <InputGroupText color="secondary" className="email-icon">
+                      <i className="fa fa-envelope colori"/>
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    className="inputbox"
+                    className="inputbox email"
                     name="email"
                     placeholder="E-mail"
                     type="email"
@@ -207,6 +246,7 @@ class Intro extends Component {
             </div>
           </div>
         </section>
+        <section id="intro-bottom" className="clearfix"/>
       </React.Fragment>
     );
   }

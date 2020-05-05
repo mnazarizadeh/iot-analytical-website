@@ -19,12 +19,7 @@ class Features extends Component {
           <div className="container">
             <header className="section-header">
               <h3>Features</h3>
-              <p></p>
-            </header>
-
-            <div className="row about-container">
-              <div className="col-lg-6 content order-lg-1 order-2">
-                <p className="testparag">
+              <p>
                   IoT Analytical enhances, empowers, and helps maintain smart
                   home solutions. Is designed in a way that all relevant data
                   regarding each part of smart solution is collected, stored,
@@ -34,6 +29,12 @@ class Features extends Component {
                   maintenance of smart homes and acts as a diagnosis tool. It
                   also provides suggestions for reducing consumption and thus,
                   helps to save the environment.
+              </p>
+            </header>
+
+            <div className="row about-container">
+              <div className="col-lg-6 content order-lg-1 order-2">
+                <p className="testparag">
                 </p>
                 <div id="wrapper-features1">
                   <div className="icon-box wow fadeInLeft">
@@ -100,9 +101,8 @@ class Features extends Component {
             <div className="row about-extra">
               <div className="col-lg-6 wow fadeInLeft pb-4">
                 <img
-                  id="phonepng"
                   src="assets/img/mobile_interface.png"
-                  className="rounded mx-auto d-block"
+                  className="img-feature-desc"
                   alt="about"
                 />
               </div>
@@ -112,7 +112,7 @@ class Features extends Component {
                 <p className="description">
                   IoT analytical application is available on Android, iOS, and
                   web. The household owner can access it from anywhere, whenever
-                  he or she wants. The dashboard is designed to be as simple as
+                  they want. The dashboard is designed to be as simple as
                   possible.
                 </p>
                 <p className="testparag"></p>
@@ -123,7 +123,7 @@ class Features extends Component {
               <div className="col-lg-6 wow fadeInRight order-1 order-lg-2 pb-5">
                 <img
                   src="assets/img/feature3.png"
-                  className="img-fluid"
+                  className="img-feature-desc"
                   alt="about"
                 />
               </div>

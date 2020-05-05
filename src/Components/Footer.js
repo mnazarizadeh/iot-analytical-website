@@ -19,8 +19,8 @@ class Footer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lat: 35.7132,
-      lng: 51.42,
+      lat: 35.713043,
+      lng: 51.419675,
       zoom: 17,
       modal: false,
       show: false,

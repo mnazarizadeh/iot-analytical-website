@@ -33,19 +33,14 @@ const template = (
     showLoader={showLoader}
   >
     {/* <Route exact path="/" component={App} /> */}
-    <Route
-      exact
-      path="/"
-      render={props => <App hideLoader={hideLoader} {...props} />}
-    />
-    
-    <Route path="/Dashboard" component={Admin} />
-    <Route path="/Electricity" component={Electricity} />
-    <Route path="/Water" component={Water} />
-    <Route path="/Gas" component={Gas} />
-    <Route path="/Diagnosis" component={Diagnosis} />
-    <Route path="/Settings" component={Admin} />
-    <Route path="/login" component={Login} />
+    <Route exact path="/" render={props => <App hideLoader={hideLoader} {...props} />} />
+    <Route path="/Dashboard" /*component={Admin}*/ render={props => <Admin hideLoader={hideLoader} {...props} />} />
+    <Route path="/Electricity" /*component={Electricity}*/ render={props => <Electricity hideLoader={hideLoader} {...props} />} />
+    <Route path="/Water" /*component={Water}*/ render={props => <Water hideLoader={hideLoader} {...props} />} />
+    <Route path="/Gas" /*component={Gas}*/ render={props => <Gas hideLoader={hideLoader} {...props} />} />
+    <Route path="/Diagnosis" /*component={Diagnosis}*/ render={props => <Diagnosis hideLoader={hideLoader} {...props} />} />
+    <Route path="/Settings" /*component={Admin}*/ render={props => <Admin hideLoader={hideLoader} {...props} />} />
+    <Route path="/login" /*component={Login}*/ render={props => <Login hideLoader={hideLoader} {...props} />} />
   </Router>
 );
 

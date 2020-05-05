@@ -20,9 +20,9 @@ class FAQ extends Component {
                     aria-controls="collapseOne"
                 >
                   <div className="card-header" id="headingOne">
-                    <h5>Q.</h5>
                     <h2 className="mb-0 faq-question">
-                        How can IoT analytical be installed?
+                      <h5>Q.</h5>
+                      How can IoT analytical be installed?
                     </h2>
                   </div>
                 </button>
@@ -54,8 +54,8 @@ class FAQ extends Component {
                     aria-controls="collapseTwo"
                 >
                   <div className="card-header" id="headingTwo">
-                    <h5>Q.</h5>
                     <h2 className="mb-0 faq-question">
+                      <h5>Q.</h5>
                       Can I customize IoT analytical for my customers?
                     </h2>
                   </div>
@@ -85,8 +85,8 @@ class FAQ extends Component {
                     aria-controls="collapseThree"
                 >
                   <div className="card-header" id="headingThree">
-                    <h5>Q.</h5>
                     <h2 className="mb-0 faq-question">
+                      <h5>Q.</h5>
                       What if my internet connection has been lost?
                     </h2>
                   </div>
@@ -115,8 +115,8 @@ class FAQ extends Component {
                     aria-controls="collapseFour"
                 >
                   <div className="card-header" id="headingFour">
-                    <h5>Q.</h5>
                     <h2 className="mb-0 faq-question">
+                      <h5>Q.</h5>
                       How does my privacy protect?
                     </h2>
                   </div>
@@ -146,8 +146,8 @@ class FAQ extends Component {
                     aria-controls="collapseFive"
                 >
                   <div className="card-header" id="headingFive">
-                    <h5>Q.</h5>
                     <h2 className="mb-0 faq-question">
+                      <h5>Q.</h5>
                       Is IoT analytical GDPR or/and CCPA compatible?
                     </h2>
                   </div>
@@ -177,8 +177,8 @@ class FAQ extends Component {
                     aria-controls="collapseSix"
                 >
                   <div className="card-header" id="headingSix">
-                    <h5>Q.</h5>
                     <h2 className="mb-0 faq-question">
+                      <h5>Q.</h5>
                       Do you have a warranty?
                     </h2>
                   </div>

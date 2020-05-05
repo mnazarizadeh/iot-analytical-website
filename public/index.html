@@ -1,73 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#007bff" />
-  <meta name="description" content="Analytics Solution for Smart Homes" />
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#007bff" />
+    <meta name="description" content="Analytics Solution for Smart Homes" />
 
-  <!-- CSS Dependencies -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin="" />
+    <!-- CSS Dependencies -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin="" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-  <title>IoT Analytical</title>
-</head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 
-<body style="background-color: #FFFF;">
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-  <div class="loader"></div>
-  <!--
-        This HTML file is a template.
-        If you open it directly in the browser, you will see an empty page.
+    <title>IoT Analytical</title>
+  </head>
 
-        You can add webfonts, meta tags, or analytics to this file.
-        The build step will place the bundled scripts into the <body> tag.
-
-        To begin the development, run `npm start` or `yarn start`.
-        To create a production bundle, use `npm run build` or `yarn build`.
-      -->
-</body>
+  <body style="background-color: #FFFF;">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <div class="loader"></div>
+  </body>
 
 </html>
-<style>
-  .loader {
-    background-color: white;
-    position: absolute;
-    top: calc(50% - 4em);
-    left: calc(50% - 4em);
-    width: 6em;
-    height: 6em;
-    border: 1.1em solid rgba(0, 0, 0, 0.2);
-    border-left: 1.1em solid #007bff;
-    border-radius: 50%;
-    animation: load 1500ms infinite linear;
-    transition: opacity 200ms;
-  }
-
-  .loader--hide {
-    opacity: 0;
-  }
-
-  @keyframes load {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-</style>
