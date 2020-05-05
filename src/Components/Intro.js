@@ -161,7 +161,7 @@ class Intro extends Component {
                   </tbody>
                 </table>
 
-                  <div id="user-validation"/>
+                <div id="user-validation"/>
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText className="name-icon">

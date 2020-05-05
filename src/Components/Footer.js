@@ -40,9 +40,28 @@ class Footer extends Component {
       this.setState((prevState) => ({
         show: !prevState.show,
       }));
+    } else {
+      document.getElementById("user-validation").textContent =
+          "Please fill empty fields!";
+    }
+
+    if (this.state.iUsername === "") {
+      document.querySelector('.name').classList.add('empty-input-alert');
+      document.querySelector('.name-icon').classList.add('empty-input-alert');
+    }
+    if (this.state.Mail === "") {
+      document.querySelector('.mail').classList.add('empty-input-alert');
+      document.querySelector('.mail-icon').classList.add('empty-input-alert');
+    }
+    if (this.state.Org === "") {
+      document.querySelector('.org').classList.add('empty-input-alert');
+      document.querySelector('.org-icon').classList.add('empty-input-alert');
     }
   };
   onInputChangedUsername = (e) => {
+    document.getElementById("user-validation").textContent = "";
+    document.querySelector('.name').classList.remove('empty-input-alert');
+    document.querySelector('.name-icon').classList.remove('empty-input-alert');
     const newValues = getValueFromEvent(e);
     this.setState({
       iUsername: newValues.Username,
@@ -50,6 +69,9 @@ class Footer extends Component {
   };
 
   onInputChangedMail = (e) => {
+    document.getElementById("user-validation").textContent = "";
+    document.querySelector('.mail').classList.remove('empty-input-alert');
+    document.querySelector('.mail-icon').classList.remove('empty-input-alert');
     const newValues = getValueFromEvent(e);
 
     this.setState({
@@ -58,6 +80,9 @@ class Footer extends Component {
   };
 
   onInputChangedOrg = (e) => {
+    document.getElementById("user-validation").textContent = "";
+    document.querySelector('.org').classList.remove('empty-input-alert');
+    document.querySelector('.org-icon').classList.remove('empty-input-alert');
     const newValues = getValueFromEvent(e);
 
     this.setState({
@@ -94,14 +119,15 @@ class Footer extends Component {
               </ModalHeader>
               <ModalBody>
                 <div>
+                  <div id="user-validation"/>
                   <InputGroup>
                     <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="fa fa-user sizeu"></i>
+                      <InputGroupText className="name-icon">
+                        <i className="fa fa-user sizeu"/>
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
-                      className="inputbox"
+                      className="inputbox name"
                       name="Username"
                       placeholder="Fullname"
                       onChange={(e) => this.onInputChangedUsername(e)}
@@ -110,12 +136,12 @@ class Footer extends Component {
 
                   <InputGroup>
                     <InputGroupAddon addonType="prepend">
-                      <InputGroupText color="secondary">
-                        <i className="fa fa-envelope colori"></i>
+                      <InputGroupText color="secondary" className="mail-icon">
+                        <i className="fa fa-envelope colori"/>
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
-                      className="inputbox"
+                      className="inputbox mail"
                       name="email"
                       placeholder="E-mail"
                       type="email"
@@ -125,12 +151,12 @@ class Footer extends Component {
 
                   <InputGroup>
                     <InputGroupAddon addonType="prepend">
-                      <InputGroupText color="secondary">
-                        <i className="fa fa-building"></i>
+                      <InputGroupText color="secondary" className="org-icon">
+                        <i className="fa fa-building"/>
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
-                      className="inputbox"
+                      className="inputbox org"
                       name="org"
                       placeholder="Organization"
                       type="text"
