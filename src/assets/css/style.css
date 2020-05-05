@@ -210,6 +210,7 @@ h6 {
 
 #homelink {
   font-weight: 600;
+  max-width: 70%;
 }
 
 .navbar-site {
@@ -240,6 +241,7 @@ h6 {
   padding: 5px 0 5px 0;
   margin: 0;
   max-height: 44px;
+  max-width: 100%;
 }
 
 #header.header-scrolled,
@@ -307,9 +309,9 @@ h6 {
 
 #intro-bottom {
   width: 100%;
-  height: 200px;
+  height: 99px;
   position: relative;
-  margin-top: -200px;
+  margin-top: -99px;
   background-size: cover;
   background: url("../img/intro-bg-bottom.png") no-repeat center bottom;
 }
@@ -322,7 +324,7 @@ h6 {
   }
 
   #intro-bottom {
-    margin-top: -225px;
+    margin-top: -124px;
   }
 
   #introw .intro-info {
@@ -1429,6 +1431,9 @@ h6 {
 @media (max-width: 574px) {
   #introw {
     padding: 100px 0 20px 0;
+  }
+  #intro-bottom {
+    visibility: hidden;
   }
   #introw .intro-info {
     padding-top: 10px;

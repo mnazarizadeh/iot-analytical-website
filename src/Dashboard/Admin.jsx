@@ -123,11 +123,9 @@ class Admin extends React.Component {
             bgColor={this.state.backgroundColor}
             logo={{
               text: (
-                <img
-                  src={require("./assets/img/ia_text_dark.png")}
-                  alt="logo"
-                />
-              )
+                <img src={require("./assets/img/ia_text_dark.png")} alt="logo"/>
+              ),
+              outterLink: ("/")
             }}
             toggleSidebar={this.toggleSidebar}
           />
