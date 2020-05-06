@@ -22,8 +22,10 @@ const history = createBrowserHistory();
 
 const loader = document.querySelector(".loader");
 const showLoader = () => loader.classList.remove("loader--hide");
-
-const hideLoader = () => loader.classList.add("loader--hide");
+const hideLoader = () => {
+    loader.classList.add("loader--hide");
+    document.querySelector('#root').classList.add('page-show');
+};
 
 const template = (
   <Router

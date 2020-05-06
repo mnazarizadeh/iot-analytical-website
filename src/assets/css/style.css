@@ -230,11 +230,15 @@ h6 {
 }
 
 .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,54,111)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 4l24 24M4 28l24 -24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler .collapsed .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,54,111)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.custom-toggler.navbar-toggler {
-  border-color: rgb(0, 54, 111);
+.custom-toggler .navbar-toggler {
+  /*border-color: rgb(0, 54, 111);*/
 }
 
 #logo-img {
@@ -407,6 +411,9 @@ h6 {
   text-decoration: none;
 }
 
+.iotModal .table {
+  margin-bottom: 0;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -1458,20 +1465,60 @@ h6 {
   border: 1.1em solid rgba(0, 0, 0, 0.2);
   border-left: 1.1em solid #007bff;
   border-radius: 50%;
-  animation: load 1500ms infinite linear;
+  animation: load 1000ms infinite ease;
   transition: opacity 200ms;
-}
-
-.loader--hide {
-  visibility: hidden;
 }
 
 @keyframes load {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(-90deg);
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotate(270deg);
   }
+}
+
+.loader--hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 1s, opacity 1s;
+}
+
+.page-show {
+  animation: load-content ease 4s;
+  -webkit-animation: load-content ease 4s;
+  -moz-animation: load-content ease 4s;
+  -o-animation: load-content ease 4s;
+  -ms-animation: load-content ease 4s;
+}
+
+@keyframes load-content {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes load-content {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes load-content {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes load-content {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-ms-keyframes load-content {
+  0% {opacity: 0;}
+  30% {opacity: 0;}
+  100% {opacity: 1;}
 }

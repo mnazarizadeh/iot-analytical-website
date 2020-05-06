@@ -127,7 +127,7 @@ class Intro extends Component {
                 <div className="product-pic-modal">
                   <img src="./assets/img/product.png" alt="product-pic" />
                 </div>
-                <table className="table table-image mb-4">
+                <table className="table table-image">
                   <thead>
                     <tr>
                       <th scope="col" style={{ color: "black" }}>
