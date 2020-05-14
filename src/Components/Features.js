@@ -19,11 +19,11 @@ class Features extends Component {
           <div className="container">
             <header className="section-header">
               <h3>Features</h3>
-              <p>
+              <p className="text-center text-justify">
                   IoT Analytical enhances, empowers, and helps maintain smart
-                  home solutions. Is designed in a way that all relevant data
-                  regarding each part of smart solution is collected, stored,
-                  and process automatically. The user can easily access water,
+                  home solutions. It is designed in a way that all relevant data
+                  regarding each part of smart home solution is collected, stored,
+                  and processed automatically. The user can easily access water,
                   gas, and electricity consumption and receive live diagnosis
                   analysis. IoT Analytical contributes significantly to the
                   maintenance of smart homes and acts as a diagnosis tool. It
@@ -45,7 +45,7 @@ class Features extends Component {
                       <span>Compatibility</span>
                     </h4>
                     <p className="description">
-                      Whether your smart home solution uses Android or Linux,
+                      Whether your smart home solution uses Android or other Linux distributions,
                       IoT analytical can be easily installed through the use of
                       its restful API. Hence, it can be easily installed on
                       almost every smart home out there.
@@ -132,7 +132,7 @@ class Features extends Component {
                 <h4 className="testh">No hidden costs</h4>
                 <p className="testparag"></p>
                 <p className="description">
-                  all features available in IoT analytical is available for
+                  All features available in IoT analytical is available for
                   one-time fee payment. No subscription required. No hidden
                   cost, no bull*hit!
                 </p>

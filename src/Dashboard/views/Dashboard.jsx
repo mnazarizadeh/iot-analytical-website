@@ -18,11 +18,10 @@
 import React from "react";
 
 // react plugin used to create charts
-import { Line, Pie } from "react-chartjs-2";
+import { Line, Pie, } from "react-chartjs-2";
 
 // reactstrap components
 import {
-
   Card,
   CardHeader,
   CardBody,
@@ -42,13 +41,38 @@ import {
   chartExample7
 } from "./../variables/charts.jsx";
 
+const hideLoader = () => {
+    document.querySelectorAll(".chart-loader").forEach(element => {
+      element.classList.add("chart-loader-hide");
+    });
+    document.querySelectorAll('.chart-area').forEach(element => {
+      element.classList.add('chart-page-show');
+    });
+};
+const hideLoaderFast = () => {
+    document.querySelectorAll(".chart-loader").forEach(element => {
+        element.classList.add("chart-loader-fast-hide");
+    });
+};
+let firstRun = true;
+
 class Dashboard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      bigChartData: "data1"
+      bigChartData: "data1",
     };
+    this.elecChartRef = React.createRef();
   }
+    componentDidMount() {
+      if (firstRun) {
+          hideLoader();
+          firstRun = false;
+      } else {
+        hideLoaderFast();
+      }
+      console.log(this.elecChartRef)
+    }
   setBgChartData = name => {
     this.setState({
       bigChartData: name
@@ -68,8 +92,10 @@ class Dashboard extends React.Component {
                   <CardTitle tag="h3">Electricity</CardTitle>
                 </CardHeader>
                 <CardBody>
+                  <div className="chart-loader"/>
                   <div className="chart-area">
                     <Line
+                      ref={this.elecChartRef}
                       data={chartExample7.data}
                       options={chartExample7.options}
                     />
@@ -84,6 +110,7 @@ class Dashboard extends React.Component {
                   <CardTitle tag="h3">Water</CardTitle>
                 </CardHeader>
                 <CardBody>
+                  <div className="chart-loader"/>
                   <div className="chart-area">
                     <Line
                       data={chartExample2.data}
@@ -100,6 +127,7 @@ class Dashboard extends React.Component {
                   <CardTitle tag="h3">Gas</CardTitle>
                 </CardHeader>
                 <CardBody>
+                  <div className="chart-loader"/>
                   <div className="chart-area">
                     <Line
                       data={chartExample3.data}
@@ -120,6 +148,7 @@ class Dashboard extends React.Component {
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
+                  <div className="chart-loader"/>
                   <div className="chart-area">
                     <Pie
                       data={chartExample4.data}
@@ -138,6 +167,7 @@ class Dashboard extends React.Component {
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
+                  <div className="chart-loader"/>
                   <div className="chart-area">
                     <Pie
                       data={chartExample5.data}
@@ -156,6 +186,7 @@ class Dashboard extends React.Component {
                   </CardTitle>
                 </CardHeader>
                 <CardBody>
+                  <div className="chart-loader"/>
                   <div className="chart-area">
                     <Pie
                       data={chartExample6.data}

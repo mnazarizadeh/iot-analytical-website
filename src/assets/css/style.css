@@ -89,13 +89,43 @@ body::-webkit-scrollbar {
   font-size: 20px;
 }
 
-.iotModal .inputbox {
-  font-size: 16px;
+.iotModal .inputbox,
+.iotModal .inputbox:focus {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 20px;
+    border-width: thick;
+    border-top: 0 none;
+    border-right: 0 none;
+    border-left: 0 none;
+    box-shadow: none;
+    height: 2rem;
+  /*text-align: center;*/
+    border-radius: 0;
 }
 
-.iotModal .empty-input-alert {
+.iotModal .inputbox::placeholder {
+    opacity: 0.5;
+}
+
+.iotModal .inputbox:focus::placeholder {
+  color: #007bff;
+  opacity: 0.5;
+  border-color: #007bff;
+}
+
+.ig-width {
+  /*width: 70% !important;*/
+  min-width: 200px;
+  margin: auto;
+  display: flex;
+}
+
+.iotModal .empty-input-alert input,
+.iotModal .empty-input-alert label {
   border-color: orangered;
-  border-width: medium;
+  border-width: thick;
+  color: orangered;
 }
 
 .iotModal .modal-header-custom {
@@ -108,18 +138,29 @@ body::-webkit-scrollbar {
 }
 
 .product-pic-modal {
-  text-align: center !important;
+  text-align: center;
+  border: none;
 }
 
 .product-pic-modal img {
   padding: 0.25rem;
-  border: 0.0625rem solid #e3e3e3;
-  border-radius: 0.25rem;
-  box-shadow: 0 1px 2px rgba(34, 42, 66, 0.075);
+  /*border: 0.0625rem solid #e3e3e3;*/
+  /*border-radius: 0.25rem;*/
+  /*box-shadow: 0 1px 2px rgba(34, 42, 66, 0.075);*/
 }
 
 .quantity {
+  width: 40px;
+  height: 40px;
   max-width: 3.75rem;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.iotModal .modal-content {
+    border-radius: 0;
+    border: 0 none;
 }
 
 .iotModal .modal-content .modal-footer {
@@ -129,6 +170,7 @@ body::-webkit-scrollbar {
 
 .iotModal .btn-custom-iot {
   padding: 7px 20px !important;
+  display: none;
 }
 
 
@@ -297,7 +339,18 @@ h6 {
   text-decoration: none !important;
 }
 
+.iotModal .btn-custom-cancel {
+    border-radius: 50px !important;
+    color: #007bff !important;
+    background: transparent !important;
+    border: 2px solid #007bff !important;
+}
 
+.iotModal .btn-custom-cancel:hover {
+    color: #007bff !important;
+    background: white !important;
+    border: 2px solid #007bff !important;
+}
 
 /*--------------------------------------------------------------
 # Intro Section
@@ -405,14 +458,98 @@ h6 {
 }
 
 #introw .intro-info .btn-services:hover {
-  background: #007bff;
-  border-color: #007bff;
-  color: #fff;
+  background: white;
+  border-color: white;
+  color: #007bff;
   text-decoration: none;
 }
 
 .iotModal .table {
   margin-bottom: 0;
+}
+
+.iotModal .button-div {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.iotModal .btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 0;
+  transition: 0.5s;
+  color: #fff;
+  width: 30%;
+  height: 3rem;
+  margin: 10px auto;
+  /*box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);*/
+}
+
+.iotModal .btn:hover {
+  /*box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);*/
+}
+
+.iotModal .btn:focus {
+  /*box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);*/
+}
+
+.iotModal .btn:active {
+  /*box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;*/
+}
+
+.iotModal .btn-submit,
+.iotModal .btn-submit:hover,
+.iotModal .btn-submit:focus {
+  color: white;
+  background: #007bff;
+  border: 2px solid #007bff;
+}
+
+.iotModal .btn-submit:active {
+  color: white !important;
+  background: #1545b3 !important;
+  border: 2px solid #1545b3 !important;
+}
+
+.iotModal .btn-cancel,
+.iotModal .btn-cancel:hover,
+.iotModal .btn-cancel:focus {
+  color: #007bff;
+  background: white;
+  border: 2px solid #007bff;
+}
+
+.iotModal .btn-cancel:active {
+  color: #007bff !important;
+  background: whitesmoke !important;
+  border: 2px solid #007bff !important;
+}
+
+.iotModal .btn-spinner {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  color: grey;
+  background: transparent;
+  border: 0 none;
+  font-size: 20px;
+}
+
+.iotModal .text-field {
+    margin: 5px 0 5px 5px;
+    padding-right: 10px;
+    /*width: 50%;*/
+}
+
+.iotModal .order-form {
+    /*overflow-x: unset;*/
+    /*overflow-y: scroll;*/
+    /*max-height: 200px;*/
 }
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -933,6 +1070,10 @@ h6 {
   transition: margin 0.2s;
 }
 
+#team .member .member-info-content span {
+  font-family: "Open Sans", sans-serif;
+}
+
 #team .member:hover .member-info {
   background: rgba(0, 62, 128, 0.7);
   opacity: 1;
@@ -1200,6 +1341,7 @@ h6 {
 #footer .press-kit:hover,
 #footer .press-kit:focus {
   color: white;
+  cursor: pointer;
 }
 
 #footer .press-kit:hover {
@@ -1405,6 +1547,18 @@ h6 {
   }
 }
 
+@media (min-width: 768px) {
+  .order-modal {
+    max-width: 750px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .order-modal {
+    max-width: 850px !important;
+  }
+}
+
 @media (max-width: 767px) {
   #introw .intro-info {
     width: 100%;
@@ -1522,3 +1676,151 @@ h6 {
   30% {opacity: 0;}
   100% {opacity: 1;}
 }
+
+/****************************
+number spinner
+*****************************/
+.number-input input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  padding: 0;
+}
+.number-input input[type=number]::-webkit-inner-spin-button,
+.number-input input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.number-input {
+  /*margin-bottom: 3rem;*/
+  /*margin: auto;*/
+  /*display: flex;*/
+}
+.number-input button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+.number-input button:before,
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  height: 2px;
+  transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.number-input input[type=number] {
+  text-align: center;
+}
+.number-input.number-input {
+  border: 1px solid #ced4da;
+  width: fit-content;
+  border-radius: 0;
+}
+.number-input.number-input button {
+  width: 2.6rem;
+  height: .7rem;
+}
+.number-input.number-input button.minus {
+  padding-left: 10px;
+}
+.number-input.number-input button:before,
+.number-input.number-input button:after {
+  width: .7rem;
+  background-color: #495057;
+}
+.number-input.number-input input[type=number] {
+  max-width: 4rem;
+  padding: .5rem;
+  border: 1px solid #ced4da;
+  border-width: 0 1px;
+  font-size: 1rem;
+  height: 2rem;
+  color: #495057;
+}
+
+/****************************
+chart-loading
+*****************************/
+
+.chart-loader {
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% - 2em);
+  left: calc(50% - 2em);
+  width: 4em;
+  height: 4em;
+  border: .3em solid rgba(0, 0, 0, 0.2);
+  /*border-left: .3em solid #007bff;*/
+  border-left: .3em solid #fff;
+  border-radius: 50%;
+  animation: chart-load 1000ms infinite ease;
+  transition: opacity 200ms;
+}
+
+@keyframes chart-load {
+  0% {
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+.chart-loader-hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 2s, opacity 1s linear 1s;
+}
+
+.chart-loader-fast-hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.chart-page-show {
+  animation: chart-load-content ease 2.5s;
+  -webkit-animation: chart-load-content ease 2.5s;
+  -moz-animation: chart-load-content ease 2.5s;
+  -o-animation: chart-load-content ease 2.5s;
+  -ms-animation: chart-load-content ease 2.5s;
+}
+
+@keyframes chart-load-content {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes chart-load-content {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes chart-load-content {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes chart-load-content {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-ms-keyframes chart-load-content {
+  0% {opacity: 0;}
+  80% {opacity: 0;}
+  100% {opacity: 1;}
+}
+

@@ -4,16 +4,17 @@ import { withRouter } from "react-router-dom";
 import {
   Button,
   Modal,
-  ModalHeader,
+  // ModalHeader,
   ModalBody,
   ModalFooter,
-  InputGroup,
-  InputGroupAddon,
-  InputGroupText,
-  Input,
+  // InputGroup,
+  // InputGroupAddon,
+  // InputGroupText,
+  // Input,
 } from "reactstrap";
 import SweetAlert from 'react-bootstrap-sweetalert';
 import { getValueFromEvent } from "../util/clientUtils";
+import TextField from '@material-ui/core/TextField';
 
 class Footer extends Component {
   constructor(props) {
@@ -24,9 +25,10 @@ class Footer extends Component {
       zoom: 17,
       modal: false,
       show: false,
-      iUsername: "",
-      Mail: "",
-      Org: ""
+      name: "",
+      email: "",
+      org: "",
+      error: false,
     };
   }
 
@@ -35,58 +37,52 @@ class Footer extends Component {
       modal: !prevState.modal,
     }));
   };
+  closeModal = () => {
+      this.setState(() => ({
+          modal: false,
+          show: false,
+          name: "",
+          email: "",
+          org: "",
+          error: false,
+      }));
+  };
+
   CheckSubmit = () => {
-    if (this.state.iUsername !== "" && this.state.Mail !== "" && this.state.Org !== "") {
+    if (this.state.name !== "" && this.state.email !== "" && this.state.org !== "") {
       this.setState((prevState) => ({
         show: !prevState.show,
       }));
     } else {
-      document.getElementById("user-validation").textContent =
-          "Please fill empty fields!";
-    }
-
-    if (this.state.iUsername === "") {
-      document.querySelector('.name').classList.add('empty-input-alert');
-      document.querySelector('.name-icon').classList.add('empty-input-alert');
-    }
-    if (this.state.Mail === "") {
-      document.querySelector('.mail').classList.add('empty-input-alert');
-      document.querySelector('.mail-icon').classList.add('empty-input-alert');
-    }
-    if (this.state.Org === "") {
-      document.querySelector('.org').classList.add('empty-input-alert');
-      document.querySelector('.org-icon').classList.add('empty-input-alert');
+        this.setState(() => ({
+            error: true,
+        }));
+        document.getElementById("user-validation").textContent =
+            "Please fill out empty fields!";
     }
   };
-  onInputChangedUsername = (e) => {
+  onInputChangedName = (e) => {
     document.getElementById("user-validation").textContent = "";
-    document.querySelector('.name').classList.remove('empty-input-alert');
-    document.querySelector('.name-icon').classList.remove('empty-input-alert');
     const newValues = getValueFromEvent(e);
     this.setState({
-      iUsername: newValues.Username,
+      name: newValues.name,
     });
   };
 
-  onInputChangedMail = (e) => {
+  onInputChangedEmail = (e) => {
     document.getElementById("user-validation").textContent = "";
-    document.querySelector('.mail').classList.remove('empty-input-alert');
-    document.querySelector('.mail-icon').classList.remove('empty-input-alert');
     const newValues = getValueFromEvent(e);
 
     this.setState({
-      Mail: newValues.Mail,
+      email: newValues.email,
     });
   };
 
   onInputChangedOrg = (e) => {
     document.getElementById("user-validation").textContent = "";
-    document.querySelector('.org').classList.remove('empty-input-alert');
-    document.querySelector('.org-icon').classList.remove('empty-input-alert');
     const newValues = getValueFromEvent(e);
-
     this.setState({
-      Org: newValues.Org,
+      org: newValues.org,
     });
   };
 
@@ -98,7 +94,7 @@ class Footer extends Component {
           success
           show={this.state.show}
           title="Thank You!"
-          onConfirm={() => this.setState({ show: false })}
+          onConfirm={() => this.closeModal()}
         >
           Your Press Kit will be emailed to you soon.
         </SweetAlert>
@@ -111,67 +107,30 @@ class Footer extends Component {
               toggle={() => this.openModal()}
               className="iotModal"
             >
-              <ModalHeader
-                className="modal-header-custom"
-                toggle={() => this.openModal()}
-              >
-                Get Press Kit
-              </ModalHeader>
               <ModalBody>
+                <div id="user-validation"/>
                 <div>
-                  <div id="user-validation"/>
-                  <InputGroup>
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText className="name-icon">
-                        <i className="fa fa-user sizeu"/>
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input
-                      className="inputbox name"
-                      name="Username"
-                      placeholder="Fullname"
-                      onChange={(e) => this.onInputChangedUsername(e)}
-                    />
-                  </InputGroup>
-
-                  <InputGroup>
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText color="secondary" className="mail-icon">
-                        <i className="fa fa-envelope colori"/>
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input
-                      className="inputbox mail"
-                      name="email"
-                      placeholder="E-mail"
-                      type="email"
-                      onChange={(e) => this.onInputChangedMail(e)}
-                    />
-                  </InputGroup>
-
-                  <InputGroup>
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText color="secondary" className="org-icon">
-                        <i className="fa fa-building"/>
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input
-                      className="inputbox org"
-                      name="org"
-                      placeholder="Organization"
-                      type="text"
-                      onChange={(e) => this.onInputChangedOrg(e)}
-                    />
-                  </InputGroup>
+                    <TextField required fullWidth id="standard-basic" label="Name" name="name"
+                               onChange={(e) => this.onInputChangedName(e)}
+                               className="text-field name"
+                               error={this.state.error && this.state.name === ""}/>
+                    <TextField required fullWidth id="standard-basic" label="Email" name="email"
+                               onChange={(e) => this.onInputChangedEmail(e)}
+                               className="text-field email"
+                               error={this.state.error && this.state.email === ""}/>
+                    <TextField required fullWidth id="standard-basic" label="Organization" name="org"
+                               onChange={(e) => this.onInputChangedOrg(e)}
+                               className="text-field org"
+                               error={this.state.error && this.state.org === ""}/>
                 </div>
               </ModalBody>
               <ModalFooter>
-                <Button
-                  className="btn-custom-iot"
-                  onClick={() => this.CheckSubmit()}
-                >
+                <Button className="btn-custom-iot" onClick={() => this.CheckSubmit()}>
                   Submit
-                </Button>{" "}
+                </Button>
+                <Button type="button" className="btn-custom-cancel" onClick = {() => this.closeModal()}>
+                    Cancel
+                </Button>
               </ModalFooter>
             </Modal>
           </div>
@@ -214,7 +173,6 @@ class Footer extends Component {
                     <strong>Email:</strong> info@iot-analytical.com
                     <br />
                     <a
-                      href="#GetPressKit"
                       className="press-kit"
                       onClick={() => this.openModal()}
                     >

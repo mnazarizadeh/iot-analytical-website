@@ -22,7 +22,7 @@ class Team extends Component {
                   <div className="member-info">
                     <div className="member-info-content">
                       <h4>Mohammad Nazarizadeh</h4>
-                      <span>CEO</span>
+                      <span>CEO & CTO</span>
                       <div className="social">
                         <a
                           href="mailto:m.nazarizadeh@gmail.com?subject=Contact IA Team"
@@ -64,7 +64,7 @@ class Team extends Component {
                   <div className="member-info">
                     <div className="member-info-content">
                       <h4>Maedeh Amiri</h4>
-                      <span>Software Engineer</span>
+                      <span>Product Owner</span>
                       <div className="social">
                         <a
                           href="mailto:maedehamiri@gmail.com?subject=Contact IA Team"
@@ -148,7 +148,7 @@ class Team extends Component {
                   <div className="member-info">
                     <div className="member-info-content">
                       <h4>Marsa Mousavi</h4>
-                      <span>Sales and Marketing Expert</span>
+                      <span>PR and Business Development Manager</span>
                       <div className="social">
                         <a
                           href="mailto:marsa.mousavi@gmail.com?subject=Contact IA Team"
@@ -194,7 +194,7 @@ class Team extends Component {
                         <br />
                         Nazarizadeh
                       </h4>
-                      <span>Business Development Manager</span>
+                      <span>Sales and Marketing Team Lead</span>
                       <div className="social">
                         <a
                           href="mailto:hamed.nazarizadehh@gmail.com?subject=Contact IA Team"
@@ -211,7 +211,7 @@ class Team extends Component {
                           <i className="fa fa-envelope" />
                         </a>
                         <a
-                          href="https://linkedin.com/in/hamed-nazari-3b3a736b"
+                          href="https://www.linkedin.com/in/hamednz"
                           target="_blank"
                           rel="noopener noreferrer"
                         >

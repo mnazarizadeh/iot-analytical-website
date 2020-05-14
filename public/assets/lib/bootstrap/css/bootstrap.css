@@ -230,8 +230,9 @@ button {
 }
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  /*outline: 1px dotted;*/
+  /*outline: 5px auto -webkit-focus-ring-color;*/
+  outline: none !important;
 }
 
 input,
@@ -1888,27 +1889,27 @@ pre code {
 
 .form-control::-webkit-input-placeholder {
   color: #6c757d;
-  opacity: 1;
+  opacity: 0.3;
 }
 
 .form-control::-moz-placeholder {
   color: #6c757d;
-  opacity: 1;
+  opacity: 03;
 }
 
 .form-control:-ms-input-placeholder {
   color: #6c757d;
-  opacity: 1;
+  opacity: 0.3;
 }
 
 .form-control::-ms-input-placeholder {
   color: #6c757d;
-  opacity: 1;
+  opacity: 0.3;
 }
 
 .form-control::placeholder {
   color: #6c757d;
-  opacity: 1;
+  opacity: 0.3;
 }
 
 .form-control:disabled, .form-control[readonly] {
@@ -3427,7 +3428,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   -ms-flex-align: stretch;
   align-items: stretch;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .input-group > .form-control,
@@ -5762,7 +5763,7 @@ a.close.disabled {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 800px;
     margin: 1.75rem auto;
   }
   .modal-dialog-centered {
