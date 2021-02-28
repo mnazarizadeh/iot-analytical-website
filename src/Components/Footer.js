@@ -205,6 +205,14 @@ class Footer extends Component {
                     >
                       <i className="fa fa-linkedin"></i>
                     </a>
+                    <a
+                        href="https://www.youtube.com/channel/UCeL3RKuq_wpI-2S_9rXHR6A"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="youtube"
+                    >
+                      <i className="fa fa-youtube-play"></i>
+                    </a>
                   </div>
                 </div>
                 <div className="col-lg-5 col-md-6">
