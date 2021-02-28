@@ -32,7 +32,7 @@ class Team extends Component {
                           <i className="fa fa-google" />
                         </a>
                         <a
-                          href="mailto:mnazarizadeh@iot-analytical.com?subject=Contact IA Team"
+                          href="mailto:mohammad@iot-analytical.com?subject=Contact IA Team"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -74,7 +74,7 @@ class Team extends Component {
                           <i className="fa fa-google" />
                         </a>
                         <a
-                          href="mailto:mamiri@iot-analytical.com?subject=Contact IA Team"
+                          href="mailto:maedeh@iot-analytical.com?subject=Contact IA Team"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -116,7 +116,7 @@ class Team extends Component {
                           <i className="fa fa-google" />
                         </a>
                         <a
-                          href="mailto:asadoughi@iot-analytical.com?subject=Contact IA Team"
+                          href="mailto:ali@iot-analytical.com?subject=Contact IA Team"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -158,7 +158,7 @@ class Team extends Component {
                           <i className="fa fa-google" />
                         </a>
                         <a
-                          href="mailto:mmousavi@iot-analytical.com?subject=Contact IA Team"
+                          href="mailto:marsa@iot-analytical.com?subject=Contact IA Team"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -204,7 +204,7 @@ class Team extends Component {
                           <i className="fa fa-google" />
                         </a>
                         <a
-                          href="mailto:hnazarizadeh@iot-analytical.com?subject=Contact IA Team"
+                          href="mailto:hamed@iot-analytical.com?subject=Contact IA Team"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
