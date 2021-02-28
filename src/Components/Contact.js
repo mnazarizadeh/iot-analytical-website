@@ -32,8 +32,8 @@ class Contact extends Component {
                     <p className="testparag">info@iot-analytical.com</p>
                   </div>
                   <div className="col-md-3 info">
-                    <i className="ion-ios-telephone-outline"/>
-                    <p className="testparag">+98 21 88690360</p>
+                    <i className="ion-social-twitter-outline"/>
+                    <p className="testparag">@IoTAnalytical</p>
                   </div>
                 </div>
 
